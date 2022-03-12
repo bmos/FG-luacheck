@@ -1,6 +1,6 @@
 max_line_length = 140
 
-std = 'fg+fg_functions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
+std = 'fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
 
 stds.fg = {
     read_globals = {
@@ -19,7 +19,7 @@ stds.fg = {
     }
 }
 
-stds.fg_functions = {
+stds.fgfunctions = {
     read_globals = {
         "onInit",
         "onClose",
