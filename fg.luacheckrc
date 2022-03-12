@@ -11,17 +11,10 @@ stds.fg = {
         "Extension",
         "File",
         "Input",
-        Interface = {
-            fields = {
-                onWindowOpened = {read_only = false},
-        }
+        Interface = {fields = {onWindowOpened = {read_only = false}}},
         "Module",
         "Session",
-        Token = {
-            fields = {
-                onMove = {read_only = false},
-            }
-        }
+        Token = {fields = {onMove = {read_only = false}}},
         "User",
         "Utility"
     },
