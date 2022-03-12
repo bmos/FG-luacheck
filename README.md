@@ -5,7 +5,8 @@ It defines all global varibales used by FG's API, CoreRPG, 2E, 3.5E, 4E, 5E, PFR
 It also contains all the global variables I have added for my extensions.
 
 It ignores global variable errors for all global variables matching these patterns:
-* OOB_%u+
+* _.+
+* %u+
+* OOB_[%u_]+
 * handle%u%l+.*
 * notify%u%l+.*
-* %u+
