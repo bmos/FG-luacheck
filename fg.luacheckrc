@@ -5,7 +5,10 @@ exclude_files = ".install/*"
 
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
-ignore = {"111/OOB_*"}
+ignore = {
+    "111/OOB_.*",
+    "111/%u+"
+}
 
 stds.fg = {
     read_globals = {
