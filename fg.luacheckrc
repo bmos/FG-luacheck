@@ -1,9 +1,6 @@
 max_line_length = 140
 max_cyclomatic_complexity = 8
 codes = true
-exclude_files = {
-    ".install/lua-5.1.5/test/*.lua",
-}
 
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
