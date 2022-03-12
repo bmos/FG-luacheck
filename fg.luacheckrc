@@ -1,6 +1,6 @@
 max_line_length = 140
 
-std = 'fg+corerpg'
+std = 'fg+corerpg+pfrpg+35e+4e+5e'
 
 stds.fg = {
     read_globals = {
@@ -71,6 +71,152 @@ stds.corerpg = {
         "TargetingManager",
         "TokenManager",
         "VisionManager",
-        "ActionEffect",
+        "ActionEffect"
+    }
+}
+
+stds.35e = {
+    globals = {
+        "DataCommon",
+        "GameSystem",
+        "CampaignDataManager2",
+        "ActorManager35E",
+        "CharManager",
+        "CombatManager2",
+        "EffectManager35E",
+        "ItemManager2",
+        "PartyManager2",
+        "SpellManager",
+        "TokenManager2",
+        "VersionManager2",
+        "ActionAbility",
+        "ActionAttack",
+        "ActionDamage",
+        "ActionHeal",
+        "ActionInit",
+        "ActionSkill",
+        "ActionSave",
+        "ActionSpell"
+    }
+}
+
+stds.pfrpg = {
+    globals = {
+        "DataCommon",
+        "DesktopPFRPG"
+    }
+}
+
+stds.5e = {
+    globals = {
+        "DataCommon",
+        "GameSystem",
+        "CampaignDataManager2",
+        "DataSpell",
+        "CharacterListManager_Inspiration",
+        "ActorManager5E",
+        "CharManager",
+        "CharArmorManager",
+        "CharAttunementManager",
+        "CharEncumbranceManager5E",
+        "CharWeaponManager",
+        "CombatManager2",
+        "EffectManager5E",
+        "ForgeManagerItem",
+        "ItemManager2",
+        "PartyManager2",
+        "PowerManager",
+        "TokenManager2",
+        "VersionManager2",
+        "ActionsManager2",
+        "ActionGeneral",
+        "ActionAttack",
+        "ActionCheck",
+        "ActionDamage",
+        "ActionHeal",
+        "ActionInit",
+        "ActionPower",
+        "ActionRecharge",
+        "ActionRecovery",
+        "ActionSave",
+        "ActionSkill"
+    }
+}
+
+stds.4e = {
+    globals = {
+        "DataCommon",
+        "GameSystem",
+        "CampaignDataManager2",
+        "ActorManager4E",
+        "CharManager",
+        "CombatManager2",
+        "EffectManager4E",
+        "ItemManager2",
+        "NPCManager4E",
+        "PartyManager2",
+        "PowerManager",
+        "SCManager",
+        "TokenManager2",
+        "VersionManager2",
+        "ActionAbility",
+        "ActionAttack",
+        "ActionDamage",
+        "ActionHeal",
+        "ActionInit",
+        "ActionRecharge",
+        "ActionSave",
+        "ActionSkill"
+    }
+}
+
+stds.2e = {
+    globals = {
+        "PartyManager2",
+        "DataCommon",
+        "GameSystem",
+        "CombatManager2",
+        "EffectManager5E",
+        "ItemManager2",
+        "PowerManager",
+        "DataCommonADND",
+        "ItemManager",
+        "TokenManager2",
+        "VersionManager2",
+        "ActionsManager2",
+        "ActionGeneral",
+        "ActionAttack",
+        "ActionCheck",
+        "ActionDamage",
+        "ActionHeal",
+        "ActionInit",
+        "ActionPower",
+        "ActionRecharge",
+        "ActionSave",
+        "ActionSkill",
+        "LibraryDataADND",
+        "EffectManagerADND",
+        "TokenManagerADND",
+        "ActorManagerADND",
+        "ActionSurprise",
+        "ActionTurn",
+        "WindowManagerADND",
+        "AbilityScoreADND",
+        "ConvertManagerADND",
+        "ConnectionManagerADND",
+        "CharlistManagerADND",
+        "CombatManagerADND",
+        "ManagerImportADND",
+        "ManagerPsionics",
+        "ActionDamagePSP",
+        "ActionHealPSP",
+        "UtilityManagerADND",
+        "MenuManager",
+        "ManagerSafari",
+        "WeaponManagerADND",
+        "PowerManagerADND",
+        "VisionManagerADND",
+        "AHDB",
+        "JSON"
     }
 }
