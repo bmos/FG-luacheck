@@ -15,18 +15,7 @@ stds.fg = {
         "Session",
         "Token",
         "User",
-        "Utility",
-        "onInit",
-        "onClose",
-        "update",
-        "setColor"
-        "getColor"
-        "setVisible"
-        "getVisible"
-        "setValue"
-        "getValue"
-        "getName"
-        "getPath"
+        "Utility"
     }
 }
 
