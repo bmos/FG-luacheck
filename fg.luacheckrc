@@ -16,6 +16,11 @@ stds.fg = {
         "Token",
         "User",
         "Utility"
+    },
+    globals = {
+        "window",
+        "super",
+        "self"
     }
 }
 
@@ -33,7 +38,9 @@ stds.fgfunctions = {
     globals = {
         "onInit",
         "onClose",
-        "update"
+        "update",
+        "onUpdate",
+        "onValueChanged"
     }
 }
 
