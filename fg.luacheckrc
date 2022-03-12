@@ -35,13 +35,13 @@ stds.fg_functions = {
         "onInit",
         "onClose",
         "update",
-        "setColor"
-        "getColor"
-        "setVisible"
-        "getVisible"
-        "setValue"
-        "getValue"
-        "getName"
+        "setColor",
+        "getColor",
+        "setVisible",
+        "getVisible",
+        "setValue",
+        "getValue",
+        "getName",
         "getPath"
     }
 }
