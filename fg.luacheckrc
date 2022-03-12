@@ -1,6 +1,6 @@
 max_line_length = 140
 
-std = 'fg+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
+std = 'fg+fg_functions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
 
 stds.fg = {
     read_globals = {
@@ -15,7 +15,34 @@ stds.fg = {
         "Session",
         "Token",
         "User",
-        "Utility"
+        "Utility",
+        "onInit",
+        "onClose",
+        "update",
+        "setColor"
+        "getColor"
+        "setVisible"
+        "getVisible"
+        "setValue"
+        "getValue"
+        "getName"
+        "getPath"
+    }
+}
+
+stds.fg_functions = {
+    read_globals = {
+        "onInit",
+        "onClose",
+        "update",
+        "setColor"
+        "getColor"
+        "setVisible"
+        "getVisible"
+        "setValue"
+        "getValue"
+        "getName"
+        "getPath"
     }
 }
 
