@@ -306,6 +306,7 @@ stds.sfrpg = {
 
 stds.bmos = {
     globals = {
+        EffectManager35EDS = {other_fields = true},
         TempHitpointEffects = {other_fields = true},
         AmmunitionManager = {other_fields = true},
         EffectManagerAURA = {other_fields = true},
