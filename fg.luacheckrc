@@ -1,6 +1,6 @@
 max_line_length = 140
 
-std = 'fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
+std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
 
 stds.fg = {
     read_globals = {
