@@ -4,7 +4,7 @@ codes = true
 
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
-ignore = {"111/OOB_MSGTYPE_"}
+ignore = {"111/OOB_*"}
 
 stds.fg = {
     read_globals = {
