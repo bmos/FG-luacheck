@@ -13,18 +13,13 @@ stds.fg = {
         "Input",
         Interface = {
             fields = {
-                onWindowOpened = {
-                    read_only = false,
-                }
-            }
+                onWindowOpened = {read_only = false},
         }
         "Module",
         "Session",
         Token = {
             fields = {
-                onMove = {
-                    read_only = false,
-                }
+                onMove = {read_only = false},
             }
         }
         "User",
