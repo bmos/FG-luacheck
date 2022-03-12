@@ -1,1 +1,76 @@
 max_line_length = 140
+
+std = 'fg+corerpg'
+
+stds.fg = {
+    read_globals = {
+        "Comm",
+        "DB",
+        "Debug",
+        "Extension",
+        "File",
+        "Input",
+        "Interface",
+        "Module",
+        "Session",
+        "Token",
+        "User",
+        "Utility"
+    }
+}
+
+stds.corerpg = {
+    globals = {
+        "ChatManager",
+        "ColorManager",
+        "DesktopManager",
+        "DecalManager",
+        "Desktop",
+        "DiceManager",
+        "ExportManager",
+        "LibraryData",
+        "ListManager",
+        "ModuleManager",
+        "OOBManager",
+        "OptionsManager",
+        "OptionsCore",
+        "StringManager",
+        "StringUTF8Manager",
+        "UtilityManager",
+        "VersionManager",
+        "VersionManager2",
+        "WindowManager",
+        "CharacterListManager",
+        "DiceTowerManager",
+        "GmIdentityManager",
+        "ModifierStack",
+        "ActorManager",
+        "ActorHealthManager",
+        "ActionsManager",
+        "CalendarManager",
+        "CampaignDataManager",
+        "CharManager",
+        "CharEncumbranceManager",
+        "CombatManager",
+        "CombatManager2",
+        "CurrencyManager",
+        "EffectManager",
+        "GameSystem",
+        "ImageManager",
+        "ImageDistanceManager",
+        "ItemManager",
+        "LanguageManager",
+        "ManualRollManager",
+        "ModifierManager",
+        "NPCManager",
+        "PartyManager",
+        "PartyLootManager",
+        "ReferenceManualManager",
+        "StoryTemplateManager",
+        "TableManager",
+        "TargetingManager",
+        "TokenManager",
+        "VisionManager",
+        "ActionEffect",
+    }
+}
