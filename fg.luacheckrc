@@ -21,9 +21,6 @@ stds.fg = {
 
 stds.fgfunctions = {
     read_globals = {
-        "onInit",
-        "onClose",
-        "update",
         "setColor",
         "getColor",
         "setVisible",
@@ -32,6 +29,11 @@ stds.fgfunctions = {
         "getValue",
         "getName",
         "getPath"
+    },
+    globals = {
+        "onInit",
+        "onClose",
+        "update"
     }
 }
 
