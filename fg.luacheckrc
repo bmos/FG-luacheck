@@ -15,11 +15,7 @@ stds.fg = {
         "Session",
         "Token",
         "User",
-        "Utility",
-        "math",
-        "tonumber",
-        "tostring",
-        "type"
+        "Utility"
     },
     globals = {
         "window",
