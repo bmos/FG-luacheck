@@ -8,8 +8,8 @@ exclude_files = {
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
 ignore = {
-    "111/OOB_.*",
-    "113/OOB_.*",
+    "111/OOB_%u+*",
+    "113/OOB_%u+*",
     "113/handle%u%l+.*",
     "113/notify%u%l+.*",
     "111/%u+",
