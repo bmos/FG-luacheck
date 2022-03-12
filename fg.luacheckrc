@@ -1,6 +1,6 @@
 max_line_length = 140
 
-std = 'fg+corerpg+pfrpg+35e+4e+5e'
+std = 'fg+corerpg+pfrpg+dnd35e+dnd4e+dnd5e'
 
 stds.fg = {
     read_globals = {
@@ -75,7 +75,7 @@ stds.corerpg = {
     }
 }
 
-stds.35e = {
+stds.dnd35e = {
     globals = {
         "DataCommon",
         "GameSystem",
@@ -107,7 +107,7 @@ stds.pfrpg = {
     }
 }
 
-stds.5e = {
+stds.dnd5e = {
     globals = {
         "DataCommon",
         "GameSystem",
@@ -143,7 +143,7 @@ stds.5e = {
     }
 }
 
-stds.4e = {
+stds.dnd4e = {
     globals = {
         "DataCommon",
         "GameSystem",
@@ -170,7 +170,7 @@ stds.4e = {
     }
 }
 
-stds.2e = {
+stds.dnd2e = {
     globals = {
         "PartyManager2",
         "DataCommon",
