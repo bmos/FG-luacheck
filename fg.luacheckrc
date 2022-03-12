@@ -44,6 +44,7 @@ stds.fg = {
 
 stds.fgfunctions = {
     read_globals = {
+        "getDatabaseNode",
         "setColor",
         "getColor",
         "setVisible",
