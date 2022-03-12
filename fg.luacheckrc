@@ -250,3 +250,46 @@ stds.dnd2e = {
         "JSON"
     }
 }
+
+stds.bmos = {
+    globals = {
+        "TempHitpointEffects",
+        "AmmunitionManager",
+        "EffectManagerAURA",
+        "TimeManager",
+        "LongTermEffects",
+        "CoinsWeight",
+        "ExtraplanarContainers",
+        "MoonManager",
+        "PartyInventoryIDOptions",
+        "ParcelWeight",
+        "AdvancedEffectsHandlers",
+        "AdvancedEffects",
+        "RollStructuresAE",
+        "CharManagerACIM",
+        "InvManagerACIM",
+        "MagicItemGenerator",
+        "DrainAndPermanentBonuses",
+        "CharManagerTE",
+        "TEGlobals",
+        "NatArmBon",
+        "ActionSaveEStS",
+        "PrepPaladin",
+        "ItemDurabilityInfo",
+        "ItemDurabilityHHP",
+        "ItemDurabilityDamage",
+        "ItemDurabilityBroken",
+        "LiveHP",
+        "PCLiveHP",
+        "NPCLiveHP",
+        "DiseaseTracker",
+        "ActionDiseaseSave",
+        "ActionDiseaseTimeRoll",
+        "SanityTracker",
+        "SpellFailure",
+        "SpellFailClasses",
+        "SpellFormatting",
+        "UpgradeSpells",
+        "EffectLibraryDescriptions"
+    }
+}
