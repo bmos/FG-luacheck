@@ -1,13 +1,15 @@
 max_line_length = 140
 max_cyclomatic_complexity = 7
 codes = true
-exclude_files = ".install/*"
+exclude_files = {
+    ".install/*",
+}
 
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
 ignore = {
     "111/OOB_.*",
-    "111/%u+"
+    "111/%u+",
 }
 
 stds.fg = {
@@ -23,12 +25,12 @@ stds.fg = {
         "Session",
         Token = {fields = {onMove = {read_only = false}}},
         "User",
-        "Utility"
+        "Utility",
     },
     globals = {
         "window",
         "super",
-        "self"
+        "self",
     }
 }
 
@@ -45,14 +47,14 @@ stds.fgfunctions = {
         "ipairs",
         "pairs",
         "string",
-        "table"
+        "table",
     },
     globals = {
         "onInit",
         "onClose",
         "update",
         "onUpdate",
-        "onValueChanged"
+        "onValueChanged",
     }
 }
 
@@ -108,7 +110,7 @@ stds.corerpg = {
         "TargetingManager",
         "TokenManager",
         "VisionManager",
-        "ActionEffect"
+        "ActionEffect",
     }
 }
 
@@ -133,14 +135,14 @@ stds.dnd35e = {
         "ActionInit",
         "ActionSkill",
         "ActionSave",
-        "ActionSpell"
+        "ActionSpell",
     }
 }
 
 stds.pfrpg = {
     globals = {
         "DataCommon",
-        "DesktopPFRPG"
+        "DesktopPFRPG",
     }
 }
 
@@ -176,7 +178,7 @@ stds.dnd5e = {
         "ActionRecharge",
         "ActionRecovery",
         "ActionSave",
-        "ActionSkill"
+        "ActionSkill",
     }
 }
 
@@ -203,7 +205,7 @@ stds.dnd4e = {
         "ActionInit",
         "ActionRecharge",
         "ActionSave",
-        "ActionSkill"
+        "ActionSkill",
     }
 }
 
@@ -254,7 +256,7 @@ stds.dnd2e = {
         "PowerManagerADND",
         "VisionManagerADND",
         "AHDB",
-        "JSON"
+        "JSON",
     }
 }
 
@@ -292,7 +294,7 @@ stds.sfrpg = {
         "ActionShipAttack",
         "ActionShipDamage",
         "ActionShipSkill",
-        "ActionShipInit"
+        "ActionShipInit",
     }
 }
 
@@ -335,6 +337,6 @@ stds.bmos = {
         "SpellFailClasses",
         "SpellFormatting",
         "UpgradeSpells",
-        "EffectLibraryDescriptions"
+        "EffectLibraryDescriptions",
     }
 }
