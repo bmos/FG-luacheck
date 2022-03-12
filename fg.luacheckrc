@@ -10,12 +10,12 @@ std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 ignore = {
     "111/OOB_.*",
     "113/OOB_.*",
-    "113/handle%u%l+",
-    "113/notify%u%l+",
+    "113/handle%u%l+.*",
+    "113/notify%u%l+.*",
     "111/%u+",
     "113/%u+",
-    "113/handle%u%l+",
-    "113/notify%u%l+",
+    "113/handle%u%l+.*",
+    "113/notify%u%l+.*",
 }
 
 stds.fg = {
