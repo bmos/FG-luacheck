@@ -33,7 +33,11 @@ stds.fgfunctions = {
         "setValue",
         "getValue",
         "getName",
-        "getPath"
+        "getPath",
+        "ipairs",
+        "pairs",
+        "string",
+        "table"
     },
     globals = {
         "onInit",
