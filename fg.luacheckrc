@@ -1,5 +1,5 @@
 max_line_length = 140
-max_cyclomatic_complexity = 5
+max_cyclomatic_complexity = 8
 codes = true
 exclude_files = {
     ".install/*",
@@ -8,6 +8,8 @@ exclude_files = {
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
 ignore = {
+    "111/_.+",
+    "113/_.+",
     "111/OOB_%u+",
     "113/OOB_%u+",
     "113/handle%u%l+.*",
