@@ -1,5 +1,5 @@
 max_line_length = 140
-max_cyclomatic_complexity = 7
+max_cyclomatic_complexity = 5
 codes = true
 exclude_files = {
     ".install/*",
