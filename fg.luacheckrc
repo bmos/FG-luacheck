@@ -1,7 +1,7 @@
 max_line_length = 140
 max_cyclomatic_complexity = 7
 
-std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+bmos'
+std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
 
 stds.fg = {
     read_globals = {
@@ -248,6 +248,44 @@ stds.dnd2e = {
         "VisionManagerADND",
         "AHDB",
         "JSON"
+    }
+}
+
+stds.sfrpg = {
+    globals = {
+        "DataCommon",
+        "GameSystem",
+        "CampaignDataManager2",
+        "StringManager2",
+        "ActorManagerSFRPG",
+        "CharManager",
+        "CharEncumbranceManagerSFRPG",
+        "CharStarshipManager",
+        "CombatManager2",
+        "EffectManagerSFRPG",
+        "ForgeManagerItem",
+        "ItemManager2",
+        "LogManager",
+        "PartyManager2",
+        "PartyLootManager_SFRPG",
+        "SpellManager",
+        "TokenManager2",
+        "VersionManager2",
+        "ActionAttack",
+        "ActionDamage",
+        "ActionHeal",
+        "ActionInit",
+        "ActionSkill",
+        "ActionSave",
+        "ActionSpell",
+        "ActionMechSkill",
+        "VehicleManager",
+        "StarshipCombatManager",
+        "StarshipTokenManager",
+        "ActionShipAttack",
+        "ActionShipDamage",
+        "ActionShipSkill",
+        "ActionShipInit"
     }
 }
 
