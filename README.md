@@ -1,8 +1,10 @@
 # FantasyGrounds .luacheckrc configuration
 This config file is suitable for using luacheck to check lua code for FantasyGrounds.
 
-It defines all global varibales used by FG's API, CoreRPG, 2E, 3.5E, 4E, 5E, PFRPG, and SFRPG.
-It also contains all the global variables I have added for my extensions.
+Whitelists all global varibales used by FG's API, CoreRPG, 2E, 3.5E, 4E, 5E, PFRPG, and SFRPG.
+Whitelists all the global variables I have added for my extensions.
+Warns about line length > 140.
+Warns about cyclomatic complexity > 8.
 
 It ignores global variable errors for all global variables matching these patterns:
 * _.+
