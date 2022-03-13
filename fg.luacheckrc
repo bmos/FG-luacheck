@@ -49,18 +49,12 @@ stds.fgfunctions = {
         "setTooltipText",
         "setEmptyText",
         "getEmptyText",
-        "onDoubleClick",
-        "onButtonPress",
         "setVisible",
         "getVisible",
         "setValue",
         "getValue",
         "getName",
         "getPath",
-        "ipairs",
-        "pairs",
-        "string",
-        "table",
     },
     globals = {
         "onInit",
@@ -68,6 +62,8 @@ stds.fgfunctions = {
         "update",
         "onUpdate",
         "onValueChanged",
+        "onDoubleClick",
+        "onButtonPress",
     }
 }
 
