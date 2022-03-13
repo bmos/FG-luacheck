@@ -43,5 +43,5 @@ jobs:
             bmos/FG-PFRPG-Spell-Formatting@main
             bmos/FG-PFRPG-Upgrade-NPC-Actions@main
           FILES: |
-            fg-luacheck-action.yml=.github/luacheck.yml
+            fg-luacheck-action.yml=.github/workflows/luacheck.yml
           TOKEN: ${{ secrets.ACTIONS }}
