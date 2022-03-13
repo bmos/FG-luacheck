@@ -5,6 +5,7 @@ on:
     paths:
     # Only run if pushed commits include a change to a Lua (.lua) file.
       - 'fg-luacheck-action.yml'
+      - 'sync-luacheck.yml'
   schedule:
     - cron: 0 0 * * *
   workflow_dispatch:
