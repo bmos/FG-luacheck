@@ -3,7 +3,6 @@ name: File Sync
 on:
   push:
     paths:
-    # Only run if pushed commits include a change to a Lua (.lua) file.
       - 'fg-luacheck-action.yml'
       - 'sync-luacheck.yml'
   schedule:
