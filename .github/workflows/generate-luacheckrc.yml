@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: Generate new .luacheckrc
-        uses: bmos/action-generate-luacheckrc@v1
+        uses: bmos/action-generate-luacheckrc@master
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
