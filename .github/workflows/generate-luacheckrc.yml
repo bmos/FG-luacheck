@@ -16,7 +16,8 @@ jobs:
 
       - name: Generate new .luacheckrc
         uses: bmos/action-generate-luacheckrc@master
-        INPUT_PAT: ${{ secrets.ACTIONS }}
+        with:
+          INPUT_PAT: ${{ secrets.ACTIONS }}
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3.14.0
