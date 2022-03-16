@@ -5,7 +5,7 @@ Whitelists all global varibales used by FG's API, CoreRPG, 2E, 3.5E, 4E, 5E, PFR
 Whitelists all the global variables I have added for my extensions.
 Warns about setting new global variables, but not about accessing unknown global variables.
 Warns about line length > 150.
-Warns about cyclomatic complexity > 10.
+Warns about cyclomatic complexity > 35 (anything above 10 is pretty bad).
 
 It ignores global variable errors for all global variables matching these patterns:
 * _.+
