@@ -10,6 +10,8 @@ ignore = {
     "111/OOB_[%u_]+",
     "111/handle%u%l+.*",
     "111/notify%u%l+.*",
+    "111/on%u%l+.*",
+    "111/getRoll.*",
     "111/%u+",
 }
 
