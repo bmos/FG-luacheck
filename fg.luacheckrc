@@ -1,5 +1,5 @@
 max_line_length = 150
-max_cyclomatic_complexity = 10
+max_cyclomatic_complexity = 35
 codes = true
 
 std = 'lua51+fg+fgfunctions+corerpg+pfrpg+dnd35e+dnd4e+dnd5e+dnd2e+sfrpg+bmos'
