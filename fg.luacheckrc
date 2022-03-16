@@ -62,6 +62,7 @@ stds.fgfunctions = {
         "update",
         "onUpdate",
         "onValueChanged",
+        "onDataChanged",
         "onDoubleClick",
         "onButtonPress",
         "onClickRelease",
