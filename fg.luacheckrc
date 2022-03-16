@@ -55,6 +55,7 @@ stds.fgfunctions = {
         "getValue",
         "getName",
         "getPath",
+        "registerOptions",
     },
     globals = {
         "onInit",
