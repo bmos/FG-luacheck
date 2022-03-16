@@ -13,3 +13,6 @@ It ignores global variable errors for all global variables matching these patter
 * OOB_[%u_]+
 * handle%u%l+.*
 * notify%u%l+.*
+* get%u%l+.*
+* mod%u%l+.*
+* on%u%l+.*
