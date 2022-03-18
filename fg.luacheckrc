@@ -8,6 +8,8 @@ ignore = {
     "113",
     "111/_.+",
     "111/OOB_[%u_]+",
+    "111/register%u%l+.*",
+    "111/unregister%u%l+.*",
     "111/handle%u%l+.*",
     "111/notify%u%l+.*",
     "111/get%u%l+.*",
