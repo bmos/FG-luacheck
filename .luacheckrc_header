@@ -2,7 +2,7 @@ max_line_length = 150
 max_cyclomatic_complexity = 35
 codes = true
 
-std = 'lua51+fg+fgfunctions+corerpg'
+std = 'lua51+fg+fgfunctions+corerpg+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
 
 ignore = {
   "111/_.+",
@@ -45,6 +45,8 @@ stds.fgfunctions = {
         "setTooltipText",
         "setEmptyText",
         "getEmptyText",
+        "setReadOnly",
+        "getReadOnly",
         "setVisible",
         "getVisible",
         "setValue",
@@ -66,4 +68,48 @@ stds.fgfunctions = {
         "onButtonPress",
         "onClickRelease",
     }
+}
+
+stds.bmos = {
+  globals = {
+    EffectManager35EDS = {other_fields = true},
+    TempHitpointEffects = {other_fields = true},
+    AmmunitionManager = {other_fields = true},
+    EffectManagerAURA = {other_fields = true},
+    TimeManager = {other_fields = true},
+    LongTermEffects = {other_fields = true},
+    CoinsWeight = {other_fields = true},
+    ExtraplanarContainers = {other_fields = true},
+    MoonManager = {other_fields = true},
+    PartyInventoryIDOptions = {other_fields = true},
+    ParcelWeight = {other_fields = true},
+    AdvancedEffectsHandlers = {other_fields = true},
+    AdvancedEffects = {other_fields = true},
+    RollStructuresAE = {other_fields = true},
+    CharManagerACIM = {other_fields = true},
+    InvManagerACIM = {other_fields = true},
+    MagicItemGenerator = {other_fields = true},
+    DrainAndPermanentBonuses = {other_fields = true},
+    CharManagerTE = {other_fields = true},
+    TEGlobals = {other_fields = true},
+    NatArmBon = {other_fields = true},
+    ActionSaveEStS = {other_fields = true},
+    PrepPaladin = {other_fields = true},
+    ItemDurabilityInfo = {other_fields = true},
+    ItemDurabilityHHP = {other_fields = true},
+    ItemDurabilityDamage = {other_fields = true},
+    ItemDurabilityBroken = {other_fields = true},
+    LiveHP = {other_fields = true},
+    PCLiveHP = {other_fields = true},
+    NPCLiveHP = {other_fields = true},
+    DiseaseTracker = {other_fields = true},
+    ActionDiseaseSave = {other_fields = true},
+    ActionDiseaseTimeRoll = {other_fields = true},
+    SanityTracker = {other_fields = true},
+    SpellFailure = {other_fields = true},
+    SpellFailClasses = {other_fields = true},
+    SpellFormatting = {other_fields = true},
+    UpgradeSpells = {other_fields = true},
+    EffectLibraryDescriptions = {other_fields = true},
+  }
 }
