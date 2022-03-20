@@ -2,8 +2,6 @@ max_line_length = 150
 max_cyclomatic_complexity = 35
 codes = true
 
-std = 'lua51+fg+fgfunctions+corerpg+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
-
 ignore = {
   "111/OOB_MSGTYPE_.+",
 }
@@ -112,6 +110,8 @@ stds.bmos = {
     EffectLibraryDescriptions = {other_fields = true},
   }
 }
+
+std = '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
 
 stds.pfrpg2 = {
 	globals = {
