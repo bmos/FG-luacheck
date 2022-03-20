@@ -13,17 +13,80 @@ jobs:
     runs-on: ubuntu-latest
     name: generate new .luacheckrc
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
 
-      - name: Generate new .luacheckrc
+    - name: Clone FG-Unofficial-Developers-Guild/CoreRPG
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/CoreRPG
+        path: .fg/rulesets/CoreRPG
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/2E
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/2E
+        path: .fg/rulesets/DND2E
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/3.5E
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/3.5E
+        path: .fg/rulesets/DND35E
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/4e
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/4e
+        path: .fg/rulesets/DND4E
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/5e
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/5e
+        path: .fg/rulesets/DND5E
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/PFRPG
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/PFRPG
+        path: .fg/rulesets/PFRPG
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/PFRPG2
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/PFRPG2
+        path: .fg/rulesets/PFRPG2
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Clone FG-Unofficial-Developers-Guild/SFRPG
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/SFRPG
+        path: .fg/rulesets/SFRPG
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
+    - name: Generate new .luacheckrc
         uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
         with:
-          token: ${{ secrets.ACTIONS }}
           std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
 
-      - name: Create pull request
+    - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
           title: Update .luacheckrc
