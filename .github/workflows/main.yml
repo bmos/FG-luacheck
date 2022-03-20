@@ -1,0 +1,31 @@
+name: Update .luacheckrc
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 0 * * *
+  push:
+    paths:
+      - '.luacheckrc_header'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    name: generate new .luacheckrc
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Generate new .luacheckrc
+        uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
+        with:
+          token: ${{ secrets.ACTIONS }}
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Update .luacheckrc
+          commit-message: "test: update .luacheckrc"
+          branch: update-luacheckrc
+          delete-branch: true
