@@ -5,7 +5,6 @@ codes = true
 std = 'lua51+fg+fgfunctions+corerpg+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
 
 ignore = {
-  "111/_.+",
   "111/OOB_MSGTYPE_.+",
 }
 
