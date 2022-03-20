@@ -8,5 +8,4 @@ Contains stds definitions for:
 corerpg, dnd2e, dnd35e, dnd4e, dnd5e, pfrpg, pfrpg2, sfrpg, bmos
 
 It ignores global variable warnings for all global variables matching these patterns:
-* _.+
 * OOB_[%u_]+
