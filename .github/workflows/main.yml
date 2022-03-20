@@ -21,6 +21,7 @@ jobs:
         uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
         with:
           token: ${{ secrets.ACTIONS }}
+          std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
