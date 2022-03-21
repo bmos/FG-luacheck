@@ -82,14 +82,14 @@ jobs:
         token: ${{ secrets.ACTIONS }}
 
     - name: Generate new .luacheckrc
-        uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
-        with:
-          std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
+      uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
+      with:
+        std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+bmos'
 
     - name: Create pull request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          title: Update .luacheckrc
-          commit-message: "test: update .luacheckrc"
-          branch: update-luacheckrc
-          delete-branch: true
+      uses: peter-evans/create-pull-request@v3
+      with:
+        title: Update .luacheckrc
+        commit-message: "test: update .luacheckrc"
+        branch: update-luacheckrc
+        delete-branch: true
