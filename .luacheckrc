@@ -14249,6 +14249,23 @@ stds.sfrpg = {
 				},
 			},
 		},
+		inventorylist = {
+			read_only = false,
+			fields = {
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		item = {
 			read_only = false,
 			fields = {
@@ -44374,6 +44391,23 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		inventorylist = {
+			read_only = false,
+			fields = {
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
