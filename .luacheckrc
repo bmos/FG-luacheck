@@ -3871,58 +3871,14 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		action = {
+		abilityroll = {
 			read_only = false,
 			fields = {
-				setFilter = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				getFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				createAction = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDetail = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDescription = {
-					read_only = false,
-					other_fields = false,
-				},
-				activatePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				usePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				sDisplayMode = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -3952,6 +3908,47 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				createDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateViews = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCastChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		action_action_mini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDataChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateDisplay = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -4046,6 +4043,234 @@ stds.pfrpg2 = {
 				},
 			},
 		},
+		action_class_mini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerMenuItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSheetMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCasterTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellView = {
+					read_only = false,
+					other_fields = false,
+				},
+				performFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				showSpellsForLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		action_item = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		action_item_mini = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		action_level_mini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateLabel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		action_section = {
 			read_only = false,
 			fields = {
@@ -4083,7 +4308,317 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		char = {
+		actionclasslist = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				constructDefaultActions = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSectionActions = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellAddToLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		actions = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTraitType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				bReturnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				bParsed = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		actionsections = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		atk = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitNodes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		babgrp = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionBAB = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionGRP = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				hovery = {
+					read_only = false,
+					other_fields = false,
+				},
+				hoverx = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		button_menu = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		carried = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -4094,105 +4629,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCharEffectUpdate = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCharEffectDelete = {
+				onLinkUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
-				onXrefChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCalculatedEffectStringChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeItemAutomation = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCoinsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				recalcHitPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChoicesChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				initChargenTrackerAbilityFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				initChargenTrackerChoiceFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				reCalcAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				recalcHitPoint = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCyclerControls = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				wCharTracker = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_actions = {
-			read_only = false,
-			fields = {
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSpellCounters = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_actions2 = {
-			read_only = false,
-			fields = {
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSpellCounters = {
+				setLink = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -4288,7 +4733,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		char_attackproficiencies = {
+		char_attack_prof = {
 			read_only = false,
 			fields = {
 				iscustom = {
@@ -4329,26 +4774,26 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		char_attackproficiencies_list = {
+		char_defense_prof = {
 			read_only = false,
 			fields = {
+				iscustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				sets = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				updateWindow = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
+				onSystemChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -4356,42 +4801,21 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		char_char_effects_xref_list = {
-			read_only = false,
-			fields = {
-				onInit = {
+				onProfUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				isCustom = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
+				updateMenu = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char_chareffect = {
+		char_effect = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -4411,307 +4835,6 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				toggleDetail = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_chareffects_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateNameTooltips = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				showEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_classlevelsummary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateValue = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_combat = {
-			read_only = false,
-			fields = {
-				isInitialized = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSystemChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onProfUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDetail = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_defenseproficiencies = {
-			read_only = false,
-			fields = {
-				iscustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				sets = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateWindow = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSystemChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onProfUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				isCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateMenu = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_defenseproficiencies_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_inv = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStrengthChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSizeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEncumbranceChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBonusChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onArmorChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBulkChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHealthChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_notes = {
-			read_only = false,
-			fields = {
-				getTabNames = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTabButton = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateTabStyle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				TableUtilReverse = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -4774,105 +4897,6 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		char_skilllink = {
-			read_only = false,
-			fields = {
-				getSkillDescNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillDescNode = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSkillDataUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNewInstance = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_totalwithability = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				sourceupdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAbilitySource = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		char_weapon = {
 			read_only = false,
 			fields = {
@@ -4901,147 +4925,6 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				onDamageAction = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weapon_effects_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponattack = {
-			read_only = false,
-			fields = {
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponeffect = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateMenu = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponfullattack = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateWidgets = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateAttackFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5112,7 +4995,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		clientct_effectlist = {
+		charsheet = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -5123,21 +5006,215 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onEffectsUpdated = {
+				onCharEffectUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				onFilter = {
+				onCharEffectDelete = {
 					read_only = false,
 					other_fields = false,
 				},
-				deleteChild = {
+				onXrefChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCalculatedEffectStringChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCarriedChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeItemAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCoinsChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				recalcHitPoints = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChoicesChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				initChargenTrackerAbilityFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				initChargenTrackerChoiceFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				reCalcAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				recalcHitPoint = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCyclerControls = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				wCharTracker = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		clientct_entry = {
+		charsheet_actions = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_actions2 = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_combat = {
+			read_only = false,
+			fields = {
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSystemChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onProfUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_inventory = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStrengthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSizeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEncumbranceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_notes = {
+			read_only = false,
+			fields = {
+				getTabNames = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTabButton = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateTabStyle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				TableUtilReverse = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -5158,14 +5235,18 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		counter_spell = {
+		ct_automation = {
 			read_only = false,
 			fields = {
-				slots = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCTAutomation = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5173,7 +5254,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onWheel = {
+				setTraitType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5185,112 +5274,31 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onDoubleClick = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateSlots = {
+				onDragStart = {
 					read_only = false,
 					other_fields = false,
 				},
-				adjustCounter = {
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
-				canCast = {
+				parseComponents = {
 					read_only = false,
 					other_fields = false,
 				},
-				getPreparedValue = {
+				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
-				setPreparedValue = {
+				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionWNDCChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameOrTokenUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTargeting = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDefensive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleSpacing = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEntrySectionToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
+				bParsed = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5340,96 +5348,6 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_effect_summary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEffectsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionEffect = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				getEffectsString = {
-					read_only = false,
-					other_fields = false,
-				},
-				bParsed = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_effectlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteChild = {
-					read_only = false,
-					other_fields = false,
-				},
-				reset = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5512,10 +5430,30 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ct_menu = {
+		desc = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTraitType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5527,42 +5465,83 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				bReturnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				bParsed = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		domainspells = {
+			read_only = false,
+			fields = {
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		effects = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
 				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				clearNPCs = {
+				deleteChild = {
+					read_only = false,
+					other_fields = false,
+				},
+				reset = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		dialog_select = {
-			read_only = false,
-			fields = {
-				requestSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateNextSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSelectionChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				processOK = {
-					read_only = false,
-					other_fields = false,
-				},
-				processCancel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		embedded_messages_dialog = {
+		embedded_message_OK = {
 			read_only = false,
 			fields = {
 				processClose = {
@@ -5579,7 +5558,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		embedded_messages_dialog_ok_cancel = {
+		embedded_message_OK_Cancel = {
 			read_only = false,
 			fields = {
 				fnCallbackOK = {
@@ -5612,10 +5591,93 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		item_drop = {
+		embedded_message_beginnerbox_switchtocore = {
 			read_only = false,
 			fields = {
-				onDrop = {
+				fnCallbackOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				fnCallbackCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				processClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		encounters = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		gmnotes = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		heightened = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5654,171 +5716,30 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		list_action = {
+		list = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionWNDCChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameOrTokenUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
 				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellCounterUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_actionclass = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultActions = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSectionActions = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellAddToLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_actionsection = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spell = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellCounterUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spellclass = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellAddToLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spelllevel = {
-			read_only = false,
-			fields = {
-				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5826,15 +5747,656 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onFilter = {
+				onHotkey = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleActive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDefensive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleSpacing = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEntrySectionToggle = {
 					read_only = false,
 					other_fields = false,
 				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		main = {
+			read_only = false,
+			fields = {
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_action = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_affliction = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_feat = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_item = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_lookupdata = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_npc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_race = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_spell = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		masterindexitem_trait = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		meleeatk = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitNodes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		miscellaneous = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		name = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTraitType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitNodes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNavigateDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNavigateUp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -5869,68 +6431,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		npc_babgrp = {
-			read_only = false,
-			fields = {
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActor = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionBAB = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionGRP = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				hovery = {
-					read_only = false,
-					other_fields = false,
-				},
-				hoverx = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_main = {
+		npc_combat_creature = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -5959,50 +6460,59 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		npc_skill = {
+		npc_combat_hazard = {
 			read_only = false,
 			fields = {
-				getCompletion = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				parseComponents = {
+				updateControl = {
 					read_only = false,
 					other_fields = false,
 				},
-				onChar = {
+				controlSetReadyOnly = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHover = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHoverUpdate = {
+				convertAbilityTextToList = {
 					read_only = false,
 					other_fields = false,
 				},
-				action = {
+				getAbilityTitleText = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDoubleClick = {
+			},
+		},
+		npc_combat_vehicle = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
+				updateControl = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragEnd = {
+				controlSetReadyOnly = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
+				convertAbilityTextToList = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityTitleText = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -6053,7 +6563,20 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ps_client = {
+		partyatkroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		partysheet_client = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -6087,67 +6610,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ps_roll_ability = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_atk = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_save = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_skill = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillLookup = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillLookup = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_skill = {
+		ps_skills = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -6168,7 +6631,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ps_skillitem = {
+		ps_skillsitem = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -6181,7 +6644,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ps_xp_encentry = {
+		ps_xp_encounterentry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -6189,23 +6652,6 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_enclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -6224,7 +6670,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ps_xp_questlist = {
+		quests = {
 			read_only = false,
 			fields = {
 				onListChanged = {
@@ -6245,7 +6691,141 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		record_action_stats = {
+		rangedatk = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitNodes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reaction = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTraitType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				bReturnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				bParsed = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_action_stats = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -6298,16 +6878,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ref_groupedlist_groupitem_pf2 = {
-			read_only = false,
-			fields = {
-				setColumnInfo = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_groupedlist_pf2 = {
+		reference_groupedlist = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -6320,26 +6891,341 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		ref_list_spell = {
+		reference_groupedlist_groupitem = {
 			read_only = false,
 			fields = {
-				onFilter = {
+				setColumnInfo = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		spell = {
+		reference_spellgroup = {
 			read_only = false,
 			fields = {
-				setFilter = {
+				showFullHeaders = {
 					read_only = false,
 					other_fields = false,
 				},
-				getFilter = {
+			},
+		},
+		routine = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTraitType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				bReturnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				bParsed = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		saveroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		select_dialog_with_summary_button_heritage = {
+			read_only = false,
+			fields = {
+				requestSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateNextSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSelectionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		select_dialog_with_summary_button_heritage_no_versatile = {
+			read_only = false,
+			fields = {
+				requestSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateNextSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSelectionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		select_dialog_with_summary_button_lookupdata = {
+			read_only = false,
+			fields = {
+				requestSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateNextSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSelectionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		select_dialog_with_summary_button_lookupdata_2 = {
+			read_only = false,
+			fields = {
+				requestSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateNextSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSelectionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		senses = {
+			read_only = false,
+			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		shortcut = {
+			read_only = false,
+			fields = {
+				getSkillDescNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skillroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSkillLookup = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSkillLookup = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
+			read_only = false,
+			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		special = {
+			read_only = false,
+			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -6348,47 +7234,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDisplayChanged = {
+				onVisUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHover = {
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				createAction = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDetail = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDescription = {
-					read_only = false,
-					other_fields = false,
-				},
-				activatePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				usePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				sDisplayMode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFilter = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -6482,10 +7336,6 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
 		spell_class = {
@@ -6559,11 +7409,190 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		spell_class_mini = {
+			read_only = false,
+			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerMenuItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSheetMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCasterTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellView = {
+					read_only = false,
+					other_fields = false,
+				},
+				performFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				showSpellsForLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item_mini = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -6608,24 +7637,53 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
-		string_action_automation_line = {
+		spell_level_mini = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActor = {
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateLabel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		traits = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -6653,31 +7711,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				actionTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitNodes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
 				onDoubleClick = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				bReturnValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				bParsed = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -6687,7 +7737,7 @@ stds.pfrpg2 = {
 				},
 			},
 		},
-		string_attackline = {
+		value = {
 			read_only = false,
 			fields = {
 				onValueChanged = {
@@ -6754,133 +7804,20 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
-		string_ct_action_automation_line = {
+		weapon_effect = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActor = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateCTAutomation = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				setTraitType = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				bParsed = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		string_traits_line = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				setTraitType = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionTraits = {
-					read_only = false,
-					other_fields = false,
-				},
-				getTraitNodes = {
-					read_only = false,
-					other_fields = false,
-				},
-				getTraitRecordGlobally = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
+				updateMenu = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11013,7 +11950,96 @@ stds.sfrpg = {
 				},
 			},
 		},
-		ability = {
+		abilities_class_mini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerMenuItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSheetMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCasterTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellView = {
+					read_only = false,
+					other_fields = false,
+				},
+				performFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				showSpellsForLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				nSections = {
+					read_only = false,
+					other_fields = false,
+				},
+				nSectionLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				nSectionLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		abilities_item_mini = {
 			read_only = false,
 			fields = {
 				setFilter = {
@@ -11072,7 +12098,44 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		abilities_level_mini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateLabel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11255,28 +12318,20 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
-		ability_counter = {
+		ability_item = {
 			read_only = false,
 			fields = {
-				slots = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
 					read_only = false,
 					other_fields = false,
 				},
 				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11284,55 +12339,43 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onWheel = {
+				onDisplayChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				onModeChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
+				onHover = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateSlots = {
+				createAction = {
 					read_only = false,
 					other_fields = false,
 				},
-				adjustCounter = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				checkBounds = {
+				toggleDetail = {
 					read_only = false,
 					other_fields = false,
 				},
-				getMaxValue = {
+				getDescription = {
 					read_only = false,
 					other_fields = false,
 				},
-				setMaxValue = {
+				activatePower = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCurrentValue = {
+				sDisplayMode = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCurrentValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCurrNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMaxNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
+				sAbilityMode = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11377,63 +12420,186 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		abilityroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		altracialtrait = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		altracialtrait_header = {
+			read_only = false,
+			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
-		button_char_showhideactions = {
+		archetype = {
 			read_only = false,
 			fields = {
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupGunner = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupOtherRoles = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupMinorActions = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupWeapons = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		button_ship_showhideactions = {
+		archetype_header = {
 			read_only = false,
 			fields = {
-				onButtonPress = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupGunner = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupOtherRoles = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupMinorActions = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupWeapons = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char = {
+		bonuses = {
+			read_only = false,
+			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		boon = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		boon_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		button_menu = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		carried = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -11444,40 +12610,19 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateTotalSkillPoints = {
+				onLinkUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				setLink = {
 					read_only = false,
 					other_fields = false,
 				},
 				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_actions = {
-			read_only = false,
-			fields = {
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateAbilityCounters = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDisplayChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11518,10 +12663,6 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
 		char_actions_details_spells = {
@@ -11552,205 +12693,6 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				getEditMode = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_actions_spells = {
-			read_only = false,
-			fields = {
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSpellCounters = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_actions_starship = {
-			read_only = false,
-			fields = {
-				bInitialize = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				roleChange = {
-					read_only = false,
-					other_fields = false,
-				},
-				bInitialize = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_classlevelsummary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_combat = {
-			read_only = false,
-			fields = {
-				isInitialized = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_inv = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChange = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBonusChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onArmorChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHealthChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onConChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11804,101 +12746,6 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				updateMenu = {
-					read_only = false,
-					other_fields = false,
-				},
-				bRankUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllink = {
-			read_only = false,
-			fields = {
-				getSkillDescNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillDescNode = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSkillDataUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNewInstance = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_totalwithability = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				sourceupdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAbilitySource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11970,88 +12817,31 @@ stds.sfrpg = {
 				},
 			},
 		},
-		char_weaponattack = {
-			read_only = false,
-			fields = {
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				charMechSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				charSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				bAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponfullattack = {
+		chardrone = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateWidgets = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateAttackFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				v = {
+				updateTotalSkillPoints = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char_weaponlist = {
+		chardrone_actions = {
 			read_only = false,
 			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildAdded = {
+				onDisplayChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -12059,11 +12849,65 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				updateAbilityCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		chardrone_actions_details = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				addWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAbilityClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAbility = {
+					read_only = false,
+					other_fields = false,
+				},
 				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+				getEditMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		chardrone_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealthChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -12071,40 +12915,60 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onFilter = {
+				onConChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char_weaponsingleattack = {
+		chardrone_skill = {
 			read_only = false,
 			fields = {
+				bRankUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				iscustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				sets = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				updateWindow = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateWidgets = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateAttackFields = {
+				onCheckPenaltyChange = {
 					read_only = false,
 					other_fields = false,
 				},
-				action = {
+				onFreeSkill = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
+				onStatUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDoubleClick = {
+				setCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateMenu = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -12220,27 +13084,6 @@ stds.sfrpg = {
 				},
 			},
 		},
-		charmini_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		charmini_weapon = {
 			read_only = false,
 			fields = {
@@ -12278,7 +13121,7 @@ stds.sfrpg = {
 				},
 			},
 		},
-		charstarship = {
+		charsheet = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -12289,19 +13132,200 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onTierStatusChanged = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHPStatusChanged = {
+				updateTotalSkillPoints = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateColor = {
+			},
+		},
+		charsheet_actions = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateCurrentBP = {
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAbilityCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_actions_spells = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_actions_starship = {
+			read_only = false,
+			fields = {
+				bInitialize = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				roleChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				bInitialize = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_combat = {
+			read_only = false,
+			fields = {
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_inventory = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChange = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onConChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateTotalSkillPoints = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini_actions = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAbilityCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onConChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -12403,6 +13427,35 @@ stds.sfrpg = {
 				},
 			},
 		},
+		charstarshipsheet = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTierStatusChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHPStatusChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateColor = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCurrentBP = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		charvehicle_main = {
 			read_only = false,
 			fields = {
@@ -12448,14 +13501,28 @@ stds.sfrpg = {
 				},
 			},
 		},
-		class_column_list = {
+		class_feature = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				isEmpty = {
+			},
+		},
+		class_feature_ability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		class_feature_ability_header = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -12463,41 +13530,64 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				upDateBaseFeatures = {
+			},
+		},
+		class_feature_header = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				upDateFeatureAbilities = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				upDateBaseSpecialFeatures = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				sNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				aTarget = {
-					read_only = false,
-					other_fields = false,
-				},
-				sBName = {
-					read_only = false,
-					other_fields = false,
-				},
-				nBLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				nBLevel = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		clientct_entry = {
+		class_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		class_overview = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateValue = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -12518,7 +13608,7 @@ stds.sfrpg = {
 				},
 			},
 		},
-		clientct_shipentry = {
+		client_ct_shipentry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -12551,48 +13641,29 @@ stds.sfrpg = {
 				},
 			},
 		},
-		clientctship = {
+		comp_specialability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		comp_specialability_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionCTSIChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		comp = {
+		companionsheet = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -12605,7 +13676,7 @@ stds.sfrpg = {
 				},
 			},
 		},
-		comp_inv = {
+		companionsheet_inventory = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -12622,76 +13693,7 @@ stds.sfrpg = {
 				},
 			},
 		},
-		comp_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBonusChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onArmorChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		comp_main = {
+		companionsheet_main = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -12739,161 +13741,6 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				nReach = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		counter_spell = {
-			read_only = false,
-			fields = {
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				canCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionWNDCChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameOrTokenUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTargeting = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDefensive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleSpacing = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEntrySectionToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_effect_summary2 = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEffectsChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -12996,49 +13843,7 @@ stds.sfrpg = {
 				},
 			},
 		},
-		ct_menu = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCs = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_pendingattacks = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_pendingattacks_entry = {
+		ct_pendingattack = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -13114,35 +13919,6 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				nRanCrit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_shipactive = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -13225,31 +14001,6 @@ stds.sfrpg = {
 				},
 			},
 		},
-		ct_shipmenu = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCs = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		ct_shiptarget = {
 			read_only = false,
 			fields = {
@@ -13267,7 +14018,431 @@ stds.sfrpg = {
 				},
 			},
 		},
-		ct_shiptarget_summary = {
+		damage = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		effect = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		encounter_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		encounters = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		feat = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		feat_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		features = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				isEmpty = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				upDateBaseFeatures = {
+					read_only = false,
+					other_fields = false,
+				},
+				upDateFeatureAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				upDateBaseSpecialFeatures = {
+					read_only = false,
+					other_fields = false,
+				},
+				sNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				aTarget = {
+					read_only = false,
+					other_fields = false,
+				},
+				sBName = {
+					read_only = false,
+					other_fields = false,
+				},
+				nBLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				nBLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_main = {
+			read_only = false,
+			fields = {
+				armor_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				augmentation_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				computer_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				item_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				weapon_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				mech_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				vehicle_subtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateHardness = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateHP = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		items = {
+			read_only = false,
+			fields = {
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemIcons = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		itemtemplate = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		itemtemplate_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				bSectio2 = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		list = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -13278,16 +14453,915 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onTargetsChanged = {
+				onOptionWNDCChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameOrTokenUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleActive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDefensive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleSpacing = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEntrySectionToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		ct_shiptoken = {
+		main = {
 			read_only = false,
 			fields = {
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		melee = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		mpsummary = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		multiatk = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		name = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNavigateDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNavigateUp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		note_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPublicChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				StateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_creature = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_mech = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_trap = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_vehicle = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_specialability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_specialability_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_spells = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSpellClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEditMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		offensiveabilities = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		partyatkroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		partysheet_client = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		pendingattack = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_skills = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_xp_encounterentry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_xp_questentry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		quests = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		race = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				StateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		race_comp_stats = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				sFort = {
+					read_only = false,
+					other_fields = false,
+				},
+				sRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				sWill = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSaves = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		race_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		race_pc_stats = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				sFort = {
+					read_only = false,
+					other_fields = false,
+				},
+				sRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				sWill = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSaves = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		racialspecial = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		racialspecial_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		racialtrait = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		racialtrait_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ranged = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_proficiency_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referencestarshipitem = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		saveroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		senses = {
+			read_only = false,
+			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -13307,34 +15381,13 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
+				getCompletion = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		ct_target_summary2 = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTargetsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ctship = {
+		shiplist = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -13413,24 +15466,7 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		item = {
-			read_only = false,
-			fields = {
 				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStateChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -13438,454 +15474,66 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				sTitle = {
+				onOptionCTSIChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				sTitle = {
+				onFilter = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		item_drop = {
-			read_only = false,
-			fields = {
-				onDrop = {
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		item_main = {
-			read_only = false,
-			fields = {
-				armor_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				augmentation_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				computer_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				item_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				weapon_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_subtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				VisDataCleared = {
-					read_only = false,
-					other_fields = false,
-				},
-				InvisDataAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateHardness = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateHP = {
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		itemtemplate = {
+		shortcut = {
 			read_only = false,
 			fields = {
-				onInit = {
+				getSkillDescNode = {
 					read_only = false,
 					other_fields = false,
 				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSkillDescNode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skill = {
+			read_only = false,
+			fields = {
 				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStateChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				sTitle = {
-					read_only = false,
-					other_fields = false,
-				},
-				sTitle = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
-		itemtemplate_main = {
+		skill_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				VisDataCleared = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				InvisDataAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				bSectio2 = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_ability = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityCounterUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_abilityclass = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellAddToLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_abilitylevel = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_forge_items = {
-			read_only = false,
-			fields = {
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateItemIcons = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_forge_templates = {
-			read_only = false,
-			fields = {
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateItemIcons = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_mods = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				isEmpty = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spell = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellCounterUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spellclass = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellAddToLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spelllevel = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				TypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				StateChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -13895,7 +15543,41 @@ stds.sfrpg = {
 				},
 			},
 		},
-		npc_skill = {
+		skill_task_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skillroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSkillLookup = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSkillLookup = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
 			read_only = false,
 			fields = {
 				getCompletion = {
@@ -13942,376 +15624,32 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
 				getCompletion = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		npc_spells = {
+		skilltask = {
 			read_only = false,
 			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSpellClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				getEditMode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_crosslink = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				setLink = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_client = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_ability = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_atk = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_save = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_skill = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillLookup = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillLookup = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_shiplist = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_skill = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_encentry = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_enclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_questentry = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_questlist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		race = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				TypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
 				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				StateChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		race_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFort = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRef = {
-					read_only = false,
-					other_fields = false,
-				},
-				sWill = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSaves = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		spell = {
-			read_only = false,
-			fields = {
-				setFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				getFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDisplayChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				createAction = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDetail = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDescription = {
-					read_only = false,
-					other_fields = false,
-				},
-				activatePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				usePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				sDisplayMode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFilter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -14490,7 +15828,202 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		spell_class_mini = {
+			read_only = false,
+			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerMenuItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSheetMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCasterTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityChangeUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellView = {
+					read_only = false,
+					other_fields = false,
+				},
+				performFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				showSpellsForLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				nSpellsLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item_mini = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -14551,7 +16084,112 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		spell_level_mini = {
+			read_only = false,
+			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateLabel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSpellName = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSaveThrow = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spelldesc = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spelldesc2 = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spelldesc2_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spelldesc_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -14569,6 +16207,37 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				StateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		starship_attack = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		starship_crew = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		starship_crew_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -14595,50 +16264,23 @@ stds.sfrpg = {
 				},
 			},
 		},
-		starship_skill = {
+		starship_specialability = {
 			read_only = false,
 			fields = {
-				getCompletion = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				parseComponents = {
+			},
+		},
+		starship_specialability_header = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -14664,10 +16306,6 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				sTitle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -14714,7 +16352,96 @@ stds.sfrpg = {
 				},
 			},
 		},
-		string_attackline = {
+		system = {
+			read_only = false,
+			fields = {
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		templates = {
+			read_only = false,
+			fields = {
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemIcons = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		theme = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		theme_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		themefeature_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		value = {
 			read_only = false,
 			fields = {
 				onValueChanged = {
@@ -14769,46 +16496,53 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
+			},
+		},
+		vehicleability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		string_crosslink = {
+		vehicleability_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				setLink = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		string_shipattackline = {
+		vehicleattack = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		vehicleattack_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		weapons = {
 			read_only = false,
 			fields = {
 				onValueChanged = {
@@ -18989,9 +20723,17 @@ stds.dnd2e = {
 				},
 			},
 		},
-		advanced_effects = {
+		actionitem = {
 			read_only = false,
 			fields = {
+				aHyperEntries = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -19000,13 +20742,77 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				refreshText = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPowerEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				addMiniAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				addWeaponEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				addHyperTextRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortByOrders = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortByLevels = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		advanced_effects_editor = {
+		advanced_effect_editor_main = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19039,58 +20845,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		char = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_abilities = {
-			read_only = false,
-			fields = {
-				collapse = {
-					read_only = false,
-					other_fields = false,
-				},
-				expand = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_actions = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateForID = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_click_chooser = {
+		advanced_effects_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19105,132 +20860,9 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateForNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
-		char_damagelist_item = {
-			read_only = false,
-			fields = {
-				controlDamageEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				buildDamageEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDamageChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				controlDamageEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				controlDamageEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBonusChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onArmorChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_labelframetop = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				setIcon = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_log_advancement = {
+		advancement_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19259,7 +20891,258 @@ stds.dnd2e = {
 				},
 			},
 		},
-		char_main = {
+		base = {
+			read_only = false,
+			fields = {
+				slots = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+				addCounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCounterAt = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				slots = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		carried = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLinkUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				setLink = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		char_matrix_edit_1e = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAttackMatrix = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		char_matrix_edit_becmi = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAttackMatrix = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		char_weapon = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateShortCutView = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLinkChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAttackChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				highlightAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAttackAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageActionSingle = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		char_weapon_editor_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForID = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_abilities_contents = {
+			read_only = false,
+			fields = {
+				collapse = {
+					read_only = false,
+					other_fields = false,
+				},
+				expand = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_actions_powers = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForID = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_actions_weapons = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForID = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_main = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19316,7 +21199,41 @@ stds.dnd2e = {
 				},
 			},
 		},
-		char_matrix = {
+		chat = {
+			read_only = false,
+			fields = {
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		chooser = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		class_advancement_editor_matrix_1e = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19333,7 +21250,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		char_matrix_thaco = {
+		class_advancement_editor_matrix_becmi = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19344,269 +21261,13 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				createTHACOMatrix = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
+				createAttackMatrix = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char_random_spells = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				generateRandomSpells = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSpellsLearnedCount = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_saves_details = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				detailsUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skill = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				isCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				setRadialOptions = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSkillReference = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weapon = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateShortCutView = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAttackChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				highlightAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAttackAction = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDamageActionSingle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weapon_editor = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateForID = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				onProfChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChangedOnItem = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		chat_window = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		clientct_entry = {
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19643,7 +21304,33 @@ stds.dnd2e = {
 				},
 			},
 		},
-		ct = {
+		combat_mini_section = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		combat_mini_section_ct = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		combat_mini_thaco_matrix = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -19654,39 +21341,44 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onOptionWNDCChanged = {
+				createTHACOMatrix = {
 					read_only = false,
 					other_fields = false,
 				},
-				onNameOrTokenUpdated = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+			},
+		},
+		combatants_entry_host = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				onSortCompare = {
+				onHealthChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHotkey = {
+				removeAsTarget = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleVisibility = {
+				toggleNPCControls = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleTargeting = {
+				toggleHiddenName = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleAttributes = {
+				getBackground = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19694,23 +21386,117 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleSpacing = {
+				clearMapSelectedToken = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleEffects = {
+				toggleTargetTokenIndicators = {
 					read_only = false,
 					other_fields = false,
 				},
-				onVisibilityToggle = {
+				toggleSelected = {
 					read_only = false,
 					other_fields = false,
 				},
-				onEntrySectionToggle = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				delete = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFactionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLinkChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCFields = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		combattracker_host = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				sizeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		combattracker_weapons_list = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMyID = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMyDamageID = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				setWeaponRecordValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildWeaponsListForCTView = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAttackAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageActionSingle = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19825,35 +21611,59 @@ stds.dnd2e = {
 				},
 			},
 		},
-		ct_menu = {
+		cta_main_selected_host = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				onLinkChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				clearNPCs = {
+				updateView = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkNPCFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCFields = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		ct_power = {
+		desc = {
 			read_only = false,
 			fields = {
+				getPowerNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCreatureInfo = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19865,27 +21675,15 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
 				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActor = {
-					read_only = false,
-					other_fields = false,
-				},
-				rechargePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				usePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionAbility = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19897,48 +21695,69 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onDrag = {
+					read_only = false,
+					other_fields = false,
+				},
 				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		cta = {
+		effects = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				sizeChanged = {
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
+				onEnter = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleVisibility = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHotkey = {
+				deleteChild = {
+					read_only = false,
+					other_fields = false,
+				},
+				reset = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		cta_action_item = {
+		encounters = {
 			read_only = false,
 			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		hypertext = {
+			read_only = false,
+			fields = {
+				aSourceRecords = {
+					read_only = false,
+					other_fields = false,
+				},
 				aHyperEntries = {
 					read_only = false,
 					other_fields = false,
@@ -19955,27 +21774,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
 				refreshText = {
-					read_only = false,
-					other_fields = false,
-				},
-				addPowerEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				addMiniAction = {
-					read_only = false,
-					other_fields = false,
-				},
-				addWeaponEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				addHyperTextRecord = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20007,54 +21806,71 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				actionAbility = {
+				setTable = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActor = {
+				sortByNames = {
 					read_only = false,
 					other_fields = false,
 				},
-				sortByOrders = {
+				setActivateWindow = {
 					read_only = false,
 					other_fields = false,
 				},
-				sortByLevels = {
+				setTooltipTextField = {
+					read_only = false,
+					other_fields = false,
+				},
+				aSourceRecords = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		cta_active = {
+		item = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				onIDChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
+				onStateChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
+				onNameUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		cta_combat_stats_summary = {
+		item_import_contents = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				createBlankNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				processImportText = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_main = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -20065,13 +21881,54 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCombatStatsChanged = {
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		cta_combatants_host = {
+		label = {
+			read_only = false,
+			fields = {
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		list = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -20158,36 +22015,39 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		cta_entry = {
-			read_only = false,
-			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				onOptionWNDCChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHealthChanged = {
+				onNameOrTokenUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
-				removeAsTarget = {
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleNPCControls = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleHiddenName = {
+				onHotkey = {
 					read_only = false,
 					other_fields = false,
 				},
-				getBackground = {
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleAttributes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20195,331 +22055,25 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				clearMapSelectedToken = {
+				toggleSpacing = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleTargetTokenIndicators = {
+				toggleEffects = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleSelected = {
+				onVisibilityToggle = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				delete = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFactionChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				linkPCFields = {
+				onEntrySectionToggle = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		cta_languages = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		cta_menu = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCs = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		cta_selected = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateView = {
-					read_only = false,
-					other_fields = false,
-				},
-				linkNPCFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				linkPCFields = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		cta_skills = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		cta_target_summary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTargetsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		cta_token = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		encountersafari = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		hyperlink_text = {
-			read_only = false,
-			fields = {
-				aSourceRecords = {
-					read_only = false,
-					other_fields = false,
-				},
-				aHyperEntries = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				refreshText = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				setTable = {
-					read_only = false,
-					other_fields = false,
-				},
-				sortByNames = {
-					read_only = false,
-					other_fields = false,
-				},
-				setActivateWindow = {
-					read_only = false,
-					other_fields = false,
-				},
-				setTooltipTextField = {
-					read_only = false,
-					other_fields = false,
-				},
-				aSourceRecords = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		item_import = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				createBlankNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				processImportText = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		item_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				VisDataCleared = {
-					read_only = false,
-					other_fields = false,
-				},
-				InvisDataAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		menubutton = {
+		menus = {
 			read_only = false,
 			fields = {
 				menuListType = {
@@ -20616,7 +22170,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		menulist = {
+		menus_dropwindow = {
 			read_only = false,
 			fields = {
 				windowParent = {
@@ -20636,6 +22190,43 @@ stds.dnd2e = {
 					other_fields = false,
 				},
 				windowParent = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		modifier = {
+			read_only = false,
+			fields = {
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWheel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20670,20 +22261,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		npc_import = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				processImportText = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_main = {
+		npc_combat = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -20764,7 +22342,20 @@ stds.dnd2e = {
 				},
 			},
 		},
-		npc_statblock_import = {
+		npc_import_contents = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				processImportText = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_statblock_import_contents = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -20789,55 +22380,10 @@ stds.dnd2e = {
 				},
 			},
 		},
-		npc_weapons_ct = {
+		npcs = {
 			read_only = false,
 			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				getMyID = {
-					read_only = false,
-					other_fields = false,
-				},
-				getMyDamageID = {
-					read_only = false,
-					other_fields = false,
-				},
-				getWeaponRecord = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageRecord = {
-					read_only = false,
-					other_fields = false,
-				},
-				setWeaponRecordValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				buildWeaponsListForCTView = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAttackAction = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDamageActionSingle = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_abilityscore = {
-			read_only = false,
-			fields = {
-				onInit = {
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20845,25 +22391,17 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				action = {
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		number_charskill = {
+		partysheet_client = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -20874,69 +22412,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_movement = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				detailsUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_savescore = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
+				onOptionChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20999,27 +22475,6 @@ stds.dnd2e = {
 				},
 			},
 		},
-		power_action_list = {
-			read_only = false,
-			fields = {
-				reset = {
-					read_only = false,
-					other_fields = false,
-				},
-				setOrder = {
-					read_only = false,
-					other_fields = false,
-				},
-				setNewOrder = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		power_action_mini = {
 			read_only = false,
 			fields = {
@@ -21069,129 +22524,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		power_counter = {
-			read_only = false,
-			fields = {
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				canCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_counter_memorize = {
-			read_only = false,
-			fields = {
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				canCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_group = {
+		power_group_header = {
 			read_only = false,
 			fields = {
 				inValidSheet = {
@@ -21245,7 +22578,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		power_import = {
+		power_import_contents = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -21363,14 +22696,46 @@ stds.dnd2e = {
 				},
 			},
 		},
-		power_list = {
+		power_item_spellrecord = {
 			read_only = false,
 			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemSync = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForMemorizationChanges = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				firstTimeSpellRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				firstTimeItemRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21378,60 +22743,23 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+				cleanUpMemorization = {
 					read_only = false,
 					other_fields = false,
 				},
-				onChildListChanged = {
+				createActionCast = {
 					read_only = false,
 					other_fields = false,
 				},
-				onChildWindowAdded = {
+				toggleDetail = {
 					read_only = false,
 					other_fields = false,
 				},
-				onEnter = {
+				getDescription = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHeaderToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSummaryChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
+				usePower = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21575,7 +22903,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		ps_client = {
+		power_stats = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -21586,7 +22914,15 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onOptionChanged = {
+				onSummaryChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21609,108 +22945,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		ps_roll_atk = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_check = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_save = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_skill = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_statusbar = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				isHorizontal = {
-					read_only = false,
-					other_fields = false,
-				},
-				updatePosition = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSize = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateBackColor = {
-					read_only = false,
-					other_fields = false,
-				},
-				setValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMax = {
-					read_only = false,
-					other_fields = false,
-				},
-				getValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getMax = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateText = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_encentry = {
+		ps_xp_encounterentry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -21718,23 +22953,6 @@ stds.dnd2e = {
 					other_fields = false,
 				},
 				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_enclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21753,7 +22971,7 @@ stds.dnd2e = {
 				},
 			},
 		},
-		ps_xp_questlist = {
+		quests = {
 			read_only = false,
 			fields = {
 				onListChanged = {
@@ -21774,14 +22992,68 @@ stds.dnd2e = {
 				},
 			},
 		},
-		quicknotes = {
+		quicknote = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				handlePageTop = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePagePrev = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageNext = {
+					read_only = false,
+					other_fields = false,
+				},
+				replaceWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ready_check_entry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateName = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				seeIfEveryoneIsReady = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ready_check_entry_user = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21816,45 +23088,129 @@ stds.dnd2e = {
 				},
 			},
 		},
-		readycheck_host = {
+		records = {
 			read_only = false,
 			fields = {
+				menuListType = {
+					read_only = false,
+					other_fields = false,
+				},
+				nFontSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				nWindowWidth = {
+					read_only = false,
+					other_fields = false,
+				},
+				nWindowLength = {
+					read_only = false,
+					other_fields = false,
+				},
+				windowDropDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				modulesUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				initializeMenu = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateName = {
+				setBooksMenuRefresh = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateCheck = {
+				setupBooksMenu = {
 					read_only = false,
 					other_fields = false,
 				},
-				seeIfEveryoneIsReady = {
+				setMyButtonPositionProperly = {
+					read_only = false,
+					other_fields = false,
+				},
+				minimizeMe = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMove = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateBookListings = {
+					read_only = false,
+					other_fields = false,
+				},
+				createRefManualSelections = {
+					read_only = false,
+					other_fields = false,
+				},
+				createMenuSelections = {
+					read_only = false,
+					other_fields = false,
+				},
+				populateMenuList = {
+					read_only = false,
+					other_fields = false,
+				},
+				addMenuItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWindowLengthValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDropDownLayout = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				menuListType = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		readycheck_user = {
+		records_dropwindow = {
 			read_only = false,
 			fields = {
-				onInit = {
+				windowParent = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				registerWindowParent = {
+					read_only = false,
+					other_fields = false,
+				},
+				minimizeMe = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				windowParent = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		ref_item_main = {
+		ref_magicitem_stats = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -21871,7 +23227,226 @@ stds.dnd2e = {
 				},
 			},
 		},
-		ref_summary = {
+		reference_adventuringgeartablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_armortablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_featgroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_groupedlist_groupitem = {
+			read_only = false,
+			fields = {
+				FT_COL_DEFAULT_LENGTH = {
+					read_only = false,
+					other_fields = false,
+				},
+				setItemRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				setItemClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				setColumnInfo = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFTColumnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_helmtablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_mountsandotheranimalstablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_shieldtablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_waterbornevehiclestablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_weapontablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		refmanuals = {
+			read_only = false,
+			fields = {
+				menuListType = {
+					read_only = false,
+					other_fields = false,
+				},
+				nFontSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				nWindowWidth = {
+					read_only = false,
+					other_fields = false,
+				},
+				nWindowLength = {
+					read_only = false,
+					other_fields = false,
+				},
+				windowDropDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				modulesUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				initializeMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				setBooksMenuRefresh = {
+					read_only = false,
+					other_fields = false,
+				},
+				setupBooksMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				setMyButtonPositionProperly = {
+					read_only = false,
+					other_fields = false,
+				},
+				minimizeMe = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMove = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateBookListings = {
+					read_only = false,
+					other_fields = false,
+				},
+				createRefManualSelections = {
+					read_only = false,
+					other_fields = false,
+				},
+				createMenuSelections = {
+					read_only = false,
+					other_fields = false,
+				},
+				populateMenuList = {
+					read_only = false,
+					other_fields = false,
+				},
+				addMenuItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWindowLengthValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDropDownLayout = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				menuListType = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		refmanuals_dropwindow = {
+			read_only = false,
+			fields = {
+				windowParent = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerWindowParent = {
+					read_only = false,
+					other_fields = false,
+				},
+				minimizeMe = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				windowParent = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		safari_main_window = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -21880,26 +23455,134 @@ stds.dnd2e = {
 				},
 			},
 		},
-		string_powerdesc = {
+		skill_item = {
 			read_only = false,
 			fields = {
-				getPowerNode = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCreatureInfo = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActor = {
+				setCustom = {
 					read_only = false,
 					other_fields = false,
 				},
+				isCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRadialOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				constructDefaultSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillReference = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spells_generaterandom = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateRandomSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellsLearnedCount = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		split_damage_entries = {
+			read_only = false,
+			fields = {
+				controlDamageEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildDamageEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				controlDamageEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				controlDamageEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		value = {
+			read_only = false,
+			fields = {
 				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21911,15 +23594,27 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
 				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				rechargePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAbility = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -21931,11 +23626,15 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrag = {
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragEnd = {
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27576,7 +29275,154 @@ stds.corerpg = {
 				},
 			},
 		},
-		button_crosslink = {
+		ability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		asset_preview = {
+			read_only = false,
+			fields = {
+				setData = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleDrag = {
+					read_only = false,
+					other_fields = false,
+				},
+				onImportClicked = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDecalClicked = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		assign = {
+			read_only = false,
+			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		base = {
+			read_only = false,
+			fields = {
+				slots = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+				addCounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCounterAt = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				slots = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle_npc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				synchToCount = {
+					read_only = false,
+					other_fields = false,
+				},
+				synchTokenView = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle_npcmaplink = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -27587,11 +29433,19 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onButtonPress = {
+				tokenDeleted = {
 					read_only = false,
 					other_fields = false,
 				},
-				onLinkUpdated = {
+				tokenMoved = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteLink = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkLink = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27599,45 +29453,33 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
+				clearLink = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		button_expand_collapse = {
+		battlerandom = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battlerandom_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onButtonPress = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyTo = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		button_iconcycler = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				registerUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				synchData = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateDisplay = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27645,178 +29487,28 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				getSourceNode = {
+			},
+		},
+		battlerandom_npc = {
+			read_only = false,
+			fields = {
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
-				setIndex = {
+				addNumber = {
 					read_only = false,
 					other_fields = false,
 				},
-				setStringValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getIndex = {
-					read_only = false,
-					other_fields = false,
-				},
-				getStringValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				cycleIcon = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				addState = {
+				addDice = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		button_record_isidentified = {
+		calendar = {
 			read_only = false,
 			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				notify = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		button_record_locked = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				notify = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		button_stringcycler = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				registerUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				initialize = {
-					read_only = false,
-					other_fields = false,
-				},
-				initialize2 = {
-					read_only = false,
-					other_fields = false,
-				},
-				matchData = {
-					read_only = false,
-					other_fields = false,
-				},
-				synchData = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDatabaseNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setStringValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getStringValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setDisplayColor = {
-					read_only = false,
-					other_fields = false,
-				},
-				setDisplayFont = {
-					read_only = false,
-					other_fields = false,
-				},
-				cycleLabel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		buttongroup_counter = {
-			read_only = false,
-			fields = {
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -27829,185 +29521,7 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkBounds = {
-					read_only = false,
-					other_fields = false,
-				},
-				getMaxValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMaxValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCurrentValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCurrentValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCurrNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMaxNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		buttongroup_radio = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				registerUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				initialize = {
-					read_only = false,
-					other_fields = false,
-				},
-				synch_index = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDatabaseNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setStringValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getStringValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				getIndex = {
-					read_only = false,
-					other_fields = false,
-				},
-				setIndex = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		buttongroup_tabs = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				hideControls = {
-					read_only = false,
-					other_fields = false,
-				},
-				showControls = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateTab = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				deactivateEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				setVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				getTabCount = {
-					read_only = false,
-					other_fields = false,
-				},
-				getTab = {
-					read_only = false,
-					other_fields = false,
-				},
-				setTab = {
-					read_only = false,
-					other_fields = false,
-				},
-				addTab = {
-					read_only = false,
-					other_fields = false,
-				},
-				getIndex = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
+				onCalendarChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28026,7 +29540,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		calendar_log = {
+		calendar_main = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -28083,143 +29597,10 @@ stds.corerpg = {
 				},
 			},
 		},
-		calendar_log_entry = {
+		category_label = {
 			read_only = false,
 			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDateChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		calendar_period_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				rebuildCalendarWindows = {
-					read_only = false,
-					other_fields = false,
-				},
-				buildCalendarWindows = {
-					read_only = false,
-					other_fields = false,
-				},
-				scrollToCampaignDate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		calendar_top = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCalendarChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		campaign_button_new = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				setRecordType = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invloc = {
-			read_only = false,
-			fields = {
-				onChar = {
+				initialize = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28231,12 +29612,15 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		char_invname = {
-			read_only = false,
-			fields = {
-				onLoseFocus = {
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28262,83 +29646,6 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onResetButtonPressed = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		characterlist_entry = {
-			read_only = false,
-			fields = {
-				setActiveState = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCurrent = {
-					read_only = false,
-					other_fields = false,
-				},
-				setName = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateColor = {
-					read_only = false,
-					other_fields = false,
-				},
-				createWidgets = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMenuItems = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCurrentIdentity = {
-					read_only = false,
-					other_fields = false,
-				},
-				bringCharacterToTop = {
-					read_only = false,
-					other_fields = false,
-				},
-				portraitwidget = {
-					read_only = false,
-					other_fields = false,
-				},
-				namewidget = {
-					read_only = false,
-					other_fields = false,
-				},
-				statewidget = {
-					read_only = false,
-					other_fields = false,
-				},
-				colorwidget = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28377,27 +29684,6 @@ stds.corerpg = {
 				},
 			},
 		},
-		charselect_client_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				addIdentity = {
-					read_only = false,
-					other_fields = false,
-				},
-				activeidentities = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		charselect_host_entry = {
 			read_only = false,
 			fields = {
@@ -28418,23 +29704,6 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				dragCharacter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		charselect_host_list = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28461,58 +29730,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		charselect_import_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModuleLoad = {
-					read_only = false,
-					other_fields = false,
-				},
-				addPregen = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		chat_entry = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDeliverMessage = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTab = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		chat_mode = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateStateGraphic = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		chat_window = {
+		chat = {
 			read_only = false,
 			fields = {
 				onDiceLanded = {
@@ -28533,94 +29751,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		clientct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionCTSIChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		clientct_effectlabel = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		clientct_effectlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEffectsUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteChild = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		clientct_entry = {
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -28645,90 +29776,59 @@ stds.corerpg = {
 				},
 			},
 		},
-		column_ft = {
+		clientct_effect = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				onVisUpdate = {
+				updateOwner = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				allowEdit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setEditMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkData = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		column_list = {
+		color_swatch = {
 			read_only = false,
 			fields = {
+				DEFAULT_COLOR = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				isEmpty = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		column_number = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		column_string = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		combobox = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDestroy = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28740,112 +29840,11 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				activate = {
+				colorDialogCallback = {
 					read_only = false,
 					other_fields = false,
 				},
-				isComboBoxReadOnly = {
-					read_only = false,
-					other_fields = false,
-				},
-				setComboBoxReadOnly = {
-					read_only = false,
-					other_fields = false,
-				},
-				setComboBoxVisible = {
-					read_only = false,
-					other_fields = false,
-				},
-				refreshDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				refreshButtonDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				refreshSelectionDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				showList = {
-					read_only = false,
-					other_fields = false,
-				},
-				hideList = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setListIndex = {
-					read_only = false,
-					other_fields = false,
-				},
-				setListValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				add = {
-					read_only = false,
-					other_fields = false,
-				},
-				addItems = {
-					read_only = false,
-					other_fields = false,
-				},
-				replace = {
-					read_only = false,
-					other_fields = false,
-				},
-				remove = {
-					read_only = false,
-					other_fields = false,
-				},
-				clear = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSelectedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getValues = {
-					read_only = false,
-					other_fields = false,
-				},
-				optionClicked = {
-					read_only = false,
-					other_fields = false,
-				},
-				optionDelete = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		combobox_button = {
-			read_only = false,
-			fields = {
-				setTarget = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
+				onColorUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28879,165 +29878,6 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				delete = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		combobox_list = {
-			read_only = false,
-			fields = {
-				onLoseFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-				optionClicked = {
-					read_only = false,
-					other_fields = false,
-				},
-				optionDelete = {
-					read_only = false,
-					other_fields = false,
-				},
-				setTarget = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFonts = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFrames = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMaxRows = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustHeight = {
-					read_only = false,
-					other_fields = false,
-				},
-				hide = {
-					read_only = false,
-					other_fields = false,
-				},
-				setSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				scrollToSelected = {
-					read_only = false,
-					other_fields = false,
-				},
-				add = {
-					read_only = false,
-					other_fields = false,
-				},
-				replace = {
-					read_only = false,
-					other_fields = false,
-				},
-				remove = {
-					read_only = false,
-					other_fields = false,
-				},
-				clear = {
-					read_only = false,
-					other_fields = false,
-				},
-				getIndexWindow = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameOrTokenUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTargeting = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleSpacing = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEntrySectionToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_active = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29079,81 +29919,6 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_effect_summary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEffectsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_effectlabel = {
-			read_only = false,
-			fields = {
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onGainFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLoseFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_effectlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteChild = {
-					read_only = false,
-					other_fields = false,
-				},
-				reset = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29216,44 +29981,6 @@ stds.corerpg = {
 				},
 			},
 		},
-		ct_menu = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCs = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_name = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		ct_target = {
 			read_only = false,
 			fields = {
@@ -29266,65 +29993,6 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				removeTarget = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_target_summary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTargetsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_token = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		currency_list = {
-			read_only = false,
-			fields = {
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29367,230 +30035,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		desktop_dock_category = {
-			read_only = false,
-			fields = {
-				setCategory = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCategory = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateTheming = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateState = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateFrame = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		desktop_dock_entry = {
-			read_only = false,
-			fields = {
-				setData = {
-					read_only = false,
-					other_fields = false,
-				},
-				setRecordType = {
-					read_only = false,
-					other_fields = false,
-				},
-				setDataLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCategory = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCategory = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateTheming = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateIcon = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateFrame = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		desktop_dock_entry_control = {
-			read_only = false,
-			fields = {
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		desktop_stack_entry = {
-			read_only = false,
-			fields = {
-				setData = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCategory = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateTheming = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateIcon = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateFrame = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		dialog_missinglink = {
-			read_only = false,
-			fields = {
-				initialize = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateNextModuleLoad = {
-					read_only = false,
-					other_fields = false,
-				},
-				processOK = {
-					read_only = false,
-					other_fields = false,
-				},
-				processCancel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		dialog_select = {
-			read_only = false,
-			fields = {
-				requestSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateNextSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSelectionChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				processOK = {
-					read_only = false,
-					other_fields = false,
-				},
-				processCancel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		effect = {
-			read_only = false,
-			fields = {
-				actionDrag = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onGainFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLoseFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		effect_preset = {
+		effect_preset_item = {
 			read_only = false,
 			fields = {
 				setEffect = {
@@ -29611,53 +30056,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		effectlist_custom = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		effectlist_presets = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		effectwindow = {
+		effectlist = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -29770,77 +30169,19 @@ stds.corerpg = {
 				},
 			},
 		},
-		encounter = {
-			read_only = false,
-			fields = {
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		encounter_maplink = {
+		effectlist_presets = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				tokenDeleted = {
-					read_only = false,
-					other_fields = false,
-				},
-				tokenMoved = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				setLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearLink = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
-		encounter_npc = {
+		effects = {
 			read_only = false,
 			fields = {
 				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				synchToCount = {
-					read_only = false,
-					other_fields = false,
-				},
-				synchTokenView = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		encounter_npclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29848,37 +30189,107 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				onEnter = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteChild = {
+					read_only = false,
+					other_fields = false,
+				},
+				reset = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		encounterrandom = {
+		effectsmall = {
 			read_only = false,
 			fields = {
+				actionDrag = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		encounter = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageTop = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePagePrev = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageNext = {
+					read_only = false,
+					other_fields = false,
+				},
+				replaceWindow = {
+					read_only = false,
+					other_fields = false,
+				},
 				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		encounterrandom_npc = {
+		encounter_header = {
 			read_only = false,
 			fields = {
-				onDrop = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNumber = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				addDice = {
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		entry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDeliverMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTab = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29995,6 +30406,40 @@ stds.corerpg = {
 				},
 			},
 		},
+		frameselect = {
+			read_only = false,
+			fields = {
+				setBlockData = {
+					read_only = false,
+					other_fields = false,
+				},
+				activate = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		iconbase = {
+			read_only = false,
+			fields = {
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		image = {
 			read_only = false,
 			fields = {
@@ -30015,6 +30460,95 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		imagepanelwindow = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				isPanel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onToolbarChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCursorModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTokenCountChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				saveImagePosition = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateImagePosition = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateHeaderDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				setToolbarVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateToolbarVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateToolbarDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWindowSizeAtSmallImageSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWindowSizeAtOriginalImageSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWindowSizeAtOriginalHeight = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWindowSizeAtOriginalWidth = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30175,6 +30709,31 @@ stds.corerpg = {
 				},
 			},
 		},
+		isidentified = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				notify = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		item = {
 			read_only = false,
 			fields = {
@@ -30195,6 +30754,27 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30225,7 +30805,24 @@ stds.corerpg = {
 				},
 			},
 		},
-		language = {
+		label = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		languageitem = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -30237,15 +30834,6 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		language_list = {
-			read_only = false,
-			fields = {
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30276,7 +30864,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		library_booklist_entry = {
+		library_booklistentry = {
 			read_only = false,
 			fields = {
 				getName = {
@@ -30301,7 +30889,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		link_record = {
+		link = {
 			read_only = false,
 			fields = {
 				onDragStart = {
@@ -30310,10 +30898,10 @@ stds.corerpg = {
 				},
 			},
 		},
-		list_text = {
+		list = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30321,7 +30909,39 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
 				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionCTSIChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30333,36 +30953,85 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+				rebuildCalendarWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildCalendarWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				scrollToCampaignDate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				setHeadersVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				setPathVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModuleLoad = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPregen = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		list_textitem = {
+		list_iadd = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onEnter = {
+				setRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				onNavigateDown = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				onNavigateUp = {
+			},
+		},
+		locked = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onGainFocus = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				onLoseFocus = {
+				onUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				notify = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30372,14 +31041,14 @@ stds.corerpg = {
 				},
 			},
 		},
-		list_viewers = {
+		logsmall = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onDateChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30426,32 +31095,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		masterindex_list = {
-			read_only = false,
-			fields = {
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		masterindex_window = {
+		masterindex = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -30696,36 +31340,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		masterindexcategory_label = {
-			read_only = false,
-			fields = {
-				initialize = {
-					read_only = false,
-					other_fields = false,
-				},
-				onGainFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLoseFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		masterindexcategory_window = {
+		masterindexcategory = {
 			read_only = false,
 			fields = {
 				delete = {
@@ -30758,45 +31373,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		masterindexitem_category = {
-			read_only = false,
-			fields = {
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		masterindexitem_name = {
-			read_only = false,
-			fields = {
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		masterindexitem_window = {
+		masterindexitem = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -30845,68 +31422,14 @@ stds.corerpg = {
 				},
 			},
 		},
-		modifier = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionDrag = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		modifier_preset = {
-			read_only = false,
-			fields = {
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				getData = {
-					read_only = false,
-					other_fields = false,
-				},
-				setData = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearData = {
-					read_only = false,
-					other_fields = false,
-				},
-				addCallback = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeCallback = {
-					read_only = false,
-					other_fields = false,
-				},
-				onPresetChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		modifierlist_custom = {
+		masterindexitem_id = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30914,87 +31437,103 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				buildMenu = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
+				onIDChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				onIntegrityChange = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+				onObserverUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+				onCategoryChange = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		modifierlist_presets = {
+		masterindexitem_note = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
+				setRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIntegrityChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onObserverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCategoryChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleRecordSharing = {
+					read_only = false,
+					other_fields = false,
+				},
+				unshareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				shareRecord = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
-		modifierstack_base = {
+		mode = {
 			read_only = false,
 			fields = {
-				slots = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				resetCounters = {
-					read_only = false,
-					other_fields = false,
-				},
-				addCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCounterAt = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
+				updateStateGraphic = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		modifierstack_modifier = {
+		modifier = {
 			read_only = false,
 			fields = {
 				onGainFocus = {
@@ -31031,7 +31570,16 @@ stds.corerpg = {
 				},
 			},
 		},
-		modifierwindow = {
+		modifier_presets = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		modifiers = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -31144,30 +31692,39 @@ stds.corerpg = {
 				},
 			},
 		},
-		module_selectionentry = {
+		modifiersmall = {
 			read_only = false,
 			fields = {
-				onMenuSelection = {
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				actionDrag = {
 					read_only = false,
 					other_fields = false,
 				},
-				setData = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				getModuleName = {
+			},
+		},
+		module_dialog_missinglink = {
+			read_only = false,
+			fields = {
+				initialize = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleActivation = {
+				activateNextModuleLoad = {
 					read_only = false,
 					other_fields = false,
 				},
-				setPermissions = {
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31286,6 +31843,73 @@ stds.corerpg = {
 				},
 			},
 		},
+		moduleselection_entry = {
+			read_only = false,
+			fields = {
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				setData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getModuleName = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleActivation = {
+					read_only = false,
+					other_fields = false,
+				},
+				setPermissions = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		name = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLinkUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				setLink = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		note = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		note_header = {
 			read_only = false,
 			fields = {
@@ -31378,55 +32002,18 @@ stds.corerpg = {
 				},
 			},
 		},
-		npc_roll = {
+		npcs = {
 			read_only = false,
 			fields = {
-				parseComponents = {
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number = {
-			read_only = false,
-			fields = {
-				onInit = {
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31434,114 +32021,7 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_crosslink = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				setLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_linked = {
-			read_only = false,
-			fields = {
-				sources = {
-					read_only = false,
-					other_fields = false,
-				},
-				ops = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasSources = {
-					read_only = false,
-					other_fields = false,
-				},
-				sourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				calculateSources = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSource = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSourceWithOp = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_modifier = {
-			read_only = false,
-			fields = {
-				getModifier = {
-					read_only = false,
-					other_fields = false,
-				},
-				setModifier = {
-					read_only = false,
-					other_fields = false,
-				},
-				setModifierDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateModifier = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31592,24 +32072,28 @@ stds.corerpg = {
 				},
 			},
 		},
-		parcel = {
+		parcel_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				onLockChanged = {
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		pointer_selection = {
+		pointerselection = {
 			read_only = false,
 			fields = {
 				triggers = {
@@ -31703,162 +32187,32 @@ stds.corerpg = {
 				},
 			},
 		},
-		progressbar = {
+		pregencharselect_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				updateOwner = {
 					read_only = false,
 					other_fields = false,
 				},
-				onFirstLayout = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				initialize = {
+				openCharacter = {
 					read_only = false,
 					other_fields = false,
 				},
-				setSourceMax = {
-					read_only = false,
-					other_fields = false,
-				},
-				setSourceCurrent = {
-					read_only = false,
-					other_fields = false,
-				},
-				setSourceUsed = {
-					read_only = false,
-					other_fields = false,
-				},
-				resolveSource = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFillColor = {
-					read_only = false,
-					other_fields = false,
-				},
-				setText = {
-					read_only = false,
-					other_fields = false,
-				},
-				setAutoText = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCurrentChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onUsedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMaxChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				setValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setUsed = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMax = {
-					read_only = false,
-					other_fields = false,
-				},
-				getValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getUsed = {
-					read_only = false,
-					other_fields = false,
-				},
-				getMax = {
-					read_only = false,
-					other_fields = false,
-				},
-				getPercent = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
+				dragCharacter = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		progressbar_health_d20 = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFirstLayout = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMaxChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTempChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWoundChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNonlethalChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_carriedby = {
-			read_only = false,
-			fields = {
-				getCompletion = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				onGainFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_inv = {
+		ps_inventory = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -31879,82 +32233,16 @@ stds.corerpg = {
 				},
 			},
 		},
-		ps_list = {
+		quest = {
 			read_only = false,
 			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		ps_token = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		record_header = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				getRecordTypeAndDisplayClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				initRecordType = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		record_header_id = {
+		quest_header = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -31975,101 +32263,16 @@ stds.corerpg = {
 				},
 			},
 		},
-		record_window = {
+		reference_colindexgroup = {
 			read_only = false,
 			fields = {
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
+				showFullHeaders = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		ref_block_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				activate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_filter = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyTo = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_frameselect = {
-			read_only = false,
-			fields = {
-				setBlockData = {
-					read_only = false,
-					other_fields = false,
-				},
-				activate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_frameselect_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				buildWindows = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_groupdesc = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_groupedlist = {
+		reference_groupedlist = {
 			read_only = false,
 			fields = {
 				DEFAULT_START_WIDTH = {
@@ -32194,7 +32397,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		ref_groupedlist_groupitem = {
+		reference_groupedlist_groupitem = {
 			read_only = false,
 			fields = {
 				FT_COL_DEFAULT_LENGTH = {
@@ -32219,237 +32422,7 @@ stds.corerpg = {
 				},
 			},
 		},
-		ref_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				getFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				setHeadersVisible = {
-					read_only = false,
-					other_fields = false,
-				},
-				setPathVisible = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_listgroup = {
-			read_only = false,
-			fields = {
-				showFullHeaders = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_locked = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				notify = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual = {
-			read_only = false,
-			fields = {
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				showIndex = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateIndexHelperControls = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateLinkHelper = {
-					read_only = false,
-					other_fields = false,
-				},
-				handlePageTop = {
-					read_only = false,
-					other_fields = false,
-				},
-				handlePagePrev = {
-					read_only = false,
-					other_fields = false,
-				},
-				handlePageNext = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual_index_chapter_name = {
-			read_only = false,
-			fields = {
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual_index_page_name = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onGainFocus = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				activate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLinkUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateLink = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual_index_section_name = {
-			read_only = false,
-			fields = {
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual_page = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				handlePageTop = {
-					read_only = false,
-					other_fields = false,
-				},
-				handlePagePrev = {
-					read_only = false,
-					other_fields = false,
-				},
-				handlePageNext = {
-					read_only = false,
-					other_fields = false,
-				},
-				activateLink = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual_page_content = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_manual_textwide = {
-			read_only = false,
-			fields = {
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ref_simplelist = {
+		reference_list = {
 			read_only = false,
 			fields = {
 				DEFAULT_START_WIDTH = {
@@ -32530,6 +32503,119 @@ stds.corerpg = {
 				},
 			},
 		},
+		reference_manual = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				showIndex = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateIndexHelperControls = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateLink = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateLinkHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageTop = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePagePrev = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageNext = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_manualtextwide = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referencemanualpage = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageTop = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePagePrev = {
+					read_only = false,
+					other_fields = false,
+				},
+				handlePageNext = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateLink = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referencemanualpagecontent = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		select_dialog = {
+			read_only = false,
+			fields = {
+				requestSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				activateNextSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSelectionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				processCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		setup = {
 			read_only = false,
 			fields = {
@@ -32547,160 +32633,145 @@ stds.corerpg = {
 				},
 			},
 		},
-		story = {
+		sidebar_dock_category = {
 			read_only = false,
 			fields = {
-				onInit = {
+				setCategory = {
 					read_only = false,
 					other_fields = false,
 				},
-				handlePageTop = {
+				getCategory = {
 					read_only = false,
 					other_fields = false,
 				},
-				handlePagePrev = {
+				updateTheming = {
 					read_only = false,
 					other_fields = false,
 				},
-				handlePageNext = {
+				updateState = {
 					read_only = false,
 					other_fields = false,
 				},
-				replaceWindow = {
+				updateFrame = {
 					read_only = false,
 					other_fields = false,
 				},
-				onLockChanged = {
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		story_template_generate = {
+		sidebar_dock_entry = {
 			read_only = false,
 			fields = {
-				onButtonPress = {
+				setData = {
 					read_only = false,
 					other_fields = false,
 				},
-				CrossTemplateWrite = {
+				setRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				performTableLookupsStorage = {
+				setDataLink = {
 					read_only = false,
 					other_fields = false,
 				},
-				performCalloutStorageReferences = {
+				setCategory = {
 					read_only = false,
 					other_fields = false,
 				},
-				replaceDateFG = {
+				getCategory = {
 					read_only = false,
 					other_fields = false,
 				},
-				replaceDate = {
+				updateTheming = {
 					read_only = false,
 					other_fields = false,
 				},
-				datehelper = {
+				updateIcon = {
 					read_only = false,
 					other_fields = false,
 				},
-				performInternalCallouts = {
+				updateFrame = {
 					read_only = false,
 					other_fields = false,
 				},
-				performInternalReferences = {
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
-				performTableLookups = {
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
-				performTableLookupsOG = {
+				onDragStart = {
 					read_only = false,
 					other_fields = false,
 				},
-				performTableLookupsLinkText = {
-					read_only = false,
-					other_fields = false,
-				},
-				performLiteralReplacements = {
-					read_only = false,
-					other_fields = false,
-				},
-				performColumnReferenceLinks = {
-					read_only = false,
-					other_fields = false,
-				},
-				resolveInternalReferences = {
-					read_only = false,
-					other_fields = false,
-				},
-				performLinkReplacements = {
-					read_only = false,
-					other_fields = false,
-				},
-				performIndefiniteArticles = {
-					read_only = false,
-					other_fields = false,
-				},
-				performCapitalize = {
-					read_only = false,
-					other_fields = false,
-				},
-				sName = {
-					read_only = false,
-					other_fields = false,
-				},
-				sText = {
-					read_only = false,
-					other_fields = false,
-				},
-				sText = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeTarget = {
-					read_only = false,
-					other_fields = false,
-				},
-				bContinue = {
-					read_only = false,
-					other_fields = false,
-				},
-				linkTextLevelNumberConcated = {
-					read_only = false,
-					other_fields = false,
-				},
-				linkTextLevelNumberConcated = {
-					read_only = false,
-					other_fields = false,
-				},
-				orderedLinkTextOG = {
-					read_only = false,
-					other_fields = false,
-				},
-				orderedLinkTextOG = {
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		string_crosslink = {
+		sidebar_stack_entry = {
 			read_only = false,
 			fields = {
-				onInit = {
+				setData = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				getCategory = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				updateTheming = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateIcon = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateFrame = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
+			read_only = false,
+			fields = {
+				parseComponents = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -32708,44 +32779,27 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onLinkUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				setLink = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		string_list_link = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				setEditMode = {
-					read_only = false,
-					other_fields = false,
-				},
 				onHover = {
 					read_only = false,
 					other_fields = false,
 				},
-				onLoseFocus = {
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -32757,115 +32811,63 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
+			},
+		},
+		storytemplate = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		string_multilink = {
+		storytemplate_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				addSource = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				removeSource = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdated = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		string_reflistitem_link = {
+		table = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		table_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHover = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		stringc_list_link = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		table_add = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				addMenuChoices = {
-					read_only = false,
-					other_fields = false,
-				},
-				createTable = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -33009,6 +33011,35 @@ stds.corerpg = {
 				},
 			},
 		},
+		token = {
+			read_only = false,
+			fields = {
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWheel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 		tokenbag = {
 			read_only = false,
 			fields = {
@@ -33074,122 +33105,48 @@ stds.corerpg = {
 				},
 			},
 		},
-		tokenbag_preview = {
-			read_only = false,
-			fields = {
-				setData = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDrag = {
-					read_only = false,
-					other_fields = false,
-				},
-				onImportClicked = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDecalClicked = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		tokenlight_color_swatch = {
-			read_only = false,
-			fields = {
-				DEFAULT_COLOR = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				colorDialogCallback = {
-					read_only = false,
-					other_fields = false,
-				},
-				onColorUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		toolbar = {
+		treasureparcel = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				addButton = {
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
-				setActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				highlightAll = {
-					read_only = false,
-					other_fields = false,
-				},
-				setVisibility = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		toolbar_button = {
+		vehicle = {
 			read_only = false,
 			fields = {
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				configure = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		windowtitlebar = {
+		vehicle_header = {
 			read_only = false,
 			fields = {
-				widgetTitle = {
-					read_only = false,
-					other_fields = false,
-				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onUpdate = {
+				getRecordTypeAndDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				setValue = {
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
-				updatePosition = {
-					read_only = false,
-					other_fields = false,
-				},
-				widgetTitle = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34845,29 +34802,7 @@ stds.dnd4e = {
 				},
 			},
 		},
-		char = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_abilities = {
-			read_only = false,
-			fields = {
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_classlevelsummary = {
+		abilities = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -34878,19 +34813,23 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateValue = {
+				rebuild = {
+					read_only = false,
+					other_fields = false,
+				},
+				createEntries = {
+					read_only = false,
+					other_fields = false,
+				},
+				createEntryWindow = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char_invlist = {
+		abilitiesmini = {
 			read_only = false,
 			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -34899,35 +34838,94 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				rebuild = {
 					read_only = false,
 					other_fields = false,
 				},
-				onIDChanged = {
+				createEntries = {
 					read_only = false,
 					other_fields = false,
 				},
-				onBonusChanged = {
+				createEntryWindow = {
 					read_only = false,
 					other_fields = false,
 				},
-				onArmorChanged = {
+			},
+		},
+		abilityroll = {
+			read_only = false,
+			fields = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCarriedChanged = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+			},
+		},
+		atkroll = {
+			read_only = false,
+			fields = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+			},
+		},
+		attack = {
+			read_only = false,
+			fields = {
+				getPowerNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCreatureInfo = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFocusRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34939,15 +34937,57 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onSortCompare = {
+				onDoubleClick = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateContainers = {
+				onDragStart = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				onDrag = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearNPCsFromMap = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounter = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		catalog_levellist = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35052,87 +35092,6 @@ stds.dnd4e = {
 				},
 			},
 		},
-		char_powerlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				rebuildCategories = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onUsedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				isIDPower = {
-					read_only = false,
-					other_fields = false,
-				},
-				isCDPower = {
-					read_only = false,
-					other_fields = false,
-				},
-				isHIPower = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateUsageCounts = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHeaderToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				isActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		char_skill = {
 			read_only = false,
 			fields = {
@@ -35157,126 +35116,6 @@ stds.dnd4e = {
 					other_fields = false,
 				},
 				setRadialOptions = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_totalwithability = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				sourceupdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAbilitySource = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weapondamage = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35345,56 +35184,6 @@ stds.dnd4e = {
 				},
 			},
 		},
-		charmini_powerabilitylist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				rebuild = {
-					read_only = false,
-					other_fields = false,
-				},
-				createEntries = {
-					read_only = false,
-					other_fields = false,
-				},
-				createEntryWindow = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		charmini_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		charmini_weapon = {
 			read_only = false,
 			fields = {
@@ -35440,7 +35229,33 @@ stds.dnd4e = {
 				},
 			},
 		},
-		clientct_entry = {
+		charsheet = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -35469,152 +35284,30 @@ stds.dnd4e = {
 				},
 			},
 		},
-		counter_power = {
+		critical = {
 			read_only = false,
 			fields = {
-				onInit = {
+				getPowerNode = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				getCreatureInfo = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				getActor = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkBounds = {
-					read_only = false,
-					other_fields = false,
-				},
-				getMaxValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setMaxValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCurrentValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCurrentValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				disable = {
-					read_only = false,
-					other_fields = false,
-				},
-				enable = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionWNDCChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameOrTokenUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTargeting = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDefensive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleSpacing = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEntrySectionToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_attack = {
-			read_only = false,
-			fields = {
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35626,31 +35319,27 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				getFocusRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
 				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActor = {
-					read_only = false,
-					other_fields = false,
-				},
-				rechargePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				usePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				showPowerDetails = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionAbility = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35662,15 +35351,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onDrag = {
+					read_only = false,
+					other_fields = false,
+				},
 				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35757,736 +35442,7 @@ stds.dnd4e = {
 				},
 			},
 		},
-		ct_menu = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCs = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		encounter = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				TypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCsFromMap = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEncounter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		encounter_sclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		item = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				TypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				StateChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		item_drop = {
-			read_only = false,
-			fields = {
-				addWeapon = {
-					read_only = false,
-					other_fields = false,
-				},
-				addArmor = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEquipment = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		item_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				VisDataCleared = {
-					read_only = false,
-					other_fields = false,
-				},
-				InvisDataAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		item_powerlistitem = {
-			read_only = false,
-			fields = {
-				getShortString = {
-					read_only = false,
-					other_fields = false,
-				},
-				getFullString = {
-					read_only = false,
-					other_fields = false,
-				},
-				activatePower = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				TypeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLockChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				StateChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_header = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateIDState = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_main_ability = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_powerlist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_skill = {
-			read_only = false,
-			fields = {
-				getCompletion = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_trap = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_trap_stats = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_vpower = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				updatePowerTitle = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateCategory = {
-					read_only = false,
-					other_fields = false,
-				},
-				buildPowerFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				addPowerField = {
-					read_only = false,
-					other_fields = false,
-				},
-				updatePowerFields = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_vpowerlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				rebuildCategories = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		parcel_header = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				totalMoneyTreasure = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_header = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				RechargeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_client = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_mainitem = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_ability = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_atk = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_skill = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_skill = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_encentry = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_enclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_partyentry = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_questentry = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_questlist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		sct_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		sct_skill = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				isCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				setRadialDeleteOption = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResultsChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		string_powerdesc = {
+		damage = {
 			read_only = false,
 			fields = {
 				getPowerNode = {
@@ -36561,11 +35517,1144 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getPowerNode = {
+			},
+		},
+		damagedice = {
+			read_only = false,
+			fields = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				getPowerNode = {
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		encounters = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				StateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_powerlistitem = {
+			read_only = false,
+			fields = {
+				getShortString = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFullString = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_stats_armor = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_stats_other = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_stats_weapon = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		itemlist = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				setHeadersVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				setPathVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		list = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				constructDefaultSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionWNDCChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameOrTokenUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleActive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDefensive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleSpacing = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEntrySectionToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		main_armor = {
+			read_only = false,
+			fields = {
+				addWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				addArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEquipment = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		main_weapon = {
+			read_only = false,
+			fields = {
+				addWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				addArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEquipment = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		name = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				StateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_creature = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_template = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_trap = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_combat_vehicle = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateIDState = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_trap_stats = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npc_vpower = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				updatePowerTitle = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCategory = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildPowerFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPowerField = {
+					read_only = false,
+					other_fields = false,
+				},
+				updatePowerFields = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		npcs = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		parcel_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				totalMoneyTreasure = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		partysheet_client = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		power_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				RechargeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		powerdesc = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_mainitem = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_skills = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_xp_encounterentry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_xp_partyentry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ps_xp_questentry = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		quest = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		quests = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_ability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_armortablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_equipmenttablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_feattablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_magicitemtablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_monstergroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_npcaltpower = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_npctemplate = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				TypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				StateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_power_custom = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_powertablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_weapontablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		sclist = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		sct_skill = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRadialDeleteOption = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onResultsChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		section = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				setHeadersVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				setPathVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skilllist = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				constructDefaultSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skillroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
+			read_only = false,
+			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		treasureparcel = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		value = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				rechargePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				showPowerDetails = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		weapons = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39289,7 +39378,100 @@ stds.dnd5e = {
 				},
 			},
 		},
-		char = {
+		ability_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		adventure_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		atkroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		base = {
+			read_only = false,
+			fields = {
+				slots = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+				addCounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCounterAt = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				slots = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		battle = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		carried = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -39300,57 +39482,28 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHRISOptionChanged = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				onLinkUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateAttunement = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_abilities = {
-			read_only = false,
-			fields = {
-				collapse = {
-					read_only = false,
-					other_fields = false,
-				},
-				expand = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
+				setLink = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		char_inventory = {
+		cb_genmethod = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHRENOptionChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateAttunement = {
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39368,150 +39521,6 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				onAttuneRelatedAttributeUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBonusChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onArmorChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_labelframetop = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				setIcon = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skill = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				isCustom = {
-					read_only = false,
-					other_fields = false,
-				},
-				setRadialOptions = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSkillReference = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39558,7 +39567,7 @@ stds.dnd5e = {
 				},
 			},
 		},
-		char_weaponlist = {
+		charsheet = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -39569,27 +39578,28 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onChildAdded = {
+				onHRISOptionChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onProfChanged = {
+				onMenuSelection = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+				updateAttunement = {
 					read_only = false,
 					other_fields = false,
 				},
-				onModeChanged = {
+			},
+		},
+		charsheet_abilities_contents = {
+			read_only = false,
+			fields = {
+				collapse = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
+				expand = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39597,7 +39607,28 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onFilter = {
+			},
+		},
+		charsheet_inventory_contents = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHRENOptionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAttunement = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39956,7 +39987,7 @@ stds.dnd5e = {
 				},
 			},
 		},
-		charwizard_abilities = {
+		charwizard_stats_contents = {
 			read_only = false,
 			fields = {
 				POINT_BUY_TOTAL = {
@@ -39997,74 +40028,20 @@ stds.dnd5e = {
 				},
 			},
 		},
-		charwizard_genmethod_combo = {
+		checkroll = {
 			read_only = false,
 			fields = {
-				onInit = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		charwizard_invlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onItemDeleted = {
-					read_only = false,
-					other_fields = false,
-				},
-				setInventory = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateInventory = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateCost = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				getInventorySortPath = {
-					read_only = false,
-					other_fields = false,
-				},
-				addInvItemToList = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		charwizard_itemlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				addItems = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		clientct_entry = {
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -40080,79 +40057,6 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				updateHealthDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionWNDCChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameOrTokenUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTargeting = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleAttributes = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleSpacing = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEntrySectionToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40231,35 +40135,22 @@ stds.dnd5e = {
 				},
 			},
 		},
-		ct_menu = {
+		desc = {
 			read_only = false,
 			fields = {
-				onInit = {
+				getPowerNode = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
+				getActor = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearNPCs = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct_power = {
-			read_only = false,
-			fields = {
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40271,27 +40162,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
 				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActor = {
-					read_only = false,
-					other_fields = false,
-				},
-				rechargePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				usePower = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionAbility = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40303,15 +40182,94 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onDrag = {
+					read_only = false,
+					other_fields = false,
+				},
 				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
-				dragging = {
+			},
+		},
+		encounters = {
+			read_only = false,
+			fields = {
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				dragging = {
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		inventory = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onItemDeleted = {
+					read_only = false,
+					other_fields = false,
+				},
+				setInventory = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateInventory = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCost = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateContainers = {
+					read_only = false,
+					other_fields = false,
+				},
+				getInventorySortPath = {
+					read_only = false,
+					other_fields = false,
+				},
+				addInvItemToList = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40333,6 +40291,94 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		itemlist = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItems = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		items = {
+			read_only = false,
+			fields = {
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemIcons = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		itemtemplate = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		itemtemplate_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40367,22 +40413,22 @@ stds.dnd5e = {
 				},
 			},
 		},
-		list_forge_items = {
+		list = {
 			read_only = false,
 			fields = {
-				onSortCompare = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+				onOptionWNDCChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onNameOrTokenUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40390,16 +40436,76 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateItemIcons = {
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleAttributes = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleActive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleSpacing = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEntrySectionToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		list_forge_templates = {
+		modifier = {
 			read_only = false,
 			fields = {
-				onSortCompare = {
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWheel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40407,19 +40513,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+				onDragStart = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateItemIcons = {
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40450,7 +40548,7 @@ stds.dnd5e = {
 				},
 			},
 		},
-		npc_main = {
+		npc_combat = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -40487,59 +40585,10 @@ stds.dnd5e = {
 				},
 			},
 		},
-		npc_skill = {
+		npcs = {
 			read_only = false,
 			fields = {
-				getCompletion = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		number_abilityscore = {
-			read_only = false,
-			fields = {
-				onInit = {
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40547,19 +40596,37 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
-				action = {
+				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragStart = {
+			},
+		},
+		partysheet_client = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDoubleClick = {
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		power = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -40655,68 +40722,7 @@ stds.dnd5e = {
 				},
 			},
 		},
-		power_counter = {
-			read_only = false,
-			fields = {
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				canCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_group = {
+		power_group_header = {
 			read_only = false,
 			fields = {
 				onToggle = {
@@ -40806,76 +40812,6 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				sDisplayMode = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_list = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildWindowAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEnter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHeaderToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		power_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSummaryChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -41023,18 +40959,22 @@ stds.dnd5e = {
 				},
 			},
 		},
-		ps_client = {
+		power_stats = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				onSummaryChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onOptionChanged = {
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -41057,59 +40997,7 @@ stds.dnd5e = {
 				},
 			},
 		},
-		ps_roll_atk = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_check = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_save = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_skill = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_encentry = {
+		ps_xp_encounterentry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -41117,23 +41005,6 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_enclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -41152,7 +41023,7 @@ stds.dnd5e = {
 				},
 			},
 		},
-		ps_xp_questlist = {
+		quests = {
 			read_only = false,
 			fields = {
 				onListChanged = {
@@ -41173,7 +41044,140 @@ stds.dnd5e = {
 				},
 			},
 		},
-		ref_item_main = {
+		ref_ability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_adventure = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_background_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_backgroundfeature_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_class_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_classability_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_classfeature_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_classproficiency_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_feat_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_magicitem_stats = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -41190,31 +41194,353 @@ stds.dnd5e = {
 				},
 			},
 		},
-		ref_summary = {
+		ref_race_header = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
-		string_powerdesc = {
+		ref_racialtrait_header = {
 			read_only = false,
 			fields = {
-				getPowerNode = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActor = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				onValueChanged = {
+			},
+		},
+		ref_skill_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_subrace_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_subracialtrait_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_adventuringgeartablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_armortablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_background = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_backgroundfeature = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_class = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_classability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_classfeature = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_classproficiency = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_feat = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_featgroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_mountsandotheranimalstablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_race = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_racialtrait = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_skill = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_spell = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_subrace = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_subracialtrait = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_waterbornevehiclestablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_weapontablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		saveroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skill_item = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCustom = {
+					read_only = false,
+					other_fields = false,
+				},
+				setRadialOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skillroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				constructDefaultSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillReference = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCompletion = {
 					read_only = false,
 					other_fields = false,
 				},
 				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -41230,11 +41556,93 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
 				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		templates = {
+			read_only = false,
+			fields = {
+				onSortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemIcons = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		value = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				rechargePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAbility = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -41246,11 +41654,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrag = {
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDragEnd = {
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -43272,10 +43684,149 @@ stds.dnd35e = {
 				},
 			},
 		},
-		char = {
+		abilityroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		atk = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		babgrp = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionBAB = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionGRP = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				hovery = {
+					read_only = false,
+					other_fields = false,
+				},
+				hoverx = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		button_menu = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -43283,24 +43834,36 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
-		char_actions = {
+		carried = {
 			read_only = false,
 			fields = {
-				onDisplayChanged = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onModeChanged = {
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateSpellCounters = {
+				onButtonPress = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDisplayChanged = {
+				onLinkUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				setLink = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -43338,163 +43901,6 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				getEditMode = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_classlevelsummary = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateValue = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_combat = {
-			read_only = false,
-			fields = {
-				isInitialized = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSystemChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_inv = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStrengthChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSizeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEncumbranceLimitChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_invlist = {
-			read_only = false,
-			fields = {
-				setSortLock = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onBonusChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onArmorChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCarriedChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateContainers = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_main = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onLevelChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSystemChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHealthChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -43553,101 +43959,6 @@ stds.dnd35e = {
 				},
 			},
 		},
-		char_skilllink = {
-			read_only = false,
-			fields = {
-				getSkillDescNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSkillDataUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				constructDefaultSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNewInstance = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_totalwithability = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				sourceupdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAbilitySource = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		char_weapon = {
 			read_only = false,
 			fields = {
@@ -43681,97 +43992,6 @@ stds.dnd35e = {
 				},
 			},
 		},
-		char_weaponattack = {
-			read_only = false,
-			fields = {
-				onSourceUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponfullattack = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateWidgets = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateAttackFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		char_weaponlist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onChildAdded = {
-					read_only = false,
-					other_fields = false,
-				},
-				onModeChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
 		charmini_skill = {
 			read_only = false,
 			fields = {
@@ -43788,27 +44008,6 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				updateName = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		charmini_skilllist = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStatUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -43843,7 +44042,167 @@ stds.dnd35e = {
 				},
 			},
 		},
-		clientct_entry = {
+		charsheet = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_actions = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_combat = {
+			read_only = false,
+			fields = {
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSystemChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_inventory = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStrengthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSizeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEncumbranceLimitChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSystemChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini_actions = {
+			read_only = false,
+			fields = {
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onModeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellCounters = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheetmini_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLevelChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSystemChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealthChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		client_ct_entry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -43859,144 +44218,6 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				updateHealthDisplay = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		counter_spell = {
-			read_only = false,
-			fields = {
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onWheel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				adjustCounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				canCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setPreparedValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCastValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ct = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClose = {
-					read_only = false,
-					other_fields = false,
-				},
-				onOptionWNDCChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onNameOrTokenUpdated = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSortCompare = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleVisibility = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleTargeting = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleActive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleDefensive = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleSpacing = {
-					read_only = false,
-					other_fields = false,
-				},
-				toggleEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				onVisibilityToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onEntrySectionToggle = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44075,10 +44296,44 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ct_menu = {
+		domainspells = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		encounters = {
+			read_only = false,
+			fields = {
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		fullatk = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44090,20 +44345,35 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				getActor = {
 					read_only = false,
 					other_fields = false,
 				},
-				clearNPCs = {
+				actionDamage = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		item_drop = {
-			read_only = false,
-			fields = {
-				onDrop = {
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				dragging = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44134,10 +44404,26 @@ stds.dnd35e = {
 				},
 			},
 		},
-		list_spell = {
+		list = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onOptionWNDCChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onNameOrTokenUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44145,15 +44431,65 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
+				onSortCompare = {
 					read_only = false,
 					other_fields = false,
 				},
-				onSpellCounterUpdate = {
+				onHotkey = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEntry = {
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleActive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDefensive = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleSpacing = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEntrySectionToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		main = {
+			read_only = false,
+			fields = {
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		name = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44161,61 +44497,19 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onFilter = {
+				onNavigateDown = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				onNavigateUp = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		list_spellclass = {
-			read_only = false,
-			fields = {
-				onInit = {
+				onGainFocus = {
 					read_only = false,
 					other_fields = false,
 				},
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellAddToLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		list_spelllevel = {
-			read_only = false,
-			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEntry = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
+				onLoseFocus = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44250,68 +44544,7 @@ stds.dnd35e = {
 				},
 			},
 		},
-		npc_babgrp = {
-			read_only = false,
-			fields = {
-				onValueChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseComponents = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHover = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHoverUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActor = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionBAB = {
-					read_only = false,
-					other_fields = false,
-				},
-				actionGRP = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
-				hovery = {
-					read_only = false,
-					other_fields = false,
-				},
-				hoverx = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		npc_main = {
+		npc_combat_creature = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -44328,50 +44561,35 @@ stds.dnd35e = {
 				},
 			},
 		},
-		npc_skill = {
+		npc_combat_trap = {
 			read_only = false,
 			fields = {
-				getCompletion = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				parseComponents = {
+				updateControl = {
 					read_only = false,
 					other_fields = false,
 				},
-				onChar = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHover = {
+			},
+		},
+		npc_combat_vehicle = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onHoverUpdate = {
+				updateControl = {
 					read_only = false,
 					other_fields = false,
 				},
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDoubleClick = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDragEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44414,7 +44632,20 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ps_client = {
+		partyatkroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		partysheet_client = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -44448,67 +44679,7 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ps_roll_ability = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_atk = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_save = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_roll_skill = {
-			read_only = false,
-			fields = {
-				action = {
-					read_only = false,
-					other_fields = false,
-				},
-				onButtonPress = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillLookup = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillLookup = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_skill = {
+		ps_skills = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -44529,7 +44700,7 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ps_skillitem = {
+		ps_skillsitem = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -44542,7 +44713,7 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ps_xp_encentry = {
+		ps_xp_encounterentry = {
 			read_only = false,
 			fields = {
 				onInit = {
@@ -44550,23 +44721,6 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				onMenuSelection = {
-					read_only = false,
-					other_fields = false,
-				},
-			},
-		},
-		ps_xp_enclist = {
-			read_only = false,
-			fields = {
-				onListChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				deleteAll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44585,7 +44739,7 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ps_xp_questlist = {
+		quests = {
 			read_only = false,
 			fields = {
 				onListChanged = {
@@ -44606,26 +44760,30 @@ stds.dnd35e = {
 				},
 			},
 		},
-		ref_list_spell = {
+		ref_class_header = {
 			read_only = false,
 			fields = {
-				onFilter = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		spell = {
+		ref_classability_header = {
 			read_only = false,
 			fields = {
-				setFilter = {
-					read_only = false,
-					other_fields = false,
-				},
-				getFilter = {
-					read_only = false,
-					other_fields = false,
-				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -44634,7 +44792,296 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDisplayChanged = {
+			},
+		},
+		ref_feat_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_proficiency_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_race_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_racialtrait_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ref_skill_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_armortablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_equipmenttablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_spellgroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reference_weapontablegroup = {
+			read_only = false,
+			fields = {
+				showFullHeaders = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referenceclass = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referenceclassability = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referencefeat = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referenceproficiency = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referencerace = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referenceracialtrait = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		referenceskill = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		saveroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		senses = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		shortcut = {
+			read_only = false,
+			fields = {
+				getSkillDescNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skillroll = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSkillLookup = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSkillLookup = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		skills = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44642,35 +45089,31 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				createAction = {
+				onHoverUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				onMenuSelection = {
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
-				toggleDetail = {
+				onDoubleClick = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDescription = {
+				onDragStart = {
 					read_only = false,
 					other_fields = false,
 				},
-				activatePower = {
+				onDragEnd = {
 					read_only = false,
 					other_fields = false,
 				},
-				usePower = {
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
-				sDisplayMode = {
-					read_only = false,
-					other_fields = false,
-				},
-				setFilter = {
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44837,7 +45280,190 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		spell_class_mini = {
+			read_only = false,
+			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerMenuItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStatUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				isInitialized = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSheetMode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCasterTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSpellView = {
+					read_only = false,
+					other_fields = false,
+				},
+				performFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				showSpellsForLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item_mini = {
+			read_only = false,
+			fields = {
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				createAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				activatePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				usePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDisplayMode = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44882,13 +45508,80 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+			},
+		},
+		spell_level_mini = {
+			read_only = false,
+			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				setFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateLabel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCounterUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
 			},
 		},
-		string_attackline = {
+		spelldesc = {
+			read_only = false,
+			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spelldesc_header = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordTypeAndDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				initRecordType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		value = {
 			read_only = false,
 			fields = {
 				onValueChanged = {
@@ -44940,10 +45633,6 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				dragging = {
-					read_only = false,
-					other_fields = false,
-				},
-				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
