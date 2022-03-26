@@ -22,6 +22,7 @@ stds.fg = {
     Utility = {other_fields = true},
   },
   globals = {
+    windowlist = {other_fields = true},
     window = {other_fields = true},
     super = {other_fields = true},
     self = {other_fields = true},
@@ -51,6 +52,7 @@ stds.fgfunctions = {
         "getName",
         "getPath",
         "registerOptions",
+        "registerMenuItem",
     },
     globals = {
         "onInit",
