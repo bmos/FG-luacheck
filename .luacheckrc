@@ -2133,6 +2133,214 @@ stds.bmosextraplanarcontainers = {
 				},
 			},
 		},
+		capacityweight = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		contentsvolume = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		depth = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		extraplanarcontents = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		internal_depth = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		internal_length = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		internal_volume = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getVolume = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		internal_width = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		length = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		volume = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getVolume = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		weight = {
+			read_only = false,
+			fields = {
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		width = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
 	}
 }
 
@@ -2178,6 +2386,303 @@ stds.bmosammunitionmanager = {
 					other_fields = false,
 				},
 				tLoadWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ammopicker = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		attack1 = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		attack2 = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		attack3 = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		attack4 = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		attacks = {
+			read_only = false,
+			fields = {
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		char_weapon = {
+			read_only = false,
+			fields = {
+				onDamageAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDataChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasLoadAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				automateAmmo = {
+					read_only = false,
+					other_fields = false,
+				},
+				onReloadAction = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		char_weapon_editor_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDataChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charmini_weapon = {
+			read_only = false,
+			fields = {
+				hasLoadAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				automateAmmo = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDataChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasLoadAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleDetail = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTypeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		isloaded = {
+			read_only = false,
+			fields = {
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		maxammo = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLinkUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				setLink = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		missedshots = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLinkUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				setLink = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		recoverammo = {
+			read_only = false,
+			fields = {
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
