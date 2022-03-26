@@ -69,6 +69,2242 @@ stds.fgfunctions = {
 
 std = 'lua51+fg+fgfunctions+corerpg+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2'
 
+stds.llisandurpartyitemidentified = {
+	globals = {
+		PartyInventoryIDOptions = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosspellfailure = {
+	globals = {
+		SpellFailClasses = {
+			read_only = false,
+			fields = {
+				tArcaneClass_HeavyArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				tArcaneClass_MedArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				tArcaneClass_LtArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				tArcaneClass_Shield = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		SpellFailure = {
+			read_only = false,
+			fields = {
+				arcaneSpellFailure = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosspellformattingimprovement = {
+	globals = {
+		SpellFormatting = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		description_full = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosdrainandpermanentbonuses = {
+	globals = {
+		DrainAndPermanentBonuses = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charismabase = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charismaperm = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_abilities_perms = {
+			read_only = false,
+			fields = {
+				onPermUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		constitutionbase = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		constitutionperm = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		dexteritybase = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		dexterityperm = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		intelligencebase = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		intelligenceperm = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		strengthbase = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		strengthperm = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		wisdombase = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		wisdomperm = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosextendedacbonustypes = {
+	globals = {
+		NatArmBon = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefenseStatMod = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefenseStatMod = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.kentmcculloughauraeffects = {
+	globals = {
+		EffectManagerAURA = {
+			read_only = false,
+			fields = {
+				OOB_MSGTYPE_AURATOKENMOVE = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_AURAAPPLYSILENT = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_AURAEXPIRESILENT = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyTokenMove = {
+					read_only = false,
+					other_fields = false,
+				},
+				auraOnWindowOpened = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyExpireSilent = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkDeletedAuraEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkAuraAlreadyEffecting = {
+					read_only = false,
+					other_fields = false,
+				},
+				customCheckConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAuras = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAurasForNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySilent = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkAuraApplicationAndAddOrRemove = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleTokenMovement = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyEffectSilent = {
+					read_only = false,
+					other_fields = false,
+				},
+				expireEffectSilent = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleExpireEffectSilent = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				shiftedDelta = {
+					read_only = false,
+					other_fields = false,
+				},
+				shiftedDelta = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmoscoinsweight = {
+	globals = {
+		CoinsWeight = {
+			read_only = false,
+			fields = {
+				COINS_INVENTORY_ITEM_NAME = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosmaladytracker = {
+	globals = {
+		ActionDiseaseSave = {
+			read_only = false,
+			fields = {
+				OOB_MSGTYPE_APPLYDISEASESAVE = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				modSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ActionDiseaseTimeRoll = {
+			read_only = false,
+			fields = {
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		DiseaseTracker = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				round = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateFrequency = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateDuration = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateOnset = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseDiseases = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_diseasetracker = {
+			read_only = false,
+			fields = {
+				addDisease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		diseasedesc_stats = {
+			read_only = false,
+			fields = {
+				generateOnsetString = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateDurationString = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateSaveString = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateFrequencyString = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		savecount_consec = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		savesreq = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.dmfirmymoontracker = {
+	globals = {
+		MoonManager = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPhaseName = {
+					read_only = false,
+					other_fields = false,
+				},
+				initializeDatabase = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateEpochDay = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMoons = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortMoons = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculatePhase = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEpochDay = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		calendar_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildEvents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEventsChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setSelectedDate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLogEntryToSelected = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLogEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeLogEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSetButtonPressed = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onYearChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCalendarChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				populateMoonPhaseDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				setMoonFrame = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMoonCountUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		moontracker_configuration = {
+			read_only = false,
+			fields = {
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerCloseCallback = {
+					read_only = false,
+					other_fields = false,
+				},
+				unregisterCloseCallback = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.pr6i6e6stbmospokeycameanduniquecorunkailandjustinfreitasclockadjuster = {
+	globals = {
+		LongTermEffects = {
+			read_only = false,
+			fields = {
+				advanceRoundsOnTimeChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		TimeManager = {
+			read_only = false,
+			fields = {
+				CAL_CLOCKADJUSTERNOTIFY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_CHK_DAY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_CUR_DAY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_CUR_HOUR = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_CUR_MIN = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_CUR_MONTH = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_CUR_YEAR = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_NEWCAMPAIGN = {
+					read_only = false,
+					other_fields = false,
+				},
+				CAL_DATEINMIN = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setStartTime = {
+					read_only = false,
+					other_fields = false,
+				},
+				getStartTime = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTimerStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTimerStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCurrentDate = {
+					read_only = false,
+					other_fields = false,
+				},
+				compareDates = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasTimePassed = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCurrentDateinMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				isTimeGreaterThan = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTimeDifference = {
+					read_only = false,
+					other_fields = false,
+				},
+				isXbiggerThanY = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertSecondstoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertHourstoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertMinutestoHours = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertHourstoDays = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertDaystoHours = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertMinutestoDays = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertDaystoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertMonthtoHours = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertMonthtoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertYeartoHours = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertYeartoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertYearsnowtoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertMonthssnowtoMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDaysInMonth = {
+					read_only = false,
+					other_fields = false,
+				},
+				isLeapYear = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildEvents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEventsChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setSelectedDate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLogEntryToSelected = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLogEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeLogEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSetButtonPressed = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDateChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onYearChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCalendarChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDateinMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDays = {
+					read_only = false,
+					other_fields = false,
+				},
+				nHoursTotaled = {
+					read_only = false,
+					other_fields = false,
+				},
+				nMinutesTotaled = {
+					read_only = false,
+					other_fields = false,
+				},
+				bisLeapYear = {
+					read_only = false,
+					other_fields = false,
+				},
+				nYearinHours = {
+					read_only = false,
+					other_fields = false,
+				},
+				nYearinMinutes = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeOld = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		currentday = {
+			read_only = false,
+			fields = {
+				onSourceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		currentminute = {
+			read_only = false,
+			fields = {
+				onSourceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		currentmonth = {
+			read_only = false,
+			fields = {
+				onSourceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		currentyear = {
+			read_only = false,
+			fields = {
+				onSourceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		openevents = {
+			read_only = false,
+			fields = {
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		openreminders = {
+			read_only = false,
+			fields = {
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		opentravelmanager = {
+			read_only = false,
+			fields = {
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmospartyinventoryweight = {
+	globals = {
+		ParcelWeight = {
+			read_only = false,
+			fields = {
+				calculateItemWeight = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateCoinWeight = {
+					read_only = false,
+					other_fields = false,
+				},
+				round = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		maxweight = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		totalweight = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		treasureparcel = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.faelwenwithmodificationsbyrmilmineandbmoscustomizeditemgenerator = {
+	globals = {
+		MagicItemGenerator = {
+			read_only = false,
+			fields = {
+				aSpecialMaterials = {
+					read_only = false,
+					other_fields = false,
+				},
+				aMeleeWeaponAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRangedWeaponAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAmmunitionAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aArmorAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aShieldAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aItemSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				aDamageDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				aPositionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAltDamageDice1 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAltDamageDice2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAltDamageDice3 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aWeightMultiplier = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateMagicItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				cleanAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityList = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemType = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkComboboxes = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForAbilitySelectionError = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				areExclusive = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEnhancementBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageTypeByEnhancementBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				populateItemField = {
+					read_only = false,
+					other_fields = false,
+				},
+				contains = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonusAndCost = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMaterialData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMasterworkPrice = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEnchancementCost = {
+					read_only = false,
+					other_fields = false,
+				},
+				figureAbilityName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemNewName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpecialAbilityData = {
+					read_only = false,
+					other_fields = false,
+				},
+				changeDamageBySizeDifference = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageString = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEffectsForAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCritical = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRangedEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAmmoEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponTypeName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeightBySize = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyMissingTypeData = {
+					read_only = false,
+					other_fields = false,
+				},
+				sEnhancementBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSpecialMaterial = {
+					read_only = false,
+					other_fields = false,
+				},
+				sItemSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				iMasterworkPrice = {
+					read_only = false,
+					other_fields = false,
+				},
+				bDoubleProperty = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		MagicPropertiesWindow = {
+			read_only = false,
+			fields = {
+				aSpecialMaterials = {
+					read_only = false,
+					other_fields = false,
+				},
+				aMeleeWeaponAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRangedWeaponAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAmmunitionAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aArmorAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aShieldAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				aItemSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				aDamageDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				aPositionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAltDamageDice1 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAltDamageDice2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAltDamageDice3 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aWeightMultiplier = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateMagicItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				cleanAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityList = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemType = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkComboboxes = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForAbilitySelectionError = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				areExclusive = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEnhancementBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageTypeByEnhancementBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				populateItemField = {
+					read_only = false,
+					other_fields = false,
+				},
+				contains = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonusAndCost = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMaterialData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMasterworkPrice = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEnchancementCost = {
+					read_only = false,
+					other_fields = false,
+				},
+				figureAbilityName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemNewName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpecialAbilityData = {
+					read_only = false,
+					other_fields = false,
+				},
+				changeDamageBySizeDifference = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageString = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEffectsForAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCritical = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRangedEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAmmoEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponTypeName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeightBySize = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyMissingTypeData = {
+					read_only = false,
+					other_fields = false,
+				},
+				sEnhancementBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSpecialMaterial = {
+					read_only = false,
+					other_fields = false,
+				},
+				sItemSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				iMasterworkPrice = {
+					read_only = false,
+					other_fields = false,
+				},
+				bDoubleProperty = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		button_generate = {
+			read_only = false,
+			fields = {
+				tArcaneClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				aWandLevelCosts = {
+					read_only = false,
+					other_fields = false,
+				},
+				aScrollLevelCosts = {
+					read_only = false,
+					other_fields = false,
+				},
+				aPotionLevelCosts = {
+					read_only = false,
+					other_fields = false,
+				},
+				onButtonPress = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				bSection4 = {
+					read_only = false,
+					other_fields = false,
+				},
+				bSection4 = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.llisandurenhanceditems = {
+	globals = {
+		item_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmossanitytracker = {
+	globals = {
+		EffectManager35EDS = {
+			read_only = false,
+			fields = {
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		SanityTracker = {
+			read_only = false,
+			fields = {
+				updateSanityScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				addMadness = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmoslivehitpoints = {
+	globals = {
+		EffectManager35EDS = {
+			read_only = false,
+			fields = {
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		LiveHP = {
+			read_only = false,
+			fields = {
+				calculateHp = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkEffectRelevance = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		NPCLiveHP = {
+			read_only = false,
+			fields = {
+				processHd = {
+					read_only = false,
+					other_fields = false,
+				},
+				setHpTotal = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		PCLiveHP = {
+			read_only = false,
+			fields = {
+				setHpTotal = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyClassStats_new = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFavoredClassBonusSelect_new = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.rmilmineandbmosadvanceditemactions = {
+	globals = {
+		CharManagerACIM = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				bIsShocking = {
+					read_only = false,
+					other_fields = false,
+				},
+				sStatMult = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		InvManagerACIM = {
+			read_only = false,
+			fields = {
+				getSpellSet = {
+					read_only = false,
+					other_fields = false,
+				},
+				inventoryChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onItemChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				number_name_end = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.temporaryhitpointseffects = {
+	globals = {
+		TempHitpointEffects = {
+			read_only = false,
+			fields = {
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorEndTurn_new = {
+					read_only = false,
+					other_fields = false,
+				},
+				onActorTurnStart_new = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosextrastattosaves = {
+	globals = {
+		ActionSaveEStS = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		PrepPaladin = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		fortitudemisc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		fortitudestat2 = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reflexmisc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		reflexstat2 = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		willmisc = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		willstat2 = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmositemdurability = {
+	globals = {
+		ItemDurabilityBroken = {
+			read_only = false,
+			fields = {
+				handleBrokenItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ItemDurabilityDamage = {
+			read_only = false,
+			fields = {
+				splitDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ItemDurabilityHHP = {
+			read_only = false,
+			fields = {
+				calculateHHP = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ItemDurabilityInfo = {
+			read_only = false,
+			fields = {
+				aMaterials = {
+					read_only = false,
+					other_fields = false,
+				},
+				tItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				tSizes = {
+					read_only = false,
+					other_fields = false,
+				},
+				fillAttributes = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ac = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		bonus = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		checkpenalty = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		item_main = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				VisDataCleared = {
+					read_only = false,
+					other_fields = false,
+				},
+				InvisDataAdded = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemType = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosupgradenpcactions = {
+	globals = {
+		spell_item = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		spell_item_mini = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDisplayChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosextraplanarcontainers = {
+	globals = {
+		ExtraplanarContainers = {
+			read_only = false,
+			fields = {
+				tExtraplanarContainers = {
+					read_only = false,
+					other_fields = false,
+				},
+				tContainers = {
+					read_only = false,
+					other_fields = false,
+				},
+				isAnyContainer = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosammunitionmanager = {
+	globals = {
+		AmmunitionManager = {
+			read_only = false,
+			fields = {
+				tLoadWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAmmoNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponName = {
+					read_only = false,
+					other_fields = false,
+				},
+				countMissedShots = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAmmoRemaining = {
+					read_only = false,
+					other_fields = false,
+				},
+				ammoTracker = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateMargin = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				tLoadWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
+				tLoadWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
+stds.bmosencumbrancepenalties = {
+	globals = {
+		CharManagerTE = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		EffectManager35EDS = {
+			read_only = false,
+			fields = {
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		TEGlobals = {
+			read_only = false,
+			fields = {
+				tClumsyArmorTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				nOverloadedMaxStat = {
+					read_only = false,
+					other_fields = false,
+				},
+				nHeavyMaxStat = {
+					read_only = false,
+					other_fields = false,
+				},
+				nHeavyCheckPenalty = {
+					read_only = false,
+					other_fields = false,
+				},
+				nMediumMaxStat = {
+					read_only = false,
+					other_fields = false,
+				},
+				nMediumCheckPenalty = {
+					read_only = false,
+					other_fields = false,
+				},
+				tEncumbranceSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		armorcheckpenalty = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		armormaxstatbonus = {
+			read_only = false,
+			fields = {
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		charsheet_inventory = {
+			read_only = false,
+			fields = {
+				onEncumbranceLimitChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+	}
+}
+
 stds.pfrpg2 = {
 	globals = {
 		ActionAbility = {
