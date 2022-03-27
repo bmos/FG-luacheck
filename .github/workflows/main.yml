@@ -247,7 +247,7 @@ jobs:
     
     # Processing
     - name: Generate new .luacheckrc
-      uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@v1
+      uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
       with:
         std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2'
 
