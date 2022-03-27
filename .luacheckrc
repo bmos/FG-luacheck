@@ -2163,6 +2163,10 @@ stds.bmosextraplanarcontainers = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		contentsvolume = {
@@ -2173,6 +2177,10 @@ stds.bmosextraplanarcontainers = {
 					other_fields = false,
 				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2207,6 +2215,10 @@ stds.bmosextraplanarcontainers = {
 					other_fields = false,
 				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2333,6 +2345,10 @@ stds.bmosextraplanarcontainers = {
 		weight = {
 			read_only = false,
 			fields = {
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 				update = {
 					read_only = false,
 					other_fields = false,
@@ -7290,6 +7306,10 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		babgrp = {
@@ -7373,6 +7393,10 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -9012,6 +9036,10 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_psxp_quests = {
@@ -9030,6 +9058,10 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -9676,6 +9708,10 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		miscellaneous = {
@@ -9694,6 +9730,10 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -10401,6 +10441,10 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -11542,6 +11586,10 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -16363,6 +16411,10 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		button_ct_shipmenu = {
@@ -16385,6 +16437,10 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -16439,6 +16495,10 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18942,6 +19002,10 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_psxp_quests = {
@@ -18960,6 +19024,10 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19120,6 +19188,10 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		mpsummary = {
@@ -19203,6 +19275,10 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19515,6 +19591,10 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		number_charweaponfullattack = {
@@ -19582,6 +19662,10 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20009,6 +20093,10 @@ stds.sfrpg = {
 					other_fields = false,
 				},
 				dragging = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -25671,6 +25759,10 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				aHyperEntries = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		advanced_effect_editor_main = {
@@ -26270,6 +26362,10 @@ stds.dnd2e = {
 					other_fields = false,
 				},
 				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27019,6 +27115,10 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				aSourceRecords = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		hypertext = {
@@ -27608,6 +27708,10 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_ctbox_host = {
@@ -27678,6 +27782,10 @@ stds.dnd2e = {
 					other_fields = false,
 				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27785,6 +27893,10 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_psxp_quests = {
@@ -27803,6 +27915,10 @@ stds.dnd2e = {
 					other_fields = false,
 				},
 				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29615,6 +29731,10 @@ stds.dnd2e = {
 					other_fields = false,
 				},
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35703,6 +35823,26 @@ stds.corerpg = {
 		base = {
 			read_only = false,
 			fields = {
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
 				slots = {
 					read_only = false,
 					other_fields = false,
@@ -35727,19 +35867,7 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClickDown = {
-					read_only = false,
-					other_fields = false,
-				},
-				onClickRelease = {
-					read_only = false,
-					other_fields = false,
-				},
 				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				slots = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35753,6 +35881,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				updateStateGraphic = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36186,6 +36318,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		button_record_locked = {
@@ -36211,6 +36347,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		button_refmanual_locked = {
@@ -36233,6 +36373,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				notify = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36916,6 +37060,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		chatwindow_step = {
@@ -36934,6 +37082,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDiceLanded = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -38084,6 +38236,14 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		image = {
@@ -38131,6 +38291,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -38504,6 +38668,26 @@ stds.corerpg = {
 		label = {
 			read_only = false,
 			fields = {
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEnter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGainFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -38601,6 +38785,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list = {
@@ -38634,15 +38822,51 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onNameOrTokenUpdated = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleVisibility = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleSpacing = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggleEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisibilityToggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEntrySectionToggle = {
+					read_only = false,
+					other_fields = false,
+				},
 				onNameUpdated = {
 					read_only = false,
 					other_fields = false,
 				},
 				onOptionCTSIChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				onHotkey = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -38687,6 +38911,14 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				buildWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				addIdentity = {
+					read_only = false,
+					other_fields = false,
+				},
+				activeidentities = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -38842,6 +39074,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_ctbox_host = {
@@ -38903,6 +39139,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_ctsection_effect = {
@@ -38929,6 +39169,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				reset = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39070,6 +39314,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -39501,6 +39749,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onMenuSelection = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		masterindexcategory = {
@@ -39560,6 +39812,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				initialize = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -41585,6 +41841,10 @@ stds.corerpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		string_columnh = {
@@ -41678,6 +41938,10 @@ stds.corerpg = {
 					other_fields = false,
 				},
 				onLoseFocus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45479,6 +45743,10 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_psxp_quests = {
@@ -45497,6 +45765,10 @@ stds.dnd4e = {
 					other_fields = false,
 				},
 				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -50650,6 +50922,10 @@ stds.dnd5e = {
 		itemtemplate = {
 			read_only = false,
 			fields = {
+				onLockChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
@@ -50998,6 +51274,10 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_powers = {
@@ -51081,6 +51361,10 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_psxp_quests = {
@@ -51099,6 +51383,10 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -54486,6 +54774,14 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		babgrp = {
@@ -54547,6 +54843,10 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		button_ct_menu = {
@@ -54569,6 +54869,10 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				clearNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -55201,6 +55505,10 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		hnx = {
@@ -55530,6 +55838,10 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		list_psxp_quests = {
@@ -55548,6 +55860,10 @@ stds.dnd35e = {
 					other_fields = false,
 				},
 				deleteAll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -56388,6 +56704,50 @@ stds.dnd35e = {
 		senses = {
 			read_only = false,
 			fields = {
+				getCompletion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseComponents = {
+					read_only = false,
+					other_fields = false,
+				},
+				onChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHover = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
