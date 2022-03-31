@@ -22864,11 +22864,27 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23000,7 +23016,7 @@ stds.pfrpg2 = {
 		hpancestry = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onSourceUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23008,7 +23024,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onWheel = {
+				sourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateModifier = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23016,7 +23036,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getModifier = {
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWheel = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				sources = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23024,7 +23060,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateModifier = {
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getModifier = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23033,7 +23085,7 @@ stds.pfrpg2 = {
 		hpclassperlevel = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onSourceUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23041,7 +23093,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onWheel = {
+				sourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateModifier = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23049,7 +23105,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getModifier = {
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWheel = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				sources = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -23057,7 +23129,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateModifier = {
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getModifier = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31005,7 +31093,7 @@ stds.dnd4e = {
 		criticaldice = {
 			read_only = false,
 			fields = {
-				onDragStart = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31014,6 +31102,14 @@ stds.dnd4e = {
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31234,7 +31330,7 @@ stds.dnd4e = {
 		damagedice = {
 			read_only = false,
 			fields = {
-				onDragStart = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -31243,6 +31339,14 @@ stds.dnd4e = {
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -32519,11 +32623,27 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -37228,7 +37348,7 @@ stds.dnd2e = {
 		classlevel = {
 			read_only = false,
 			fields = {
-				onInit = {
+				labelwidget = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -37244,11 +37364,15 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
-				update = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -49035,7 +49159,11 @@ stds.dnd35e = {
 		touchacstatmod = {
 			read_only = false,
 			fields = {
-				onSourceUpdate = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				sourceUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -49043,11 +49171,19 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onClose = {
+				addAbilitySource = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonus = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -49055,11 +49191,31 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addAbilitySource = {
+				sources = {
 					read_only = false,
 					other_fields = false,
 				},
-				getAbilityBonus = {
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -54425,6 +54581,18 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
 				update = {
 					read_only = false,
 					other_fields = false,
@@ -56779,11 +56947,15 @@ stds.sfrpg = {
 		computer = {
 			read_only = false,
 			fields = {
-				onInit = {
+				labelwidget = {
 					read_only = false,
 					other_fields = false,
 				},
 				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -57630,6 +57802,10 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
 				isEmpty = {
 					read_only = false,
 					other_fields = false,
@@ -57638,7 +57814,19 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 				nBLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -58344,11 +58532,15 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onClickRelease = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
+				labelwidget = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -60909,11 +61101,27 @@ stds.sfrpg = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDrop = {
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
 				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				onListChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -62578,6 +62786,18 @@ stds.sfrpg = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
 					read_only = false,
 					other_fields = false,
 				},
