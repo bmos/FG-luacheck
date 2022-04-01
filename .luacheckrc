@@ -94,7 +94,7 @@ stds.dnd5e = {
 		ActionAttack = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onPostAttackResolve = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -103,10 +103,6 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				OOB_MSGTYPE_APPLYATK = {
-					read_only = false,
-					other_fields = false,
-				},
-				getThrownRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -134,15 +130,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performThrownRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				performCombatManRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCombatManRoll = {
+				setCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -162,19 +150,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCritState = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyAttack = {
+				notifyApplyHRFC = {
 					read_only = false,
 					other_fields = false,
 				},
-				onPostAttackResolve = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMissChance = {
+				aCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -182,7 +166,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyHRFC = {
+				applyAttack = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -191,15 +175,35 @@ stds.dnd5e = {
 		ActionCheck = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performPartySheetRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionDamage = {
 			read_only = false,
 			fields = {
-				encodeDamageText = {
-					read_only = false,
-					other_fields = false,
-				},
 				handleApplyDamage = {
 					read_only = false,
 					other_fields = false,
@@ -212,7 +216,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				decodeAndOrClauses = {
+				getDamageState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -220,7 +224,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				matchAndOrClauses = {
+				decodeDamageText = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -237,10 +241,6 @@ stds.dnd5e = {
 					other_fields = false,
 				},
 				applyDmgEffectsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyConditionsToModRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -264,35 +264,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				nDamageAdjust = {
-					read_only = false,
-					other_fields = false,
-				},
 				handleApplyDamageState = {
 					read_only = false,
 					other_fields = false,
 				},
-				nNonlethalDmgAmount = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				bResist = {
-					read_only = false,
-					other_fields = false,
-				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				bVulnerable = {
-					read_only = false,
-					other_fields = false,
-				},
-				setDamageState = {
+				checkReductionType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -300,55 +276,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				notifyApplyDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				encodeDamageTypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyFailedStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				messageDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getParenDepth = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				decodeDamageText = {
-					read_only = false,
-					other_fields = false,
-				},
-				modStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageAdjust = {
+				applyFixedDamageOptionToModRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -356,7 +284,55 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performStabilizationRoll = {
+				modDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				setupModRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageAdjust = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkNumericalReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkNumericalReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyTargetedDmgEffectsToDamageOutput = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyDamage = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -364,7 +340,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyTargetedDmgEffectsToDamageOutput = {
+				encodeDamageTypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -385,6 +361,18 @@ stds.dnd5e = {
 		ActionGeneral = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionHeal = {
@@ -402,11 +390,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				encodeHealClauses = {
+					read_only = false,
+					other_fields = false,
+				},
 				decodeHealClauses = {
 					read_only = false,
 					other_fields = false,
 				},
-				encodeHealClauses = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -431,7 +423,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onResolve = {
+				getEffectAdjustments = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -447,7 +443,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyInit = {
+				onResolve = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -456,16 +452,92 @@ stds.dnd5e = {
 		ActionPower = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modCastSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySaveVs = {
+					read_only = false,
+					other_fields = false,
+				},
+				performSaveVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPowerSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCastSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSaveVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYSAVEVS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPowerCastRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPowerCast = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPowerTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySaveVs = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionRecharge = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRecharge = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionRecovery = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRecovery = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				modRecovery = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionSave = {
@@ -475,15 +547,19 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onSave = {
+				OOB_MSGTYPE_APPLYCONC = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleApplySave = {
+				handleApplyConc = {
 					read_only = false,
 					other_fields = false,
 				},
-				applySave = {
+				applyConcentrationRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyConc = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -491,15 +567,39 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				expireConcentrationEffects = {
+					read_only = false,
+					other_fields = false,
+				},
 				performVsRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				modSave = {
+				performConcentrationRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				getRoll = {
+				onConcentrationRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySystemShock = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				applySystemShockRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYSS = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSave = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -507,11 +607,55 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				performDeathRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSystemShockResultRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				applySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasConcentrationEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDeathRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getConcentrationEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySystemShock = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSystemShockRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				modSave = {
+					read_only = false,
+					other_fields = false,
+				},
 				performPartySheetRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				performRoll = {
+				performSystemShockRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -528,7 +672,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				modSkill = {
+				modRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getUnlistedRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -536,7 +684,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPCRoll = {
+				performNPCRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -553,17 +701,145 @@ stds.dnd5e = {
 		ActionsManager2 = {
 			read_only = false,
 			fields = {
+				nDroppedDie = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeAdvantage = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeAdvantage = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeDesktopMods = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActorManager5E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCreatureTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWoundPercent = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				isSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				isAlignment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCSheetWoundColor = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefenseValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefenseAdvantage = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefenseStatMod = {
+					read_only = false,
+					other_fields = false,
+				},
+				initActorHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCreatureType = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CampaignDataManager2 = {
 			read_only = false,
 			fields = {
+				sanitize = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCInnateSpellcasting = {
+					read_only = false,
+					other_fields = false,
+				},
 				handleDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCSpellHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNPCSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPregenChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCSpellcasting = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCActionSpellcasting = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEncounterGenerated = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetNPCSpellcastingSlots = {
+					read_only = false,
+					other_fields = false,
+				},
+				lookupCharData = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -572,758 +848,7 @@ stds.dnd5e = {
 		CharArmorManager = {
 			read_only = false,
 			fields = {
-			},
-		},
-		CharAttunementManager = {
-			read_only = false,
-			fields = {
-			},
-		},
-		CharEncumbranceManager5E = {
-			read_only = false,
-			fields = {
-			},
-		},
-		CharManager = {
-			read_only = false,
-			fields = {
-				handleRangedAttacks = {
-					read_only = false,
-					other_fields = false,
-				},
-				onKeyAbilityUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeSource = {
-					read_only = false,
-					other_fields = false,
-				},
-				bHeavy = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialSaveBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				addInfoDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				aFeatLoc = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleMeleeAttacks = {
-					read_only = false,
-					other_fields = false,
-				},
-				TRAIT_MULTITALENTED = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialAbilitiesEmbedded = {
-					read_only = false,
-					other_fields = false,
-				},
-				addArchetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				addRace = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleClassFeatureSpells = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStatName = {
-					read_only = false,
-					other_fields = false,
-				},
-				getBaseAttackRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialLanguages = {
-					read_only = false,
-					other_fields = false,
-				},
-				sCollisionDC = {
-					read_only = false,
-					other_fields = false,
-				},
-				nCastPerDay = {
-					read_only = false,
-					other_fields = false,
-				},
-				addLanguage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getWeaponAttackRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStatMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRequirements = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_DARKVISION = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellClassIncreaseSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addUpgrade = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_TECHNOMANCER = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				getThrownRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharItemDelete = {
-					read_only = false,
-					other_fields = false,
-				},
-				addToWeaponDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				resolveRefNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkWeaponIDChange = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_TELEPATHY = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasTrait = {
-					read_only = false,
-					other_fields = false,
-				},
-				FEAT_MULTIPLE_TIMES = {
-					read_only = false,
-					other_fields = false,
-				},
-				onKeyAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_GENERIC = {
-					read_only = false,
-					other_fields = false,
-				},
-				FEAT_TOUGHNESS = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAltFeatureRequirments = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStam = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSkillPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				outputUserMessage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addCompanionAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				onItemIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_LEVEL = {
-					read_only = false,
-					other_fields = false,
-				},
-				nClassLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onRaceAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStay = {
-					read_only = false,
-					other_fields = false,
-				},
-				sMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_D20PFSRD = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_ABILITY_SW = {
-					read_only = false,
-					other_fields = false,
-				},
-				addFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				sLabel = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LOWLIGHTVISION = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE_MEDIUM = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActiveVeh = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDuplicateFeats = {
-					read_only = false,
-					other_fields = false,
-				},
-				bSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_REPLACE = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFeatureClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_CLASS = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStat = {
-					read_only = false,
-					other_fields = false,
-				},
-				copyVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialSkillBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDeletedFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				claimCompanion = {
-					read_only = false,
-					other_fields = false,
-				},
-				bLight = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_BLINDSENSE = {
-					read_only = false,
-					other_fields = false,
-				},
-				aReplaceListData = {
-					read_only = false,
-					other_fields = false,
-				},
-				calcLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharItemAdd = {
-					read_only = false,
-					other_fields = false,
-				},
-				isWeaponTooHeavy = {
-					read_only = false,
-					other_fields = false,
-				},
-				sReplaced = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				sAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				selectAltRacialStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				aCharClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				onThemeAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				aName = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				nRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStab = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillName = {
-					read_only = false,
-					other_fields = false,
-				},
-				aList = {
-					read_only = false,
-					other_fields = false,
-				},
-				nScore = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAsscList = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_MYSTIC = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_PROFICIENCY = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSkillBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				addThemeFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				bAdvanced = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupWeapons = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSkill = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelHelper = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSALName = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				i = {
-					read_only = false,
-					other_fields = false,
-				},
-				sUpdateFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				k = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleReplaceAbility = {
-					read_only = false,
-					other_fields = false,
-				},
 				removeFromArmorDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				aFeatureStrip = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCompLevelUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSourceClassKeyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				nSpellFailure = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeCompanionOwner = {
-					read_only = false,
-					other_fields = false,
-				},
-				sortClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE = {
-					read_only = false,
-					other_fields = false,
-				},
-				nEac = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_NODECHAR = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAttacksString = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityIncreaseSelectDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_SRD_NORMAL = {
-					read_only = false,
-					other_fields = false,
-				},
-				nLevelNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillsNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialVision = {
-					read_only = false,
-					other_fields = false,
-				},
-				sType = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleBaseStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSPClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				resetHealth = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_BAD_DRONE = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCompanionOwner = {
-					read_only = false,
-					other_fields = false,
-				},
-				addTheme = {
-					read_only = false,
-					other_fields = false,
-				},
-				nAdj = {
-					read_only = false,
-					other_fields = false,
-				},
-				sPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeTargetList = {
-					read_only = false,
-					other_fields = false,
-				},
-				bApplied = {
-					read_only = false,
-					other_fields = false,
-				},
-				getReplacedFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_BAB_SLOW = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				nLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_ABILITY_D20PFSRD = {
-					read_only = false,
-					other_fields = false,
-				},
-				setKeyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				nUses = {
-					read_only = false,
-					other_fields = false,
-				},
-				nFreeSkill = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRaceCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_BAD = {
-					read_only = false,
-					other_fields = false,
-				},
-				nMaxStatBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				nResolveNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialAbilityInName = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleFreeSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillDataCommon = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFreeSkillOne = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeMechAttachments = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleModifyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyClassStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyToughness = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_WITCHWARPER = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDuplicateFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAug = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialSpeed = {
-					read_only = false,
-					other_fields = false,
-				},
-				addBoon = {
-					read_only = false,
-					other_fields = false,
-				},
-				addProfFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SUPERIORDARKVISION = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelKnownSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LIMITED_TELEPATHY = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE_SMALL = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				onActionDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateFeatureLevels = {
-					read_only = false,
-					other_fields = false,
-				},
-				initWeaponIDTracking = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleAltClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSaveBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRaceType = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_RESOLVE_STAB = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_WEAPONFAMILIARITY = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityIncreaseSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				nKac = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilitySelect = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1331,43 +856,150 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleRacialSize = {
+				addToArmorDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				aStatInfo = {
+			},
+		},
+		CharAttunementManager = {
+			read_only = false,
+			fields = {
+				onCharItemAttuneUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				RACIAL_TRAIT_LANGUAGES = {
+				onCharAttuneBonusUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleFreeRanks = {
+				getTotalSlots = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_SAVE_GOOD_DRONE = {
+				getBaseSlots = {
 					read_only = false,
 					other_fields = false,
 				},
-				addClassFeature = {
+				onOptionChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				RACIAL_TRAIT_SLOW_AND_STEADY = {
+				onAttuneCalcChange = {
 					read_only = false,
 					other_fields = false,
 				},
-				getClassKeyAbility = {
+				doesItemAllowAttunement = {
 					read_only = false,
 					other_fields = false,
 				},
-				nRpMax = {
+				onCharProfBonusUpdate = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleRacialBasicTrait = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemDelete = {
+					read_only = false,
+					other_fields = false,
+				},
+				getUsedSlots = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		CharEncumbranceManager5E = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDesktopInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEncumbranceMult = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSizeChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateEncumbranceLimit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityFieldChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilityDelete = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStrengthChange = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		CharManager = {
+			read_only = false,
+			fields = {
+				CLASS_SORCERER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassFeatureHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_MONK = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_MAGIC_ITEM_MASTER = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEAT_DRAGON_HIDE = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_POWERFUL_BUILD = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_PACT_MAGIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_BARBARIAN = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilitySelectDialog = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSkillsFromString = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1375,99 +1007,263 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				nCheckPenalty = {
+				rest = {
 					read_only = false,
 					other_fields = false,
 				},
-				addAbilityModifiers = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				sFreeSkillTwo = {
+				addSkillDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleProficiencies = {
+				resetHealth = {
 					read_only = false,
 					other_fields = false,
 				},
-				getWeaponDamageRollStructures = {
+				FEATURE_ASPECT_OF_THE_BEAR = {
 					read_only = false,
 					other_fields = false,
 				},
-				sReplaceName = {
+				addLanguageDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_BAB_MEDIUM = {
+				nInitAdj = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCMech = {
+				tRaceSubraces = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_SAVE_GOOD = {
+				pickSkills = {
 					read_only = false,
 					other_fields = false,
 				},
-				getSkillNode = {
+				onCharItemDelete = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCompLevelCheck = {
+				TRAIT_DWARVEN_TOUGHNESS = {
 					read_only = false,
 					other_fields = false,
 				},
-				RACIAL_TRAIT_SPEED_SRD_SLOW = {
+				FEAT_DURABLE = {
 					read_only = false,
 					other_fields = false,
 				},
-				isProficient = {
+				resolveRefNode = {
 					read_only = false,
 					other_fields = false,
 				},
-				getClassNode = {
+				calcPactMagicLevel = {
 					read_only = false,
 					other_fields = false,
 				},
-				removeFromWeaponDB = {
+				hasTrait = {
 					read_only = false,
 					other_fields = false,
 				},
-				addAlly = {
+				onClassSkillSelect = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_FEATURE_SPELLS_PER_DAY = {
+				convertSingleNumberTextToNumber = {
 					read_only = false,
 					other_fields = false,
 				},
-				addToArmorDB = {
+				addClassSpecializationDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRacialTrait = {
+				TRAIT_GNOME_CUNNING = {
 					read_only = false,
 					other_fields = false,
 				},
-				sSkills = {
+				outputUserMessage = {
 					read_only = false,
 					other_fields = false,
 				},
-				sTraitStats = {
+				checkFeatAdjustments = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCombatManStructures = {
+				addProficiencyDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_BAB_FAST = {
+				nSpeedAdj = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_FEATURE_SPELLS = {
+				FEATURE_SPELLCASTING = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyTough = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEAT_MEDIUM_ARMOR_MASTER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRaceSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAbilityAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACE_DWARF = {
+					read_only = false,
+					other_fields = false,
+				},
+				addFeatDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_MAGIC_ITEM_ADEPT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassSpecializationOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+				nPassiveAdj = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_MAGIC_ITEM_SAVANT = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyUnarmoredDefense = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_DRACONIC_RESILIENCE = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFullAbilitySelectList = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDraconicResilience = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRaceSubraceOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEAT_TOUGH = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeatRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAdventureDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_UNARMORED_DEFENSE = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateEncumbrance = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAbilitySelectComplete = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEAT_WAR_CASTER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassProficiencyDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassHDUsage = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_CATS_CLAWS = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRaceRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcSpellcastingLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDwarvenToughness = {
+					read_only = false,
+					other_fields = false,
+				},
+				addBackgroundRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_ARTIFICER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addTraitDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_ELDRITCH_INVOCATIONS = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassFeatureDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkSkillProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACE_DUERGAR = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_NATURAL_ARMOR = {
+					read_only = false,
+					other_fields = false,
+				},
+				addInfoDB = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1476,32 +1272,708 @@ stds.dnd5e = {
 		CharWeaponManager = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_THROWN = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_HEAVY = {
+					read_only = false,
+					other_fields = false,
+				},
+				getProperty = {
+					read_only = false,
+					other_fields = false,
+				},
+				decrementAmmo = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAttackAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_TWOHANDED = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildDamageString = {
+					read_only = false,
+					other_fields = false,
+				},
+				onItemIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildDamageAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_MAGIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageClauses = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageBaseAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildAttackAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_REROLL = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_AMMUNITION = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRange = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_REACH = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkWeaponIDChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_LIGHT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAttackBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkProperty = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_VERSATILE = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_TYPE_RANGED = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCritRange = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_CRITRANGE = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				WEAPON_PROP_FINESSE = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPropertyNumber = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CharWizardData = {
 			read_only = false,
 			fields = {
+				charwizard_starting_equipemnt = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLERIC_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRaceSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAllArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRaceSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRaceLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRaceSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewCasterClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				ARCANE_TRICKSTER_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				WIZARD_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				aMartialWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
+				genmethod = {
+					read_only = false,
+					other_fields = false,
+				},
+				ARTIFICER_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCasterClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewRaceProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewRaceSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRaceLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCharWizardStartingEquipment = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewRaceLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewRaceSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRaceSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				caster_classes = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewRaceSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				aParseRaceLangChoices = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerNewCharWizardStartingEquipment = {
+					read_only = false,
+					other_fields = false,
+				},
+				aSimpleWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
+				BARD_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				DRUID_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRaceSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRaceProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRaceNonParse = {
+					read_only = false,
+					other_fields = false,
+				},
+				ELDRITCH_KNIGHT_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				RANGER_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				WARLOCK_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRaceProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				SORCERER_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRaceSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				SPELLSLOTS = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CharWizardDataAction = {
 			read_only = false,
 			fields = {
+				parsedata = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CharWizardManager = {
 			read_only = false,
 			fields = {
+				clearSummary = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyRacialAbilityDefault = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateClassTools = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefaultRaceTraitMod = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				wndClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectRace = {
+					read_only = false,
+					other_fields = false,
+				},
+				getShortcutToolTip = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateRaceSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseBackgroundKit = {
+					read_only = false,
+					other_fields = false,
+				},
+				aBackgroundSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseBackgroundSkillProf = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellsAvailable = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItemToInventory = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateClassSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFeatures = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseBackgroundToolProf = {
+					read_only = false,
+					other_fields = false,
+				},
+				aChoiceSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				sSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateBackgroundSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseClassToolProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseFeatAbilitySelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefaultRaceMods = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAlerts = {
+					read_only = false,
+					other_fields = false,
+				},
+				completeSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelection = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateBackgroundTools = {
+					read_only = false,
+					other_fields = false,
+				},
+				cleanupText = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectVariableTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseClassSkillProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				aFinalChoiceSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				createCustomInventoryItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				nSkillChoices = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleLevelChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSummary = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectRaceSkillProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectRaceLanguage = {
+					read_only = false,
+					other_fields = false,
+				},
+				createBackgroundKitChoices = {
+					read_only = false,
+					other_fields = false,
+				},
+				closeListWindowsMatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				nClassLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				nSpecLvl = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSpecialization = {
+					read_only = false,
+					other_fields = false,
+				},
+				sClassRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyRacialAbilityOption1 = {
+					read_only = false,
+					other_fields = false,
+				},
+				aChoiceTools = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectSubRace = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcRacialAbilityMods = {
+					read_only = false,
+					other_fields = false,
+				},
+				nProfChoices = {
+					read_only = false,
+					other_fields = false,
+				},
+				bChoice = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectRaceSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseChoiceRacialMod = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCleanText = {
+					read_only = false,
+					other_fields = false,
+				},
+				createStartingKit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setSpellClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseBackgroundLanguage = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearRacialAbilityMods = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseASIChoice = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCurWalkSpeedReplace = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCurWalkSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				a3 = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyRacialAbilityOption2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				createLevelUpLabels = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateRaceProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				wndSpecialization = {
+					read_only = false,
+					other_fields = false,
+				},
+				impCharacter = {
+					read_only = false,
+					other_fields = false,
+				},
+				retrieveCasterClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseRacialModChoice = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCurWalkSpeedInc = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateRaceSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				createSpellList = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSelectedSpellCount = {
+					read_only = false,
+					other_fields = false,
+				},
+				createSelectionWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSelectionChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateBackgroundLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				getShortcutClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateRaceLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSelectRaceToolProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateFeats = {
+					read_only = false,
+					other_fields = false,
+				},
+				closeListWindowsExcept = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEquipment = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseBackground = {
+					read_only = false,
+					other_fields = false,
+				},
+				setAbilityScores = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateRaceSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWizardWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				sClassRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				createFeatureWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateRace = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseExpertise = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CharacterListManager_Inspiration = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateWidgets = {
+					read_only = false,
+					other_fields = false,
+				},
+				onUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addInspirationWidget = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CombatManager2 = {
 			read_only = false,
 			fields = {
-				sortfunc = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				reduceExhaustion = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseAttackLine = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1513,7 +1985,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				nextPhase = {
+				addRightClickDiceToClauses = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1521,75 +1993,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getXPFromCR = {
+				parseResistances = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCDecodeDefAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				addDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				callForEachCombatantRoundDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getNPCSpecialAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCRFromXP = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearExpiringEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				nCurrent = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTurnEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseAttackLine = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleResolveDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				addPC = {
-					read_only = false,
-					other_fields = false,
-				},
-				aEffect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCDecodeQualities = {
+				rollEntryInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1597,19 +2005,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				aAddDamageType = {
-					read_only = false,
-					other_fields = false,
-				},
-				addRightClickDiceToClauses = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleCompanionInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				rollTypeInit = {
+				resetCombatantInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1617,11 +2013,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addCompanion = {
+				clearExpiringEffects = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEffectResolve = {
+				rollRandomInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1633,7 +2029,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCAttacks = {
+				nIndex = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1641,15 +2037,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				rollEntryInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				CT_PHASE = {
-					read_only = false,
-					other_fields = false,
-				},
 				calcBattleXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				rest = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseNPCPower = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1658,135 +2054,7 @@ stds.dnd5e = {
 		DataCommon = {
 			read_only = false,
 			fields = {
-				arrayexpert = {
-					read_only = false,
-					other_fields = false,
-				},
 				othercomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				arrayspellcaster = {
-					read_only = false,
-					other_fields = false,
-				},
-				specialdmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproles = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipsizes = {
-					read_only = false,
-					other_fields = false,
-				},
-				sensesdata = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewminoractions = {
-					read_only = false,
-					other_fields = false,
-				},
-				arraycombatant = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesubtype = {
-					read_only = false,
-					other_fields = false,
-				},
-				racetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproleslist = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				conditionaltags = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturedefaulttype = {
-					read_only = false,
-					other_fields = false,
-				},
-				bonuscomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_weapon_damage = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatushalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesize = {
-					read_only = false,
-					other_fields = false,
-				},
-				companiondatalvl = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				acarmormatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				abilitiesshort = {
-					read_only = false,
-					other_fields = false,
-				},
-				itemsizetoacmod = {
-					read_only = false,
-					other_fields = false,
-				},
-				targetableeffectcomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_abrev = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				actypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_goodevil = {
-					read_only = false,
-					other_fields = false,
-				},
-				minimum_mech_points = {
-					read_only = false,
-					other_fields = false,
-				},
-				spelleffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_stol = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1806,11 +2074,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				weapondmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				pssavedata = {
+				specialdmgtypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1818,99 +2082,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				abilityeffects = {
-					read_only = false,
-					other_fields = false,
-				},
 				rangetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				acdeflectionmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				naturaldmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactiontitles = {
-					read_only = false,
-					other_fields = false,
-				},
-				energytypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				save_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				kinetictypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				ammotypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturehalftypesubrace = {
-					read_only = false,
-					other_fields = false,
-				},
-				acshieldmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				skilldata = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_standard_systems = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatusfull = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_neutral = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_custom_array = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_base_stats = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_default_actions = {
-					read_only = false,
-					other_fields = false,
-				},
-				feat_proficiencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipscale = {
-					read_only = false,
-					other_fields = false,
-				},
-				immunetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiptier = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1918,19 +2090,11 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				currencyDefault = {
-					read_only = false,
-					other_fields = false,
-				},
 				dmgtypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				healthstatuswounded = {
-					read_only = false,
-					other_fields = false,
-				},
-				save_ltos = {
+				creaturesubtype = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1938,11 +2102,75 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturehalftype = {
+				class_valuetoname = {
+					read_only = false,
+					other_fields = false,
+				},
+				conditionaltags = {
 					read_only = false,
 					other_fields = false,
 				},
 				connectors = {
+					read_only = false,
+					other_fields = false,
+				},
+				skilldata = {
+					read_only = false,
+					other_fields = false,
+				},
+				bonuscomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatushalf = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturesize = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_ltos = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				targetableeffectcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftypesubrace = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturedefaulttype = {
+					read_only = false,
+					other_fields = false,
+				},
+				classes = {
+					read_only = false,
+					other_fields = false,
+				},
+				condcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatusfull = {
+					read_only = false,
+					other_fields = false,
+				},
+				alignment_goodevil = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftype = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1954,7 +2182,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				condcomps = {
+				healthstatuswounded = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -1963,46 +2191,130 @@ stds.dnd5e = {
 		DataSpell = {
 			read_only = false,
 			fields = {
+				parsedata = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		Desktop5E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EffectManager5E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeEffectFromCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyOngoingDamageAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeEffectByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeEffectForCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				rebuildParsedEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyRecharge = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditionalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddIgnoreCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkImmunities = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ForgeManagerItem = {
 			read_only = false,
 			fields = {
+				k = {
+					read_only = false,
+					other_fields = false,
+				},
 				addBaseItem = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDisplayType = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemDescBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				addTemplate = {
-					read_only = false,
-					other_fields = false,
-				},
-				addForgedItemToCampaign = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCompatibilityType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2010,11 +2322,43 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				createForgedItem = {
+				addMagicItemToCampaign = {
 					read_only = false,
 					other_fields = false,
 				},
-				forgeItem = {
+				getItemStats = {
+					read_only = false,
+					other_fields = false,
+				},
+				createMagicItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMagicItemValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				addTemplate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemRarityValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCompatibilityType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemDescBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				forgeMagicItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDisplayType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2035,7 +2379,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDeathThreshold = {
+				requestCharSelectDetailClient = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2043,11 +2387,23 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				languagefonts = {
+					read_only = false,
+					other_fields = false,
+				},
 				getCharSelectDetailLocal = {
 					read_only = false,
 					other_fields = false,
 				},
+				getPregenCharSelectDetail = {
+					read_only = false,
+					other_fields = false,
+				},
 				getDistanceUnitsPerGrid = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCharSelectDetailHost = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2059,7 +2415,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getStabilizationResult = {
+				currencyDefault = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2067,43 +2423,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				tokenLightDefaults = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiptargetactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				requestCharSelectDetailClient = {
-					read_only = false,
-					other_fields = false,
-				},
 				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				modStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				performConcentrationCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCharSelectDetailHost = {
-					read_only = false,
-					other_fields = false,
-				},
-				languagefonts = {
-					read_only = false,
-					other_fields = false,
-				},
-				getStabilizationRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencyDefault = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2112,27 +2432,15 @@ stds.dnd5e = {
 		ItemManager2 = {
 			read_only = false,
 			fields = {
-				handleItem = {
-					read_only = false,
-					other_fields = false,
-				},
-				addItemToList2 = {
-					read_only = false,
-					other_fields = false,
-				},
-				sendItemTransfer = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemSourceType = {
-					read_only = false,
-					other_fields = false,
-				},
 				isArmor = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleAnyDrop = {
+				isRefBaseItemClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItemToList2 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2145,11 +2453,67 @@ stds.dnd5e = {
 		LibraryData5E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemAttunementValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemRarityValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				aListViews = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRecordOverrides = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellLevelValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCTypeValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				isItemIdentifiable = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemIsIdentified = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemRecordDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortNPCCRValues = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		Options5E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerOptions = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		PartyManager2 = {
@@ -2163,7 +2527,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCClasses = {
+				addEncounter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2171,11 +2535,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkillranks = {
-					read_only = false,
-					other_fields = false,
-				},
-				awardXP = {
+				linkPCFields = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2183,27 +2543,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEncounter = {
-					read_only = false,
-					other_fields = false,
-				},
-				linkPCLanguages = {
-					read_only = false,
-					other_fields = false,
-				},
 				addQuest = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkills = {
+				awardXP = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkill = {
+				linkPCClasses = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2212,6 +2560,110 @@ stds.dnd5e = {
 		PowerManager = {
 			read_only = false,
 			fields = {
+				parseDamagePhrase = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetPowers = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCPowerCastActionText = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCPowerDamageActionText = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCPowerHealActionText = {
+					read_only = false,
+					other_fields = false,
+				},
+				parsePower = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffectsAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				j = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseDamages = {
+					read_only = false,
+					other_fields = false,
+				},
+				rSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseAttacks = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseHeals = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCPowerAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPowerGroupRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				SPELL_LEVELS = {
+					read_only = false,
+					other_fields = false,
+				},
+				parsePCPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseNPCPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				consolidationHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSaves = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				performAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCPowerActionOutputOrder = {
+					read_only = false,
+					other_fields = false,
+				},
+				performPCPowerAction = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		TokenManager2 = {
@@ -2221,11 +2673,7 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCombatantDelete = {
-					read_only = false,
-					other_fields = false,
-				},
-				getEffectInfo = {
+				handleIFEffectTag = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2242,31 +2690,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip19 = {
+				migrateChar7 = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupWeapons = {
+				convertPregenCharacters5 = {
 					read_only = false,
 					other_fields = false,
 				},
-				nSrcDriftRating = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupFrame = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar17 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertPCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClassName = {
+				migrateChar8 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2274,51 +2706,27 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				sRecordNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				addStarshipItem = {
-					read_only = false,
-					other_fields = false,
-				},
 				updateModule = {
 					read_only = false,
 					other_fields = false,
 				},
-				pcuSummarycheck = {
+				convertCharacters2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar17 = {
+				migrateChar2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migratePCShip19 = {
+				convertItems8 = {
 					read_only = false,
 					other_fields = false,
 				},
-				aRecordStrip = {
+				convertCharacters5 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAppFrameRecord = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertModulePCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertModulePCShip20 = {
+				convertPSEnc4 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2326,27 +2734,15 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
-				migrateChar22 = {
+				convertPregenCharacters8 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migratePCShip20 = {
+				convertEncounters6 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateCampaign = {
+				convertCharacters8 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -2354,7 +2750,31 @@ stds.dnd5e = {
 					read_only = false,
 					other_fields = false,
 				},
+				migrateEncounter6 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onModuleLoad = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCharacters7 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPregenCharacters7 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCampaign = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateItem8 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar5 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18501,7 +18921,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				modCastSave = {
+				modRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18509,79 +18929,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCLCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSaveVsRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYSAVEVS = {
-					read_only = false,
-					other_fields = false,
-				},
 				performRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilitySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				getRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCastCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				modRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityCastRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				modConcentration = {
-					read_only = false,
-					other_fields = false,
-				},
-				resetUsesPerDay = {
-					read_only = false,
-					other_fields = false,
-				},
-				modCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDC = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityTargeting = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18589,7 +18937,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCastSave = {
+				getRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18602,7 +18950,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleApplyHRFC = {
+				notifyApplyHRFC = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18610,11 +18958,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getThrownRoll = {
+				performGrappleRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				clearCritState = {
+				getGrappleRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18634,23 +18982,27 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onAttack = {
+				setCustomSetCriticalHit = {
 					read_only = false,
 					other_fields = false,
 				},
-				performThrownRoll = {
+				setCustomGetCriticalHit = {
 					read_only = false,
 					other_fields = false,
 				},
-				performCombatManRoll = {
+				setCritState = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCombatManRoll = {
+				isCrit = {
 					read_only = false,
 					other_fields = false,
 				},
 				OOB_MSGTYPE_APPLYHRFC = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18662,11 +19014,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				isCrit = {
+				aCritState = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCritState = {
+				onGrapple = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18674,7 +19026,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onPostAttackResolve = {
+				onAttack = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18686,7 +19038,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyHRFC = {
+				handleApplyHRFC = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18703,7 +19055,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				decodeDamageTypes = {
+				performStabilizationRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18715,10 +19067,6 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				finalizeModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
 				matchAndOrClauses = {
 					read_only = false,
 					other_fields = false,
@@ -18727,7 +19075,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyModifierKeysToModRoll = {
+				OOB_MSGTYPE_APPLYDMG = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18735,19 +19083,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyDmgEffectsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyConditionsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
 				getRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyCriticalToModRoll = {
+				setCustomCriticalHit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18755,15 +19095,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				nStartOR3 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyDmgTypeEffectsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				nDamageAdjust = {
+				nPhysicalWeakness = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18771,47 +19111,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				nNonlethalDmgAmount = {
+				aClausesOR = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				bResist = {
-					read_only = false,
-					other_fields = false,
-				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				bVulnerable = {
-					read_only = false,
-					other_fields = false,
-				},
-				setDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyEffectModNotificationToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				notifyApplyDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				encodeDamageTypes = {
+				decodeDamageTypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18819,7 +19123,35 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupModRoll = {
+				getDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				nEndOR3 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onStabilization = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageTypesFromString = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getReductionType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18831,10 +19163,6 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getParenDepth = {
-					read_only = false,
-					other_fields = false,
-				},
 				applyDamage = {
 					read_only = false,
 					other_fields = false,
@@ -18843,7 +19171,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				getParenDepth = {
+					read_only = false,
+					other_fields = false,
+				},
+				nNonlethal = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
 				modStabilization = {
+					read_only = false,
+					other_fields = false,
+				},
+				old_getDamageAdjust = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18851,15 +19195,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDamageTypesFromString = {
+				damageExceptionExists = {
 					read_only = false,
 					other_fields = false,
 				},
-				performStabilizationRoll = {
+				notifyApplyDamage = {
 					read_only = false,
 					other_fields = false,
 				},
-				OOB_MSGTYPE_APPLYDMG = {
+				encodeDamageTypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18867,15 +19211,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				performRoll = {
-					read_only = false,
-					other_fields = false,
-				},
 				onDamage = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyAbilityEffectsToModRoll = {
+				modDamage = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18884,6 +19224,18 @@ stds.pfrpg2 = {
 		ActionFlatcheck = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modFlatcheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFlatcheck = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionHeal = {
@@ -18898,6 +19250,10 @@ stds.pfrpg2 = {
 					other_fields = false,
 				},
 				onHeal = {
+					read_only = false,
+					other_fields = false,
+				},
+				nEmpowerMod = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18975,6 +19331,10 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 				performVsRoll = {
 					read_only = false,
 					other_fields = false,
@@ -18983,7 +19343,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getRoll = {
+				nodeCTEntry = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19005,6 +19365,10 @@ stds.pfrpg2 = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				sProficency = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19037,11 +19401,51 @@ stds.pfrpg2 = {
 		ActionSpell = {
 			read_only = false,
 			fields = {
-				getSpellCastRoll = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
 				modCastSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				aSaveTraitFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCLCRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSaveVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYSAVEVS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellCastRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCast = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				modConcentration = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19057,39 +19461,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
 				onCastCLC = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCLCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSaveVsRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYSAVEVS = {
-					read_only = false,
-					other_fields = false,
-				},
-				modConcentration = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
+				bEffects = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19106,37 +19482,529 @@ stds.pfrpg2 = {
 		ActionVsDC = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyHRFC = {
+					read_only = false,
+					other_fields = false,
+				},
+				performGrappleRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyVsDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				performPartySheetVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				sProficency = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCrit = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearCritState = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCritState = {
+					read_only = false,
+					other_fields = false,
+				},
+				aCritState = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYHRFC = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyVsDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				modVsDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyHRFC = {
+					read_only = false,
+					other_fields = false,
+				},
+				onGrapple = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVsDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyVsDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				onMissChance = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYVSDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGrappleRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionsListManager = {
 			read_only = false,
 			fields = {
+				getActionSectionNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				addActionCastAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				addActionToSection = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActorManager2 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCreatureTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWoundPercent = {
+					read_only = false,
+					other_fields = false,
+				},
+				STATUS_DESTROYED = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				isSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				isAlignment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				addBonusToType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				isHazard = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				nShieldRaised = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefenseValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getArmorComps = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellDefense = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCreatureType = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefenseStatMod = {
+					read_only = false,
+					other_fields = false,
+				},
+				initActorHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPenaltyToType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityDamage = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		AutomationManager = {
 			read_only = false,
 			fields = {
+				getCustomRemoveAutomationValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCustomAutomationValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeStringOr = {
+					read_only = false,
+					other_fields = false,
+				},
+				dbAppendString = {
+					read_only = false,
+					other_fields = false,
+				},
+				dbfieldRemoveNumber = {
+					read_only = false,
+					other_fields = false,
+				},
+				entryChargenMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCustomAutomationFilterValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNewStringOr = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeString = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomRemoveAutomationHandler = {
+					read_only = false,
+					other_fields = false,
+				},
+				sAutomationRemoved = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomAutomationFilterHandler = {
+					read_only = false,
+					other_fields = false,
+				},
+				bCreateCharsheetEntry = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNewString = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				dbfieldApplyNumber = {
+					read_only = false,
+					other_fields = false,
+				},
+				processAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomAutomationHandler = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		AutomationManagerPFRPG2 = {
 			read_only = false,
 			fields = {
+				processDefenseProfAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectStringWithVariables = {
+					read_only = false,
+					other_fields = false,
+				},
+				processNoneAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsWithVariables = {
+					read_only = false,
+					other_fields = false,
+				},
+				processTraitAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processFeatWeaponProficiencyAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processRemoveEffectAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFeatAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processMovementAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processMessageAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processItemAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processHitPointAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processRemoveSpellAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				processAbilityAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeMovementAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processWeaponAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processSpellClassAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processSensesAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processFeatAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processXRefAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				getXrefNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				processDefaultRemoveAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processSkillProfAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processProfAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				sMsg = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeTraitAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processChoiceAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processAttackProfAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processSpellAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processSaveProfAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				filterAutomationByClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				processRemoveHitPointAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processOptionsAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processDefaultAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				processDeleteAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				sAutomationResult = {
+					read_only = false,
+					other_fields = false,
+				},
+				processEffectAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalStringAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				processFeatArmorProficiencyAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeSensesAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		BackgroundManager = {
 			read_only = false,
 			fields = {
+				addLoreSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleBackgroundAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				addBackground = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleBackgroundTrainedSkillChoice = {
+					read_only = false,
+					other_fields = false,
+				},
+				onBackgroundTrainedSkillSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasBeginnerBoxBackground = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleBackgroundLoreSkillChoice = {
+					read_only = false,
+					other_fields = false,
+				},
+				onBackgroundLoreSkillSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onBackgroundAbilitySelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onBackgroundAbilityFreeSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillFeat = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CampaignDataManager2 = {
 			read_only = false,
 			fields = {
+				onEncounterGenerated = {
+					read_only = false,
+					other_fields = false,
+				},
 				handleDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				sanitize = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19145,17 +20013,1069 @@ stds.pfrpg2 = {
 		CharManager = {
 			read_only = false,
 			fields = {
+				CLASS_FEAT_CLERIC_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_DOMAIN_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForRacialSaveBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				addInfoDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCalculatedEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialAbilitiesEmbedded = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_BARD = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleClassFeatureSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLookupData = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLanguage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSkillNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendCharacterEffectsToCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_DARKVISION = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_SUMMONER = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_BARBARIAN_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleAncestoryFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SKILL_INCREASE = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassSpellLevelSlot = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SWASHBUCKLER_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleSpecialAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleSpecialAutomationDivineFont = {
+					read_only = false,
+					other_fields = false,
+				},
+				LIZARDFOLK_ANCESTRY_CLAWS = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_ABILITY_FLAW = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SORCERER_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleClassFeatureFocusSpellClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEAT_MONK_POWER1 = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_MANUAL = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_SORCERER = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_ABILITY_SW = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_CHAMPION_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageAddSkillIncrease = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_LOWLIGHTVISION = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SPELLCASTING_TRADITION = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SIZE_MEDIUM = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_DRUID_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				bFeatApplied = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_RANGER_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_ASSASSIN = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_WITCH = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_RANGER = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_MAGUS_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				onItemOptionsSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				classAddFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_DRUID = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCurrency = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRacialTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_PROFICIENCY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_ALCHEMIST = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassSpellLevelHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_CLASS_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemWeight = {
+					read_only = false,
+					other_fields = false,
+				},
+				classAbilityBoosts = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromArmorDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLookupDataDeitySelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				setWeaponProficiencyLevels = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ABILITY_BOOSTS = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharEffectActiveUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SPELLCASTING = {
+					read_only = false,
+					other_fields = false,
+				},
+				openLookupDataSelectionWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ADD_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				setProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFeatOptionsSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_BAB_SLOW = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_GENERAL_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				recalcProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasClassFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ANCESTRY_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_CLERIC_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyClassStats = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseFeatureName = {
+					read_only = false,
+					other_fields = false,
+				},
+				on4FreeBoostsSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_PALADIN = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialSpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_WITCH_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				halfhuman_ancestry_feat = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAttackProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_ABILITY_BOOSTS = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_WIZARD_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSkillValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SPELLS_PER_DAY = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleProficiencies_old = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSaveBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_BLACKGUARD = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_LANGUAGES = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearAncestryAbilityChoices = {
+					read_only = false,
+					other_fields = false,
+				},
+				CORE_RULES_MODULE_NAME = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SLOW_AND_STEADY = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponDamageRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRulesAndAbilitiesFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				addDefenseProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_INQUISITOR = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_SRD_SLOW = {
+					read_only = false,
+					other_fields = false,
+				},
+				SPELLS_AVAILABLE_LEVEL_1 = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				DWARVEN_ANCESTRY_CLAN_DAGGER = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ALCHEMY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_MYSTIC_THEURGE = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_BAB_FAST = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEAT_MONK_POWER2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				addDeity = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateChargenTrackerAbilityField = {
+					read_only = false,
+					other_fields = false,
+				},
+				sFormat = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_MULTITALENTED = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRace = {
+					read_only = false,
+					other_fields = false,
+				},
+				getBaseAttackRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_TRAITS = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCharEffectAndAutomationHandlers = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponAttackRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellClassIncreaseSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ORACLE_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				setSpeedPenalty = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemDelete = {
+					read_only = false,
+					other_fields = false,
+				},
+				resolveRefNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkWeaponIDChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				bApplied = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_GENERIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertToCore = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageManualFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFavoredClassSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateSkillPoints = {
+					read_only = false,
+					other_fields = false,
+				},
+				onItemIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRaceAbilitySelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_D20PFSRD = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSpellToClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearAndRebuildAttackProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCurrentHP = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharEffectCalculations = {
+					read_only = false,
+					other_fields = false,
+				},
+				offerAddClassKit = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForRacialSkillBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				entryChargenMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				STARTING_SILVER_PIECES = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGrappleRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				addDefenseAttackProficiency = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcEncumbrance = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLookupDataClassFeatureSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearCTCharEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onXrefChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_ORACLE = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearAndRebuildDefenseProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLookupDataFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				bUntrained = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_EXTRACTS_PER_DAY = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharEffectUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleAddToPCButton = {
+					read_only = false,
+					other_fields = false,
+				},
+				BEGINNERBOX_CLASS_LEVEL4_MODULE = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_HITPOINTS = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_FEATS = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_SRD_NORMAL = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_SPEED_25 = {
+					read_only = false,
+					other_fields = false,
+				},
+				rest = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialVision = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeSpellFromClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				openHeritageSelectionWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				sFeatName = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleClassFeatureDomains = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeTargetList = {
+					read_only = false,
+					other_fields = false,
+				},
+				attackProfType = {
+					read_only = false,
+					other_fields = false,
+				},
+				attackProfName = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_BAB_MEDIUM = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialBasicTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ROGUE_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_SAVE_GOOD = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SIZE = {
+					read_only = false,
+					other_fields = false,
+				},
+				sMsg = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeItemAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeCoreClassRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_SPEED_30 = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_CLERIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForRacialAbilityInName = {
+					read_only = false,
+					other_fields = false,
+				},
+				sRecordName = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFavoredClassBonusSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_ADEPT = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_DOMAINS = {
+					read_only = false,
+					other_fields = false,
+				},
+				sModuleName = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_WITCH_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				bAutomationAppliedAllRecords = {
+					read_only = false,
+					other_fields = false,
+				},
+				sAutomationResult = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageAddFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ALCHEMIST_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLookupDataAncestryHeritageFeatureSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_MONK_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleAncestoryHeritage = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SELECT = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SUPERIORDARKVISION = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_SAVE_BAD = {
+					read_only = false,
+					other_fields = false,
+				},
+				openFilteredFeatOptionsWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ORACLE_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_CHAMPION_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SIZE_SMALL = {
+					read_only = false,
+					other_fields = false,
+				},
+				sLookupDataCategory = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				sLookupDataType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onActionDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeInventoryWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				appliedAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				nAttacks = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClassKeyAbilitySelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleAncestryHitPoints = {
+					read_only = false,
+					other_fields = false,
+				},
+				removePermanentEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_ABILITY_D20PFSRD = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_WEAPONFAMILIARITY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SKILL_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCarriedChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				recalcHitPoint = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToArmorDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_WIZARD_POWER = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageSelectFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkFavoredClassBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassSpellLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_DRUID_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_INVESTIGATOR_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAncestryHeritageSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_FIGHTER_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleWeaponAndArmorProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleDuplicateFeatures = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleDuplicateFeatures2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassKit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPermanentEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_HERITAGES = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_CHAMPION = {
+					read_only = false,
+					other_fields = false,
+				},
+				rebuildCTCharEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_BARD_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				higherProfLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				trainSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_WIZARD = {
+					read_only = false,
+					other_fields = false,
+				},
+				openFeatFilterWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleAncestryTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				addWeaponEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassLevelSummary = {
+					read_only = false,
+					other_fields = false,
+				},
+				onXrefOptionSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharEffectDelete = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SORCERER_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				ANCESTRY_SPEED_20 = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SUMMONER_FEAT = {
+					read_only = false,
+					other_fields = false,
+				},
+				initWeaponIDTracking = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_MAGUS = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcWealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcItemArmorClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ChargenTracker = {
 			read_only = false,
 			fields = {
+				addTextToLog = {
+					read_only = false,
+					other_fields = false,
+				},
+				makeStringFGUSafe = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeChargenLog = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CombatManager2 = {
 			read_only = false,
 			fields = {
-				sortfunc = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseAttackLine = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19167,7 +21087,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				nextPhase = {
+				CT_LIST = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19179,71 +21099,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCDecodeDefAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				addDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				callForEachCombatantRoundDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getNPCSpecialAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCRFromXP = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearExpiringEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				nCurrent = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTurnEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseAttackLine = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleResolveDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
 				addPC = {
 					read_only = false,
 					other_fields = false,
 				},
-				aEffect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCDecodeQualities = {
+				sTraits = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19251,19 +21111,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				aAddDamageType = {
+				rollEntryInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRightClickDiceToClauses = {
+				resetCombatantInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleCompanionInit = {
+				sortfuncPFPlaytest = {
 					read_only = false,
 					other_fields = false,
 				},
-				rollTypeInit = {
+				tsImmunityToAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				nodeValue = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19271,11 +21135,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				addCompanion = {
+				clearExpiringEffects = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEffectResolve = {
+				addRightClickDiceToClauses = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19287,23 +21151,23 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCAttacks = {
-					read_only = false,
-					other_fields = false,
-				},
 				calcBattleCR = {
 					read_only = false,
 					other_fields = false,
 				},
-				rollEntryInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				CT_PHASE = {
-					read_only = false,
-					other_fields = false,
-				},
 				calcBattleXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCRFromXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				rest = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTurnEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19312,7 +21176,15 @@ stds.pfrpg2 = {
 		DataCommon = {
 			read_only = false,
 			fields = {
-				arrayexpert = {
+				savetypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				class_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				actiondata = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19320,147 +21192,19 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				arrayspellcaster = {
-					read_only = false,
-					other_fields = false,
-				},
-				specialdmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproles = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipsizes = {
-					read_only = false,
-					other_fields = false,
-				},
-				sensesdata = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewminoractions = {
-					read_only = false,
-					other_fields = false,
-				},
-				arraycombatant = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesubtype = {
-					read_only = false,
-					other_fields = false,
-				},
-				racetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproleslist = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				conditionaltags = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturedefaulttype = {
-					read_only = false,
-					other_fields = false,
-				},
-				bonuscomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_weapon_damage = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatushalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesize = {
-					read_only = false,
-					other_fields = false,
-				},
-				companiondatalvl = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				acarmormatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				abilitiesshort = {
-					read_only = false,
-					other_fields = false,
-				},
-				itemsizetoacmod = {
-					read_only = false,
-					other_fields = false,
-				},
-				targetableeffectcomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_abrev = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				actypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_goodevil = {
-					read_only = false,
-					other_fields = false,
-				},
-				minimum_mech_points = {
-					read_only = false,
-					other_fields = false,
-				},
-				spelleffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_stol = {
-					read_only = false,
-					other_fields = false,
-				},
 				psabilitydata = {
 					read_only = false,
 					other_fields = false,
 				},
-				psskilldata = {
+				spellschooltypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				class_nametovalue = {
+				checkresultlevels = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				weapondmgtypes = {
+				creaturesize = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19472,15 +21216,39 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				abilityeffects = {
+				creaturetype = {
 					read_only = false,
 					other_fields = false,
 				},
-				rangetypes = {
+				specialdmgtypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				acdeflectionmatch = {
+				joinwithbasedmgtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				isPFRPG = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatushalf = {
+					read_only = false,
+					other_fields = false,
+				},
+				resultlevelsstringtonumerical = {
+					read_only = false,
+					other_fields = false,
+				},
+				magictraditions = {
+					read_only = false,
+					other_fields = false,
+				},
+				sensesdata = {
+					read_only = false,
+					other_fields = false,
+				},
+				rarity = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19488,83 +21256,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshipcrewactiontitles = {
-					read_only = false,
-					other_fields = false,
-				},
-				energytypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				save_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				kinetictypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				ammotypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturehalftypesubrace = {
-					read_only = false,
-					other_fields = false,
-				},
-				acshieldmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				skilldata = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_standard_systems = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatusfull = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_neutral = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_custom_array = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_base_stats = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_default_actions = {
-					read_only = false,
-					other_fields = false,
-				},
-				feat_proficiencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipscale = {
-					read_only = false,
-					other_fields = false,
-				},
-				immunetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiptier = {
+				rangetypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19572,7 +21264,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				currencyDefault = {
+				weapondmgtypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19580,7 +21272,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				healthstatuswounded = {
+				ps2skilldata = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19592,11 +21284,139 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturehalftype = {
+				proficiencyLevels = {
+					read_only = false,
+					other_fields = false,
+				},
+				acdeflectionmatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				save_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				acshieldmatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				focusspellclasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftypesubrace = {
+					read_only = false,
+					other_fields = false,
+				},
+				attackProfCategoryNames = {
+					read_only = false,
+					other_fields = false,
+				},
+				conditionaltags = {
 					read_only = false,
 					other_fields = false,
 				},
 				connectors = {
+					read_only = false,
+					other_fields = false,
+				},
+				rsversion = {
+					read_only = false,
+					other_fields = false,
+				},
+				skilldata = {
+					read_only = false,
+					other_fields = false,
+				},
+				bonuscomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				condcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				rsname = {
+					read_only = false,
+					other_fields = false,
+				},
+				currency = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftype = {
+					read_only = false,
+					other_fields = false,
+				},
+				alignment_neutral = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_ltos = {
+					read_only = false,
+					other_fields = false,
+				},
+				acarmormatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				flatfootedconditions = {
+					read_only = false,
+					other_fields = false,
+				},
+				resultlevelsnumericaltostring = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				targetableeffectcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				armorProfNames = {
+					read_only = false,
+					other_fields = false,
+				},
+				immunetypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				classdata = {
+					read_only = false,
+					other_fields = false,
+				},
+				savetypesshort = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturesubtype = {
+					read_only = false,
+					other_fields = false,
+				},
+				actypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatuswounded = {
+					read_only = false,
+					other_fields = false,
+				},
+				attackProfNamesSpecial = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturedefaulttype = {
+					read_only = false,
+					other_fields = false,
+				},
+				alignment_goodevil = {
+					read_only = false,
+					other_fields = false,
+				},
+				energytypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19608,7 +21428,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				condcomps = {
+				spelleffects = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19617,30 +21437,290 @@ stds.pfrpg2 = {
 		DesktopPFRPG = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EffectManagerPFRPG2 = {
 			read_only = false,
 			fields = {
+				onCTEffectSourceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAllEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectSourceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCheckDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				corerpg_onEffectFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDynamicVariableUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				setPCRollData = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearAllResultStates = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				dynamicVariableInitHandlers = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerEffectCompType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectEndTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorEndTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCRollName = {
+					read_only = false,
+					other_fields = false,
+				},
+				old_handleClearResultStates = {
+					read_only = false,
+					other_fields = false,
+				},
+				getConditionValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYRESULTSTATE = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCRollDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearPCRollDataAndCTEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getResultState = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				old_setResultState = {
+					read_only = false,
+					other_fields = false,
+				},
+				pfrpg2_onEffectFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyAllNPCAbilityEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				setResultState = {
+					read_only = false,
+					other_fields = false,
+				},
+				getResultStateNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				setResultStateNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleClearResultStates = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearResultStates = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyResultState = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyOngoingDamageAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				conditionValueChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyAllEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				setPCRollCTEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddIgnoreCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_CLEARRESULTSTATES = {
+					read_only = false,
+					other_fields = false,
+				},
+				old_getResultState = {
+					read_only = false,
+					other_fields = false,
+				},
+				rebuildParsedEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectExpire = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCTEffectNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditionalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearAllPCRollEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyResultState = {
+					read_only = false,
+					other_fields = false,
+				},
+				my_getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EmbeddedMessages = {
 			read_only = false,
 			fields = {
+				embedded_message_beginnerbox_switchtocore = {
+					read_only = false,
+					other_fields = false,
+				},
+				displayEmbeddedMessageOKCancel = {
+					read_only = false,
+					other_fields = false,
+				},
+				displayEmbeddedMessageOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				controlSubwindow = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		GameSystem = {
 			read_only = false,
 			fields = {
-				onInit = {
+				makeXMLSafeName = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDeathThreshold = {
+				removeAutomation = {
 					read_only = false,
 					other_fields = false,
 				},
-				targetactions = {
+				removeStringOr = {
+					read_only = false,
+					other_fields = false,
+				},
+				getd20CheckResult = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19648,7 +21728,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDistanceUnitsPerGrid = {
+				sFormat = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19668,11 +21748,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				tokenLightDefaults = {
+				addNewStringOr = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshiptargetactions = {
+				featViewTraitTypeFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				processAutomation = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19680,23 +21764,15 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				currencies = {
+				bb_background_substitutions = {
 					read_only = false,
 					other_fields = false,
 				},
-				modStabilization = {
+				featViewSkillFilter = {
 					read_only = false,
 					other_fields = false,
 				},
-				performConcentrationCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCharSelectDetailHost = {
-					read_only = false,
-					other_fields = false,
-				},
-				languagefonts = {
+				profLevelBonus = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19704,7 +21780,115 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
+				setProficiencySuccess = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyAutomation = {
+					read_only = false,
+					other_fields = false,
+				},
+				automationApplied = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeathThreshold = {
+					read_only = false,
+					other_fields = false,
+				},
+				traitTypeFilter = {
+					read_only = false,
+					other_fields = false,
+				},
+				isBeginnerBoxRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				entryChargenMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDistanceUnitsPerGrid = {
+					read_only = false,
+					other_fields = false,
+				},
+				getProfBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				sMsg = {
+					read_only = false,
+					other_fields = false,
+				},
+				languagefonts = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHighlightTextActionSymbolOffset = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getBBAbilitySub = {
+					read_only = false,
+					other_fields = false,
+				},
+				performConcentrationCheck = {
+					read_only = false,
+					other_fields = false,
+				},
 				currencyDefault = {
+					read_only = false,
+					other_fields = false,
+				},
+				currencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				replaceRegularExpressionChars = {
+					read_only = false,
+					other_fields = false,
+				},
+				getBBTrainSkillSub = {
+					read_only = false,
+					other_fields = false,
+				},
+				modStabilization = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionTextToSymbols = {
+					read_only = false,
+					other_fields = false,
+				},
+				targetactions = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCharSelectDetailHost = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNewString = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeActionSymbols = {
+					read_only = false,
+					other_fields = false,
+				},
+				profLevelBonusChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				isProfRankHigher = {
+					read_only = false,
+					other_fields = false,
+				},
+				isUnity = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19713,37 +21897,57 @@ stds.pfrpg2 = {
 		GlobalDebug = {
 			read_only = false,
 			fields = {
+				getDebugNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				isDebugSet = {
+					read_only = false,
+					other_fields = false,
+				},
+				processGlobalDebug = {
+					read_only = false,
+					other_fields = false,
+				},
+				consoleObjects = {
+					read_only = false,
+					other_fields = false,
+				},
+				consoleFormatted = {
+					read_only = false,
+					other_fields = false,
+				},
+				consoleString = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		HotKeyCustomHandler = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHotkey = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ItemManager2 = {
 			read_only = false,
 			fields = {
-				handleItem = {
-					read_only = false,
-					other_fields = false,
-				},
-				addItemToList2 = {
-					read_only = false,
-					other_fields = false,
-				},
-				sendItemTransfer = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemSourceType = {
-					read_only = false,
-					other_fields = false,
-				},
 				isArmor = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleAnyDrop = {
+				addItemToList2 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19756,53 +21960,533 @@ stds.pfrpg2 = {
 		LibraryDataPF2 = {
 			read_only = false,
 			fields = {
+				setCustomColumnControl = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCCRValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeityFeatureDivineSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCTypeValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryHeritages = {
+					read_only = false,
+					other_fields = false,
+				},
+				aListViews = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPrimalSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRituals = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellSchoolValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFocusSpellLevelGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				fCustomColumnControlHandler = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestrySize = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryHP = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFocusSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestrySpeed = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCRGroupedList = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeityFeatureAlignment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getOccultSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellSchool = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCHazardGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraditionListNames = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCantripGroupHeader = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCHazardType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeatGeneralSkillGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getArcaneSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeatTraitValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellLevelGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				sData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getArcaneSpellTraditionGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDomainFeatureDomainSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellTypeValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLookupDataValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeityFeatureDomains = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeityFeatureDivineFont = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCustomColumnData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryFlaw = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHeritageFeature1ColumnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeityFeatureFavoredWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDivineSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGeneralSkillFeats = {
+					read_only = false,
+					other_fields = false,
+				},
+				bID = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateTraitFilterWithGlobalRecords = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomColumnControlHandler = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellCastingData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTypeGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassTypeValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAutomationIcon = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryRarity = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLookupDataValueDeity = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRecordOverrides = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeatGeneralGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFocusSpellClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFTColumnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCRGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAutomationIconLookupData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLookupDataDomain = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLookupDataValueHeritage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDomainFeatureAdvDomainSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHeritageFeature2ColumnValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryBoosts = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDeityFeatureClericSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeatLevelValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryTraits = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAncestryLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemIsIdentified = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRitualLevelGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomColumnDataHandler = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemIdentifiedTreasure = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTreasureTypeAndSubtype = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ManagerGetRefData = {
 			read_only = false,
 			fields = {
+				getHeritages_old = {
+					read_only = false,
+					other_fields = false,
+				},
+				showConditionLookupData = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLookupDataFeatures = {
+					read_only = false,
+					other_fields = false,
+				},
+				getChoiceLookupData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitNodes = {
+					read_only = false,
+					other_fields = false,
+				},
+				sFormat = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHeritages = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				sVersatileHeritageName = {
+					read_only = false,
+					other_fields = false,
+				},
+				showEffectLookupData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordFromModule = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
+				sMsg = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLookupDataRecordGlobally = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ModifierStackPF2 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				PFRPG2_setModifierKey = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		NPCAbilityManager = {
 			read_only = false,
 			fields = {
+				actionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionHeal = {
+					read_only = false,
+					other_fields = false,
+				},
+				reduceUses = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionVsDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionApplyAllEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionCooldown = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				automationIsNotesOnly = {
+					read_only = false,
+					other_fields = false,
+				},
+				sDuration = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPermanentEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSuccessLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleActions = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionCreatureAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				actionPermEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				autoApplyCooldown = {
+					read_only = false,
+					other_fields = false,
+				},
+				openLink = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		OptionsPF2 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerOptions = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		PartyManager2 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardXPtoPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardEncountersToParty = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardQuestsToParty = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCLanguages = {
+					read_only = false,
+					other_fields = false,
+				},
+				addQuest = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCSkill = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		SpellManager = {
 			read_only = false,
 			fields = {
-				parseSpellSave = {
+				getActionTraits = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActionHeal = {
-					read_only = false,
-					other_fields = false,
-				},
-				nAbilRanged = {
+				getActionEffectDC = {
 					read_only = false,
 					other_fields = false,
 				},
 				resetPrepared = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActionMod = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19818,23 +22502,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				t = {
+				sAbility = {
 					read_only = false,
 					other_fields = false,
 				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertSpellDescToString = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSave = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertSpellShortDescToString = {
+				resetSpells = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19862,7 +22534,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				resetSpells = {
+				getActionAttackText = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19874,11 +22546,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				nAbilMelee = {
+				getActionHeal = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActionAbilityBonus = {
+				getActionMod = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19894,7 +22566,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				sSaveSource = {
+				convertSpellDescToString = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19906,7 +22578,7 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActionAttackText = {
+				getEffectDCEffects = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19916,10 +22588,6 @@ stds.pfrpg2 = {
 			read_only = false,
 			fields = {
 				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCombatantDelete = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19936,35 +22604,11 @@ stds.pfrpg2 = {
 		VersionManager2 = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onImport = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupWeapons = {
-					read_only = false,
-					other_fields = false,
-				},
-				nSrcDriftRating = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupFrame = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar17 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertPCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClassName = {
+				migrateChar12 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -19972,75 +22616,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				sRecordNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				addStarshipItem = {
-					read_only = false,
-					other_fields = false,
-				},
 				updateModule = {
 					read_only = false,
 					other_fields = false,
 				},
-				pcuSummarycheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertChar17 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				aRecordStrip = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertPCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAppFrameRecord = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertModulePCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertModulePCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip21 = {
+				onModuleLoad = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -20048,11 +22628,11 @@ stds.pfrpg2 = {
 					read_only = false,
 					other_fields = false,
 				},
-				onImport = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				onModuleLoad = {
+				updateChar = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27834,7 +30414,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				modCastSave = {
+				modRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27842,79 +30422,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCLCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSaveVsRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYSAVEVS = {
-					read_only = false,
-					other_fields = false,
-				},
 				performRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilitySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				getRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCastCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				modRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityCastRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				modConcentration = {
-					read_only = false,
-					other_fields = false,
-				},
-				resetUsesPerDay = {
-					read_only = false,
-					other_fields = false,
-				},
-				modCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDC = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityTargeting = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27922,7 +30430,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCastSave = {
+				getRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27931,7 +30439,7 @@ stds.dnd4e = {
 		ActionAttack = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onPostAttackResolve = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27940,10 +30448,6 @@ stds.dnd4e = {
 					other_fields = false,
 				},
 				OOB_MSGTYPE_APPLYATK = {
-					read_only = false,
-					other_fields = false,
-				},
-				getThrownRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27971,15 +30475,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performThrownRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				performCombatManRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCombatManRoll = {
+				setCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27999,19 +30495,15 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCritState = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyAttack = {
+				notifyApplyHRFC = {
 					read_only = false,
 					other_fields = false,
 				},
-				onPostAttackResolve = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMissChance = {
+				aCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28019,7 +30511,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyHRFC = {
+				applyAttack = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28028,7 +30520,15 @@ stds.dnd4e = {
 		ActionDamage = {
 			read_only = false,
 			fields = {
-				encodeDamageText = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDmgTypeEffectsToModRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageDamage = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28036,7 +30536,15 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				applyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
 				decodeDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyBrutalToModRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28044,27 +30552,35 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				decodeAndOrClauses = {
+				getDamageAdjust = {
 					read_only = false,
 					other_fields = false,
 				},
-				finalizeModRoll = {
+				onTargeting = {
 					read_only = false,
 					other_fields = false,
 				},
-				matchAndOrClauses = {
+				decodeDamageText = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyTargetedDmgTypeEffectsToDamageOutput = {
+				notifyApplyDamage = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyModifierKeysToModRoll = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDamageStrings = {
+				encodeDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageTypesFromString = {
+					read_only = false,
+					other_fields = false,
+				},
+				setupModRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28076,123 +30592,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getRoll = {
+				applyTargetedDmgTypeEffectsToDamageOutput = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyCriticalToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYDMGSTATE = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyDmgTypeEffectsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				nDamageAdjust = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleApplyDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				nNonlethalDmgAmount = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				bResist = {
-					read_only = false,
-					other_fields = false,
-				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				bVulnerable = {
-					read_only = false,
-					other_fields = false,
-				},
-				setDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyEffectModNotificationToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				notifyApplyDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				encodeDamageTypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyFailedStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				messageDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getParenDepth = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				decodeDamageText = {
-					read_only = false,
-					other_fields = false,
-				},
-				modStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageAdjust = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageTypesFromString = {
-					read_only = false,
-					other_fields = false,
-				},
-				performStabilizationRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYDMG = {
+				applyStaticOptionsToModRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28200,7 +30604,31 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performRoll = {
+				checkDie = {
+					read_only = false,
+					other_fields = false,
+				},
+				finalizeModRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyEffectModNotificationToModRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyFocusAdjustmentsToModRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyCriticalToModRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				modDamage = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28208,7 +30636,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyAbilityEffectsToModRoll = {
+				OOB_MSGTYPE_APPLYDMG = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28229,11 +30657,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				decodeHealClauses = {
-					read_only = false,
-					other_fields = false,
-				},
-				encodeHealClauses = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28262,11 +30686,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				OOB_MSGTYPE_APPLYINIT = {
+				getEffectAdjustments = {
 					read_only = false,
 					other_fields = false,
 				},
-				getRoll = {
+				OOB_MSGTYPE_APPLYINIT = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28283,6 +30707,18 @@ stds.dnd4e = {
 		ActionRecharge = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRecharge = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionSave = {
@@ -28292,23 +30728,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				performAutoRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 				onSave = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				applySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				notifyApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				performVsRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28316,11 +30740,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYSAVE = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28328,7 +30748,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performRoll = {
+				getRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28341,11 +30761,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPartySheetRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				modSkill = {
+				modRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28353,11 +30769,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPCRoll = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				performRoll = {
+				performPartySheetRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28370,6 +30786,66 @@ stds.dnd4e = {
 		ActorManager4E = {
 			read_only = false,
 			fields = {
+				getAbilityScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCreatureTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWoundPercent = {
+					read_only = false,
+					other_fields = false,
+				},
+				isSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCreatureType = {
+					read_only = false,
+					other_fields = false,
+				},
+				sStatus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefenseValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				isAlignment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				STATUS_BLOODIED = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				initActorHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefenseInternal = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCSheetWoundColor = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CampaignDataManager2 = {
@@ -28384,59 +30860,51 @@ stds.dnd4e = {
 		CharManager = {
 			read_only = false,
 			fields = {
-				handleRangedAttacks = {
+				resetPowers = {
 					read_only = false,
 					other_fields = false,
 				},
-				onKeyAbilityUpdate = {
+				getPowerSort = {
 					read_only = false,
 					other_fields = false,
 				},
-				nodeSource = {
+				setPowerHeaderCategory = {
 					read_only = false,
 					other_fields = false,
 				},
-				bHeavy = {
+				removeFromWeaponDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				checkForRacialSaveBonus = {
+				onItemIDChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				addInfoDB = {
+				onPowerAbilityAction = {
 					read_only = false,
 					other_fields = false,
 				},
-				aFeatLoc = {
+				removeFromArmorDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleMeleeAttacks = {
+				getSkillValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				TRAIT_MULTITALENTED = {
+				onIDOptionChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleRacialAbilitiesEmbedded = {
+				initWeaponIDTracking = {
 					read_only = false,
 					other_fields = false,
 				},
-				addArchetype = {
+				getPowerFocus = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRace = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleClassFeatureSpells = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStatName = {
+				getDefaultFocus = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28444,35 +30912,27 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleRacialLanguages = {
+				checkForActionPoint = {
 					read_only = false,
 					other_fields = false,
 				},
-				sCollisionDC = {
+				getPowerSubSort = {
 					read_only = false,
 					other_fields = false,
 				},
-				nCastPerDay = {
+				addPowerDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				addLanguage = {
+				getClassLevelSummary = {
 					read_only = false,
 					other_fields = false,
 				},
-				getWeaponAttackRollStructures = {
+				calcItemArmorClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				sStatMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRequirements = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_DARKVISION = {
+				rest = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28480,31 +30940,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onSpellClassIncreaseSelect = {
+				onDropPowerAbility = {
 					read_only = false,
 					other_fields = false,
 				},
-				addUpgrade = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_TECHNOMANCER = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				getThrownRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClasses = {
+				onCharItemAdd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -28516,727 +30956,15 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				resolveRefNode = {
+				rebuildCategories = {
 					read_only = false,
 					other_fields = false,
 				},
-				checkWeaponIDChange = {
+				addPowerToWeaponDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				RACIAL_TRAIT_TELEPATHY = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasTrait = {
-					read_only = false,
-					other_fields = false,
-				},
-				FEAT_MULTIPLE_TIMES = {
-					read_only = false,
-					other_fields = false,
-				},
-				onKeyAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_GENERIC = {
-					read_only = false,
-					other_fields = false,
-				},
-				FEAT_TOUGHNESS = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAltFeatureRequirments = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStam = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSkillPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				outputUserMessage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addCompanionAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				onItemIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_LEVEL = {
-					read_only = false,
-					other_fields = false,
-				},
-				nClassLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onRaceAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStay = {
-					read_only = false,
-					other_fields = false,
-				},
-				sMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_D20PFSRD = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_ABILITY_SW = {
-					read_only = false,
-					other_fields = false,
-				},
-				addFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				sLabel = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LOWLIGHTVISION = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE_MEDIUM = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActiveVeh = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDuplicateFeats = {
-					read_only = false,
-					other_fields = false,
-				},
-				bSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_REPLACE = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFeatureClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_CLASS = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStat = {
-					read_only = false,
-					other_fields = false,
-				},
-				copyVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialSkillBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDeletedFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				claimCompanion = {
-					read_only = false,
-					other_fields = false,
-				},
-				bLight = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_BLINDSENSE = {
-					read_only = false,
-					other_fields = false,
-				},
-				aReplaceListData = {
-					read_only = false,
-					other_fields = false,
-				},
-				calcLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharItemAdd = {
-					read_only = false,
-					other_fields = false,
-				},
-				isWeaponTooHeavy = {
-					read_only = false,
-					other_fields = false,
-				},
-				sReplaced = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				sAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				selectAltRacialStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				aCharClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				onThemeAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				aName = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				nRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStab = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillName = {
-					read_only = false,
-					other_fields = false,
-				},
-				aList = {
-					read_only = false,
-					other_fields = false,
-				},
-				nScore = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAsscList = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_MYSTIC = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_PROFICIENCY = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSkillBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				addThemeFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				bAdvanced = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupWeapons = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSkill = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelHelper = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSALName = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				i = {
-					read_only = false,
-					other_fields = false,
-				},
-				sUpdateFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				k = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleReplaceAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeFromArmorDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				aFeatureStrip = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCompLevelUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSourceClassKeyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				nSpellFailure = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeCompanionOwner = {
-					read_only = false,
-					other_fields = false,
-				},
-				sortClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE = {
-					read_only = false,
-					other_fields = false,
-				},
-				nEac = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_NODECHAR = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAttacksString = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityIncreaseSelectDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_SRD_NORMAL = {
-					read_only = false,
-					other_fields = false,
-				},
-				nLevelNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillsNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialVision = {
-					read_only = false,
-					other_fields = false,
-				},
-				sType = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleBaseStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSPClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				resetHealth = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_BAD_DRONE = {
-					read_only = false,
-					other_fields = false,
-				},
-				setCompanionOwner = {
-					read_only = false,
-					other_fields = false,
-				},
-				addTheme = {
-					read_only = false,
-					other_fields = false,
-				},
-				nAdj = {
-					read_only = false,
-					other_fields = false,
-				},
-				sPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeTargetList = {
-					read_only = false,
-					other_fields = false,
-				},
-				bApplied = {
-					read_only = false,
-					other_fields = false,
-				},
-				getReplacedFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_BAB_SLOW = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				nLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_ABILITY_D20PFSRD = {
-					read_only = false,
-					other_fields = false,
-				},
-				setKeyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				nUses = {
-					read_only = false,
-					other_fields = false,
-				},
-				nFreeSkill = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRaceCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_BAD = {
-					read_only = false,
-					other_fields = false,
-				},
-				nMaxStatBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				nResolveNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialAbilityInName = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleFreeSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillDataCommon = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFreeSkillOne = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeMechAttachments = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleModifyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyClassStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyToughness = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_WITCHWARPER = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDuplicateFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAug = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialSpeed = {
-					read_only = false,
-					other_fields = false,
-				},
-				addBoon = {
-					read_only = false,
-					other_fields = false,
-				},
-				addProfFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SUPERIORDARKVISION = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelKnownSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LIMITED_TELEPATHY = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelSlots = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE_SMALL = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillValue = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				onActionDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateFeatureLevels = {
-					read_only = false,
-					other_fields = false,
-				},
-				initWeaponIDTracking = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleAltClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSaveBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRaceType = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_RESOLVE_STAB = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_WEAPONFAMILIARITY = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityIncreaseSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				nKac = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				calcItemArmorClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialSize = {
-					read_only = false,
-					other_fields = false,
-				},
-				aStatInfo = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LANGUAGES = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleFreeRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_GOOD_DRONE = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SLOW_AND_STEADY = {
-					read_only = false,
-					other_fields = false,
-				},
-				getClassKeyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				nRpMax = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialBasicTrait = {
-					read_only = false,
-					other_fields = false,
-				},
-				getClassLevelSummary = {
-					read_only = false,
-					other_fields = false,
-				},
-				nCheckPenalty = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAbilityModifiers = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFreeSkillTwo = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleProficiencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				getWeaponDamageRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				sReplaceName = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_BAB_MEDIUM = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCMech = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_GOOD = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCompLevelCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_SRD_SLOW = {
-					read_only = false,
-					other_fields = false,
-				},
-				isProficient = {
-					read_only = false,
-					other_fields = false,
-				},
-				getClassNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeFromWeaponDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAlly = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_SPELLS_PER_DAY = {
+				onPowerSortCompare = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29244,27 +30972,47 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRacialTrait = {
+				checkWeaponIDChange = {
 					read_only = false,
 					other_fields = false,
 				},
-				sSkills = {
+				getPowerAbilityOutputOrder = {
 					read_only = false,
 					other_fields = false,
 				},
-				sTraitStats = {
+				getAdvancedRollStructures = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCombatManStructures = {
+				resetHealth = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_BAB_FAST = {
+				getEffectStructures = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_FEATURE_SPELLS = {
+				getFocusRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				useHealingSurge = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForSecondWind = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcNextWeaponOrder = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponCritical = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29273,7 +31021,11 @@ stds.dnd4e = {
 		CombatManager2 = {
 			read_only = false,
 			fields = {
-				sortfunc = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addBattle = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29285,7 +31037,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				nextPhase = {
+				resetCombatantInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29293,75 +31045,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getXPFromCR = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCDecodeDefAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				addDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				callForEachCombatantRoundDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getNPCSpecialAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCRFromXP = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearExpiringEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				nCurrent = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTurnEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseAttackLine = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleResolveDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				addPC = {
-					read_only = false,
-					other_fields = false,
-				},
-				aEffect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCDecodeQualities = {
+				parseCTAttackLine = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29369,19 +31053,15 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				aAddDamageType = {
+				rollEntryInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRightClickDiceToClauses = {
+				parseRegeneration = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleCompanionInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				rollTypeInit = {
+				getActiveInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29389,11 +31069,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addCompanion = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEffectResolve = {
+				clearExpiringEffects = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29405,23 +31081,15 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCAttacks = {
+				nIndex = {
 					read_only = false,
 					other_fields = false,
 				},
-				calcBattleCR = {
+				rest = {
 					read_only = false,
 					other_fields = false,
 				},
-				rollEntryInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				CT_PHASE = {
-					read_only = false,
-					other_fields = false,
-				},
-				calcBattleXP = {
+				onTurnEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29430,58 +31098,6 @@ stds.dnd4e = {
 		DataCommon = {
 			read_only = false,
 			fields = {
-				arrayexpert = {
-					read_only = false,
-					other_fields = false,
-				},
-				othercomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				arrayspellcaster = {
-					read_only = false,
-					other_fields = false,
-				},
-				specialdmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproles = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipsizes = {
-					read_only = false,
-					other_fields = false,
-				},
-				sensesdata = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewminoractions = {
-					read_only = false,
-					other_fields = false,
-				},
-				arraycombatant = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesubtype = {
-					read_only = false,
-					other_fields = false,
-				},
-				racetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproleslist = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
 				conditionaltags = {
 					read_only = false,
 					other_fields = false,
@@ -29490,147 +31106,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				bonuscomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_weapon_damage = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatushalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesize = {
-					read_only = false,
-					other_fields = false,
-				},
-				companiondatalvl = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				acarmormatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				abilitiesshort = {
-					read_only = false,
-					other_fields = false,
-				},
-				itemsizetoacmod = {
-					read_only = false,
-					other_fields = false,
-				},
-				targetableeffectcomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_abrev = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				actypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_goodevil = {
-					read_only = false,
-					other_fields = false,
-				},
-				minimum_mech_points = {
-					read_only = false,
-					other_fields = false,
-				},
-				spelleffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_stol = {
-					read_only = false,
-					other_fields = false,
-				},
 				psabilitydata = {
-					read_only = false,
-					other_fields = false,
-				},
-				psskilldata = {
-					read_only = false,
-					other_fields = false,
-				},
-				class_nametovalue = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				weapondmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				pssavedata = {
-					read_only = false,
-					other_fields = false,
-				},
-				stackablebonustypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				abilityeffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				rangetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				acdeflectionmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				naturaldmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactiontitles = {
-					read_only = false,
-					other_fields = false,
-				},
-				energytypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				save_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				kinetictypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				ammotypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturehalftypesubrace = {
-					read_only = false,
-					other_fields = false,
-				},
-				acshieldmatch = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29638,7 +31114,19 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				vehicle_standard_systems = {
+				bonuscomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				psskilldata = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatushalf = {
+					read_only = false,
+					other_fields = false,
+				},
+				skills = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29650,19 +31138,19 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				vehicle_custom_array = {
+				ability_ltos = {
 					read_only = false,
 					other_fields = false,
 				},
-				mech_base_stats = {
+				targetableeffectcomps = {
 					read_only = false,
 					other_fields = false,
 				},
-				mech_default_actions = {
+				bonustypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				feat_proficiencies = {
+				creaturesize = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29670,11 +31158,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				dmgtypes_ltos = {
+				creaturedefaultorigin = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshipscale = {
+				othercomps = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29682,15 +31170,15 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshiptier = {
+				rangetypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				alignment_lawchaos = {
+				creatureorigin = {
 					read_only = false,
 					other_fields = false,
 				},
-				currencyDefault = {
+				condcomps = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29702,7 +31190,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				save_ltos = {
+				creaturesubtype = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29710,11 +31198,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturehalftype = {
+				alignment_goodevil = {
 					read_only = false,
 					other_fields = false,
 				},
-				connectors = {
+				alignment_lawchaos = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29722,11 +31210,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				bonustypes = {
+				conditionsparse = {
 					read_only = false,
 					other_fields = false,
 				},
-				condcomps = {
+				creaturetype = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29735,11 +31223,151 @@ stds.dnd4e = {
 		Desktop4E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EffectManager4E = {
 			read_only = false,
 			fields = {
+				onActorTurnStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				makeEffectSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectEndTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleFailedSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectExpireSummary = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyFailedSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyMarkPenalty = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyOngoingDamageAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectDragDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleFailedSaveEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_FAILEDSAVEEFF = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsForCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				rebuildParsedEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectExpire = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditionalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddIgnoreCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyRecharge = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorEndTurn = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		GameSystem = {
@@ -29749,7 +31377,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDeathThreshold = {
+				currencyDefault = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29757,11 +31385,23 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				languagefonts = {
+					read_only = false,
+					other_fields = false,
+				},
 				getCharSelectDetailLocal = {
 					read_only = false,
 					other_fields = false,
 				},
+				requestCharSelectDetailClient = {
+					read_only = false,
+					other_fields = false,
+				},
 				getDistanceUnitsPerGrid = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCharSelectDetailHost = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29773,7 +31413,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getStabilizationResult = {
+				currencies = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29785,68 +31425,24 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshiptargetactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				requestCharSelectDetailClient = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				modStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				performConcentrationCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCharSelectDetailHost = {
-					read_only = false,
-					other_fields = false,
-				},
-				languagefonts = {
-					read_only = false,
-					other_fields = false,
-				},
-				getStabilizationRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencyDefault = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
 		ItemManager2 = {
 			read_only = false,
 			fields = {
-				handleItem = {
-					read_only = false,
-					other_fields = false,
-				},
-				addItemToList2 = {
-					read_only = false,
-					other_fields = false,
-				},
-				sendItemTransfer = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemSourceType = {
-					read_only = false,
-					other_fields = false,
-				},
 				isArmor = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleAnyDrop = {
+				getItemCostAsString = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemType = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItemToList2 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29859,16 +31455,68 @@ stds.dnd4e = {
 		LibraryData4E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCRoleValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRecordOverrides = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCRoleGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCLevelValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				aListViews = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCLevelGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCRole = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		NPCManager4E = {
 			read_only = false,
 			fields = {
+				applyDiceToPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPowerDB = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		Options4E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerOptions = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		PartyManager2 = {
@@ -29882,7 +31530,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCClasses = {
+				linkPCSkills = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29890,11 +31538,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkillranks = {
-					read_only = false,
-					other_fields = false,
-				},
-				awardXP = {
+				linkPCFields = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29902,11 +31546,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCFields = {
-					read_only = false,
-					other_fields = false,
-				},
-				addEncounter = {
+				awardXP = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29918,7 +31558,7 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkills = {
+				addEncounter = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29931,11 +31571,235 @@ stds.dnd4e = {
 		PowerManager = {
 			read_only = false,
 			fields = {
+				parseDamageClause = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildContinuationHeal = {
+					read_only = false,
+					other_fields = false,
+				},
+				rDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseDamageContinuation = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffectsAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				within_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseExpirationPhrase = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseTargetPhrase = {
+					read_only = false,
+					other_fields = false,
+				},
+				exp_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				damage_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseHeals = {
+					read_only = false,
+					other_fields = false,
+				},
+				cond_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbility = {
+					read_only = false,
+					other_fields = false,
+				},
+				clause_start_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertAbilityWordArrayToEffectString = {
+					read_only = false,
+					other_fields = false,
+				},
+				consolidationHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				bLevelClause = {
+					read_only = false,
+					other_fields = false,
+				},
+				sentence_end_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				adjacent_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				trigger_cond = {
+					read_only = false,
+					other_fields = false,
+				},
+				against_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseValuePhrase = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseHealsAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				ca_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				altcond_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				nTempExpiration = {
+					read_only = false,
+					other_fields = false,
+				},
+				add_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseHealsContinuation = {
+					read_only = false,
+					other_fields = false,
+				},
+				sTempExpiration = {
+					read_only = false,
+					other_fields = false,
+				},
+				increase_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPowerAbilityString = {
+					read_only = false,
+					other_fields = false,
+				},
+				heal_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				rage_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseAttacks = {
+					read_only = false,
+					other_fields = false,
+				},
+				cover_conceal_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefense = {
+					read_only = false,
+					other_fields = false,
+				},
+				regen_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				dmgadj_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseDamagesAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				immune_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				clause_end_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parsePowerDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				connect_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				trigger_break = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildContinuationEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				mod_flag = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEntityPhrase = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertDiceWordArrayToDiceString = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseDamages = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		SCManager = {
 			read_only = false,
 			fields = {
+				calcTotals = {
+					read_only = false,
+					other_fields = false,
+				},
+				addResult = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				reset = {
+					read_only = false,
+					other_fields = false,
+				},
+				addDC = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		TokenManager2 = {
@@ -29945,11 +31809,11 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCombatantDelete = {
+				handleAfterEffectTag = {
 					read_only = false,
 					other_fields = false,
 				},
-				getEffectInfo = {
+				handleIFEffectTag = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -29962,47 +31826,23 @@ stds.dnd4e = {
 		VersionManager2 = {
 			read_only = false,
 			fields = {
-				onInit = {
+				convertItems21 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip19 = {
+				migrateEffect21 = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupWeapons = {
+				convertEffects21 = {
 					read_only = false,
 					other_fields = false,
 				},
-				nSrcDriftRating = {
+				migrateAdvLog22 = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupFrame = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar17 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertPCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClassName = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharImport = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRecordNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				addStarshipItem = {
+				convertNPCPowerDice = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30010,39 +31850,27 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				pcuSummarycheck = {
+				migratePower28 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar17 = {
+				migrateEffect16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migratePCShip19 = {
+				convertModuleEncounters27 = {
 					read_only = false,
 					other_fields = false,
 				},
-				aRecordStrip = {
+				convertCombat26 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip20 = {
+				migrateModuleItem27 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAppFrameRecord = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertModulePCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertModulePCShip20 = {
+				convertPartySheet22 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30050,23 +31878,19 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
-				migrateChar22 = {
+				migrateModuleEncounter27 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migratePCShip20 = {
+				convertCharacterPowerAbilities = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar22 = {
+				migrateChar15 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migrateChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip21 = {
+				convertModuleNPCs27 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -30074,11 +31898,139 @@ stds.dnd4e = {
 					read_only = false,
 					other_fields = false,
 				},
+				convertEffects16 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCTAtkField = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertRegistry26 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertParcel26 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertOptions20 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertTables21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertLog24 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertOptions21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCharacters21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertNPCs21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar26 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertChar26 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharImport = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateNPC21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				addTrapSkillItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertModuleParcels27 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertParty26 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertItemInList26 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertEncounters21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateEncounter21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateItem21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertModuleItems27 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPartySheet24 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateModuleParcel27 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar21 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onImport = {
 					read_only = false,
 					other_fields = false,
 				},
+				migrateCalendar22 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onModuleLoad = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertLog23 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateModuleNPC27 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertArmorEnc25 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertSkillTrackerResults = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPower28 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34750,6 +36702,38 @@ stds.ammunitionmanagerbmos = {
 		AmmunitionManager = {
 			read_only = false,
 			fields = {
+				getAmmoRemaining = {
+					read_only = false,
+					other_fields = false,
+				},
+				countMissedShots = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAmmoNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				ammoTracker = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateMargin = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponName = {
+					read_only = false,
+					other_fields = false,
+				},
+				tLoadWeapons = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ammopicker = {
@@ -35724,11 +37708,99 @@ stds.dnd2e = {
 		AHDB = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleSetValueAsHost = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_DBSETVALUE = {
+					read_only = false,
+					other_fields = false,
+				},
+				setValue = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		AbilityScoreADND = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateDexterity = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateConstitution = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDexterityProperties = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCharismaProperties = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateIntelligence = {
+					read_only = false,
+					other_fields = false,
+				},
+				abilityScoreSanity = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateStrength = {
+					read_only = false,
+					other_fields = false,
+				},
+				detailsPercentUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateWisdom = {
+					read_only = false,
+					other_fields = false,
+				},
+				getStrengthProperties = {
+					read_only = false,
+					other_fields = false,
+				},
+				getConstitutionProperties = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWisdomProperties = {
+					read_only = false,
+					other_fields = false,
+				},
+				detailsUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getIntelligenceProperties = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharisma = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionAttack = {
@@ -35746,10 +37818,6 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getThrownRoll = {
-					read_only = false,
-					other_fields = false,
-				},
 				clearCritState = {
 					read_only = false,
 					other_fields = false,
@@ -35762,7 +37830,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPartySheetVsRoll = {
+				againstMirrors = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35774,19 +37842,27 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performThrownRoll = {
+				getBaseAttack = {
 					read_only = false,
 					other_fields = false,
 				},
-				performCombatManRoll = {
+				updatePsionicPoints = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCombatManRoll = {
+				setCritState = {
+					read_only = false,
+					other_fields = false,
+				},
+				adjustPSPs = {
 					read_only = false,
 					other_fields = false,
 				},
 				OOB_MSGTYPE_APPLYHRFC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getMTHACO = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35798,23 +37874,23 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				getTHACO = {
+					read_only = false,
+					other_fields = false,
+				},
+				getBaseAttackPsionic = {
+					read_only = false,
+					other_fields = false,
+				},
 				isCrit = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCritState = {
+				notifyApplyHRFC = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				onPostAttackResolve = {
-					read_only = false,
-					other_fields = false,
-				},
-				onMissChance = {
+				aCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35822,7 +37898,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyHRFC = {
+				applyAttack = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35831,56 +37907,19 @@ stds.dnd2e = {
 		ActionCheck = {
 			read_only = false,
 			fields = {
-			},
-		},
-		ActionDamage = {
-			read_only = false,
-			fields = {
-				encodeDamageText = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleApplyDamage = {
+				modRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				decodeDamageTypes = {
+				onRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				onDamageRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				decodeAndOrClauses = {
-					read_only = false,
-					other_fields = false,
-				},
-				finalizeModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				matchAndOrClauses = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyTargetedDmgTypeEffectsToDamageOutput = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyModifierKeysToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDamageStrings = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyDmgEffectsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyConditionsToModRoll = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35888,7 +37927,60 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyCriticalToModRoll = {
+			},
+		},
+		ActionDamage = {
+			read_only = false,
+			fields = {
+				getAbsorbedByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkDiceReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkNumericalReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				isMagicDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTable48HitDiceVsImmunity = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeDamageText = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYDMG = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageStrings = {
+					read_only = false,
+					other_fields = false,
+				},
+				damageArmorWorn = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageAdjust = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35900,35 +37992,23 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyDmgTypeEffectsToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				nDamageAdjust = {
-					read_only = false,
-					other_fields = false,
-				},
 				handleApplyDamageState = {
 					read_only = false,
 					other_fields = false,
 				},
-				nNonlethalDmgAmount = {
+				checkReductionType = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDamageState = {
+				getDamageTypesFromString = {
 					read_only = false,
 					other_fields = false,
 				},
-				bResist = {
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				bVulnerable = {
+				getReductionType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35936,35 +38016,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyEffectModNotificationToModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				notifyApplyDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				encodeDamageTypes = {
-					read_only = false,
-					other_fields = false,
-				},
 				applyDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupModRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyFailedStabilization = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35972,11 +38024,88 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getParenDepth = {
+				damageArmor = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyDamage = {
+				handleApplyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkShieldHit = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				modDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkDiceReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkNumericalReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ActionDamagePSP = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYDMGSTATEPSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDamageState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35984,7 +38113,63 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				modStabilization = {
+				notifyApplyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeDamageTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDamageStrings = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDamageState = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYDMGPSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				messageDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkReductionTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkNumericalReductionType = {
+					read_only = false,
+					other_fields = false,
+				},
+				modDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				isMagicDamage = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35996,40 +38181,31 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performStabilizationRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYDMG = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyTargetedDmgEffectsToDamageOutput = {
-					read_only = false,
-					other_fields = false,
-				},
-				performRoll = {
-					read_only = false,
-					other_fields = false,
-				},
 				onDamage = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyAbilityEffectsToModRoll = {
+				checkNumericalReductionTypeHelper = {
 					read_only = false,
 					other_fields = false,
 				},
-			},
-		},
-		ActionDamagePSP = {
-			read_only = false,
-			fields = {
 			},
 		},
 		ActionGeneral = {
 			read_only = false,
 			fields = {
+				onRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				modRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionHeal = {
@@ -36047,11 +38223,19 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				decodeHealClauses = {
+				onHealPostRoll = {
 					read_only = false,
 					other_fields = false,
 				},
 				encodeHealClauses = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeHealClauses = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36064,6 +38248,34 @@ stds.dnd2e = {
 		ActionHealPSP = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modHeal = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHeal = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeHealClauses = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeHealClauses = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionInit = {
@@ -36081,7 +38293,19 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onResolve = {
+				handleEffectAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectAdjustments = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				outputUserMessage = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36089,7 +38313,19 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				applySpellCastingConcentration = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyEffectAdd = {
+					read_only = false,
+					other_fields = false,
+				},
 				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_EFFECTADD = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36097,7 +38333,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyInit = {
+				onResolve = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36106,17 +38342,125 @@ stds.dnd2e = {
 		ActionPower = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modCastSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				performSaveVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				rJSON = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPowerSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSaveVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYSAVEVS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPowerCastRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPowerCast = {
+					read_only = false,
+					other_fields = false,
+				},
+				onPowerTargeting = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCastSave = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionRecharge = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRecharge = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionSave = {
 			read_only = false,
 			fields = {
 				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYCONC = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyConc = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyConcentrationRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyConc = {
+					read_only = false,
+					other_fields = false,
+				},
+				performConcentrationRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkMagicResist = {
+					read_only = false,
+					other_fields = false,
+				},
+				setNPCSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				onConcentrationRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getConstitutionPoisonModifier = {
+					read_only = false,
+					other_fields = false,
+				},
+				rJSON = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36132,11 +38476,31 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplySave = {
+				hasConcentrationEffects = {
 					read_only = false,
 					other_fields = false,
 				},
-				performVsRoll = {
+				getConstitutionMagicModifier = {
+					read_only = false,
+					other_fields = false,
+				},
+				expireConcentrationEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getConcentrationEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_SAVE_BONUS = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_SAVE_BONUSES = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRacialSaveAdjustments = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36144,19 +38508,11 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getRoll = {
-					read_only = false,
-					other_fields = false,
-				},
 				OOB_MSGTYPE_APPLYSAVE = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPartySheetRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				performRoll = {
+				notifyApplySave = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36169,11 +38525,15 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPartySheetRoll = {
+				getUnlistedRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				modSkill = {
+				modRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performPartyRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36181,7 +38541,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performPCRoll = {
+				performNPCRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36198,101 +38558,92 @@ stds.dnd2e = {
 		ActionSurprise = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				modRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSurpriseTarget = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRoll = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ActionTurn = {
 			read_only = false,
 			fields = {
-			},
-		},
-		ActionsManager2 = {
-			read_only = false,
-			fields = {
-			},
-		},
-		ActorManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		CharManager = {
-			read_only = false,
-			fields = {
-			},
-		},
-		CharlistManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		CombatManager2 = {
-			read_only = false,
-			fields = {
-			},
-		},
-		CombatManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		ConnectionManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		ConvertManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		DataCommon = {
-			read_only = false,
-			fields = {
-				arrayexpert = {
+				OOB_MSGTYPE_APPLYOBLITERATE = {
 					read_only = false,
 					other_fields = false,
 				},
-				othercomps = {
+				applyTurnedState = {
 					read_only = false,
 					other_fields = false,
 				},
-				arrayspellcaster = {
+				modRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				specialdmgtypes = {
+				notifyApplyTurn = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshiproles = {
+				onRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshipsizes = {
+				sortByLevel = {
 					read_only = false,
 					other_fields = false,
 				},
-				sensesdata = {
+				handleApplyObliteration = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshipcrewminoractions = {
+				getRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				arraycombatant = {
+				OOB_MSGTYPE_APPLYTURN = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturesubtype = {
+				applyObliteration = {
 					read_only = false,
 					other_fields = false,
 				},
-				racetype = {
+				handleApplyTurned = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshiproleslist = {
+				notifyApplyObliteration = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAlreadyTurned = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				performRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36300,83 +38651,976 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				conditionaltags = {
+			},
+		},
+		ActionsManager2 = {
+			read_only = false,
+			fields = {
+				nDroppedDie = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturedefaulttype = {
+				encodeAdvantage = {
 					read_only = false,
 					other_fields = false,
 				},
-				bonuscomps = {
+				decodeAdvantage = {
 					read_only = false,
 					other_fields = false,
 				},
-				mech_weapon_damage = {
+				encodeDesktopMods = {
 					read_only = false,
 					other_fields = false,
 				},
-				healthstatushalf = {
+			},
+		},
+		ActorManagerADND = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturesize = {
+				getCreatureTypeHelper = {
 					read_only = false,
 					other_fields = false,
 				},
-				companiondatalvl = {
+				getWoundPercent = {
 					read_only = false,
 					other_fields = false,
 				},
-				ability_ltos = {
+				isArmorType = {
 					read_only = false,
 					other_fields = false,
 				},
-				acarmormatch = {
+				getTargetNodes = {
 					read_only = false,
 					other_fields = false,
 				},
-				abilitiesshort = {
+				getWoundPercentPSP = {
 					read_only = false,
 					other_fields = false,
 				},
-				itemsizetoacmod = {
+				isSize = {
 					read_only = false,
 					other_fields = false,
 				},
-				targetableeffectcomps = {
+				isAlignment = {
 					read_only = false,
 					other_fields = false,
 				},
-				dmgtypes_abrev = {
+				getSave = {
 					read_only = false,
 					other_fields = false,
 				},
-				currencies = {
+				getCheck = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshipcrewactions = {
+				isRangeBetween = {
 					read_only = false,
 					other_fields = false,
 				},
-				actypes = {
+				isClassType = {
 					read_only = false,
 					other_fields = false,
 				},
-				alignment_goodevil = {
+				getClassLevel = {
 					read_only = false,
 					other_fields = false,
 				},
-				minimum_mech_points = {
+				getPsionicDefenseIndex = {
 					read_only = false,
 					other_fields = false,
 				},
-				spelleffects = {
+				getDefenseValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				dmgtypes_stol = {
+				getPsionicAttackIndex = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCreatureType = {
+					read_only = false,
+					other_fields = false,
+				},
+				initActorHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertToAscendingAC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPsionicAttackVersusDefenseMode = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		CharManager = {
+			read_only = false,
+			fields = {
+				CLASS_SORCERER = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassFeatureHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_MONK = {
+					read_only = false,
+					other_fields = false,
+				},
+				nPicks = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTraitRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasFeat = {
+					read_only = false,
+					other_fields = false,
+				},
+				addInfoDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_POWERFUL_BUILD = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromArmorDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_BARBARIAN = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPSPRollForAdvancement = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateMoveFromEncumbrance1e = {
+					read_only = false,
+					other_fields = false,
+				},
+				sortClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseSkillsFromString = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassLevelByName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassLevelSummary = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				rest = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_WARRIOR_HITPOINT_BONUS = {
+					read_only = false,
+					other_fields = false,
+				},
+				nBaseAC = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLanguageDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				bIsShield = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateHealthScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				pickSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTotalEXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemDelete = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbsoluteClassMaxLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_DWARVEN_TOUGHNESS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getBestProficiencyInitial = {
+					read_only = false,
+					other_fields = false,
+				},
+				resolveRefNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				getProficiencyInitial = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEncumbranceMult = {
+					read_only = false,
+					other_fields = false,
+				},
+				logCharacterChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAdvancement = {
+					read_only = false,
+					other_fields = false,
+				},
+				addWeaponProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClassSkillSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkSkillsNodeToAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_CATS_CLAWS = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertSingleNumberTextToNumber = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWisIntConPSPBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassCount = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSpellSlots = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHPRollForAdvancement = {
+					read_only = false,
+					other_fields = false,
+				},
+				reCalculateHPForMultiClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAllClassAndLevelConAdjustments = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEXPNotApplied = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassFromName = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				outputUserMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				skillExists = {
+					read_only = false,
+					other_fields = false,
+				},
+				onItemIDChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				doesPowerDBItemExist = {
+					read_only = false,
+					other_fields = false,
+				},
+				getConstitutionHPBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRaceAbilitySelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_SPELLCASTING = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToArmorDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				getInActiveClassMaxLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRaceSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAbilityAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasInActiveClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACE_DWARF = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAllClassNames = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassProficiencyDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActiveClassCount = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPowerAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFeatRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateMoveFromEncumbrance2e = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCTNodeByNodeChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcItemArmorClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAdventureDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcPactMagicLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEncumbranceRank2e = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToPowerDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_DRACONIC_RESILIENCE = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNodeByCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEffectFeature = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEAT_TOUGH = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcWeightCarried = {
+					read_only = false,
+					other_fields = false,
+				},
+				outputAdvancementLog = {
+					read_only = false,
+					other_fields = false,
+				},
+				addProficiencySlots = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromPowerDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_UNARMORED_DEFENSE = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACE_DUERGAR = {
+					read_only = false,
+					other_fields = false,
+				},
+				addBackgroundRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRaceRef = {
+					read_only = false,
+					other_fields = false,
+				},
+				getBestProficiencyRate = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassHDUsage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getProficiencyRate = {
+					read_only = false,
+					other_fields = false,
+				},
+				FEATURE_PACT_MAGIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcSpellcastingLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActiveClassMaxLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				pickWeaponProfs = {
+					read_only = false,
+					other_fields = false,
+				},
+				addTraitDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWeaponProfSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateHPForLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				addAttackAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClassFeatureDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				addProficiencyDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyEXPToActiveClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_NATURAL_ARMOR = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkWeaponIDChange = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		CharlistManagerADND = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				turnOffAllInitRolled = {
+					read_only = false,
+					other_fields = false,
+				},
+				turnOffInitRolled = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateWidgets = {
+					read_only = false,
+					other_fields = false,
+				},
+				addInitiativeWidget = {
+					read_only = false,
+					other_fields = false,
+				},
+				onUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				turnOffAllInitRun = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		CombatManager2 = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHRDistanceChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseAttackLine = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCSpaceReach = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTurnStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				addRightClickDiceToClauses = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoundStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseResistances = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollEntryInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkEffectExpire = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetCombatantInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearExpiringEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollRandomInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				nIndex = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcBattleCR = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcBattleXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				rest = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseNPCPower = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		CombatManagerADND = {
+			read_only = false,
+			fields = {
+				sortfuncADnD = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAllInititiativeIndicators = {
+					read_only = false,
+					other_fields = false,
+				},
+				getACHitFromMatrixForNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCLevelFromHitDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				createHasInitiativeWidget = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTurnStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetCombatantInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onRoundStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				copySourceToNodeCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				delayTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkEffectExpire = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollEntryInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				showTurnMessageADND = {
+					read_only = false,
+					other_fields = false,
+				},
+				getACHitFromMatrix = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyInitiativeChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				showCTMessageADND = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLastInitiative = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_CHANGEINIT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponProfNodeByName = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearExpiringEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCLevels = {
+					read_only = false,
+					other_fields = false,
+				},
+				initiativeTokenChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				setSpecialDefenseAttack = {
+					read_only = false,
+					other_fields = false,
+				},
+				isWeaponProfApplied = {
+					read_only = false,
+					other_fields = false,
+				},
+				addCTANPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSpellsFromList = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCSaves = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCHitDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				isIDListedChildren = {
+					read_only = false,
+					other_fields = false,
+				},
+				adnd_roll = {
+					read_only = false,
+					other_fields = false,
+				},
+				addBattle = {
+					read_only = false,
+					other_fields = false,
+				},
+				nextActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCTFromActor = {
+					read_only = false,
+					other_fields = false,
+				},
+				setHasInitiativeIndicator = {
+					read_only = false,
+					other_fields = false,
+				},
+				setWeaponProfApplication = {
+					read_only = false,
+					other_fields = false,
+				},
+				PC_LASTINIT = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollNPCHitPoints = {
+					read_only = false,
+					other_fields = false,
+				},
+				weaponProfExists = {
+					read_only = false,
+					other_fields = false,
+				},
+				stripHiddenNameText = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getACHitFromMatrixForPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				copySourceToNodeCTHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateInititiativeIndicator = {
+					read_only = false,
+					other_fields = false,
+				},
+				disableCombatantsCache = {
+					read_only = false,
+					other_fields = false,
+				},
+				NPC_LASTINIT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHasInitiativeWidget = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHiddenNameText = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCTNodePC = {
+					read_only = false,
+					other_fields = false,
+				},
+				rollRandomInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				isPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNodeFromCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				isNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCTNodeNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				addNPCHelper_ADND = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleInitiativeChange = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ConnectionManagerADND = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getUserLoggedInList = {
+					read_only = false,
+					other_fields = false,
+				},
+				onLoginManagement = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ConvertManagerADND = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertToNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertToPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		DataCommon = {
+			read_only = false,
+			fields = {
+				othercomps = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36396,7 +39640,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				weapondmgtypes = {
+				specialdmgtypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36408,7 +39652,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				abilityeffects = {
+				saves_multi_name = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36416,99 +39660,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				acdeflectionmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				naturaldmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactiontitles = {
-					read_only = false,
-					other_fields = false,
-				},
-				energytypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				save_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				kinetictypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				ammotypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturehalftypesubrace = {
-					read_only = false,
-					other_fields = false,
-				},
-				acshieldmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				skilldata = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_standard_systems = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatusfull = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_neutral = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_custom_array = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_base_stats = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_default_actions = {
-					read_only = false,
-					other_fields = false,
-				},
-				feat_proficiencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipscale = {
-					read_only = false,
-					other_fields = false,
-				},
-				immunetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiptier = {
-					read_only = false,
-					other_fields = false,
-				},
 				alignment_lawchaos = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencyDefault = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36516,23 +39668,99 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				healthstatuswounded = {
+				powertypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				save_ltos = {
+				creaturesubtype = {
 					read_only = false,
 					other_fields = false,
 				},
-				abilities = {
+				saves_shortnames = {
 					read_only = false,
 					other_fields = false,
 				},
-				creaturehalftype = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				conditionaltags = {
 					read_only = false,
 					other_fields = false,
 				},
 				connectors = {
+					read_only = false,
+					other_fields = false,
+				},
+				skilldata = {
+					read_only = false,
+					other_fields = false,
+				},
+				bonuscomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatushalf = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturesize = {
+					read_only = false,
+					other_fields = false,
+				},
+				saves = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_ltos = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				targetableeffectcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				class_valuetoname = {
+					read_only = false,
+					other_fields = false,
+				},
+				saves_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftypesubrace = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturedefaulttype = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatusfull = {
+					read_only = false,
+					other_fields = false,
+				},
+				classes = {
+					read_only = false,
+					other_fields = false,
+				},
+				condcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatuswounded = {
+					read_only = false,
+					other_fields = false,
+				},
+				alignment_goodevil = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftype = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36544,7 +39772,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				condcomps = {
+				abilities = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36553,21 +39781,461 @@ stds.dnd2e = {
 		DataCommonADND = {
 			read_only = false,
 			fields = {
+				nDefaultDistancePerUnitGrid = {
+					read_only = false,
+					other_fields = false,
+				},
+				psionic_attack_v_defense_table = {
+					read_only = false,
+					other_fields = false,
+				},
+				coreVersion = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemArmorTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemShieldArmorTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				fighterTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemSubTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				aConstitution = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefaultTurnUndeadMaxHD = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefaultCoinWeight = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemArmorNonCloak = {
+					read_only = false,
+					other_fields = false,
+				},
+				lowtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				aTurnUndead = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefaultTurnDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				aMatrix = {
+					read_only = false,
+					other_fields = false,
+				},
+				psionic_attack_index = {
+					read_only = false,
+					other_fields = false,
+				},
+				saves_table_index = {
+					read_only = false,
+					other_fields = false,
+				},
+				arcaneSpellClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemOtherArmorTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				basetypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefaultTurnUndeadMaxLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				turn_name_index = {
+					read_only = false,
+					other_fields = false,
+				},
+				aDefaultSurpriseDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				divineSpellClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				aWarriorSaves = {
+					read_only = false,
+					other_fields = false,
+				},
+				aIntelligence = {
+					read_only = false,
+					other_fields = false,
+				},
+				auraColors = {
+					read_only = false,
+					other_fields = false,
+				},
+				aDexterity = {
+					read_only = false,
+					other_fields = false,
+				},
+				aStrength = {
+					read_only = false,
+					other_fields = false,
+				},
+				expForCoinRate = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefaultInitiativeDice = {
+					read_only = false,
+					other_fields = false,
+				},
+				aCharisma = {
+					read_only = false,
+					other_fields = false,
+				},
+				aWisdom = {
+					read_only = false,
+					other_fields = false,
+				},
+				itemRarity = {
+					read_only = false,
+					other_fields = false,
+				},
+				psionic_defense_index = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		Desktop2E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				aDataModuleSet = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EffectManager5E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeEffectFromCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyOngoingDamageAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeEffectByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				encodeEffectForCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				rebuildParsedEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyRecharge = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditionalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddIgnoreCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkImmunities = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EffectManagerADND = {
 			read_only = false,
 			fields = {
+				isAuraEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForInitiativeRolled = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendEffectAddedMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemEffectsForEdit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getUserFromNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				manager_effect_onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateEffectsForNewInitiative = {
+					read_only = false,
+					other_fields = false,
+				},
+				inventoryUpdateItemEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAuraEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				processAuraEffectDuration = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkEffectsAfterEdit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				nScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsListAuras = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateFromDeletedInventory = {
+					read_only = false,
+					other_fields = false,
+				},
+				processEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectAurasFromAllTokens = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAuraColor = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAuraFaction = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAuraRange = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendEffectRemovedMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAuraEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendRawMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditionalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyOngoingDamageAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsList = {
+					read_only = false,
+					other_fields = false,
+				},
+				adndOnEffectAddStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectNodesByName = {
+					read_only = false,
+					other_fields = false,
+				},
+				isValidCheckEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				adndOnEffectAddEnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				decodeActors = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAuraValues = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForInitiative = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateItemEffects = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeEffectCount = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkEffectsAfterDelete = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		GameSystem = {
@@ -36577,7 +40245,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getDeathThreshold = {
+				requestCharSelectDetailClient = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36585,11 +40253,23 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				languagefonts = {
+					read_only = false,
+					other_fields = false,
+				},
 				getCharSelectDetailLocal = {
 					read_only = false,
 					other_fields = false,
 				},
+				getPregenCharSelectDetail = {
+					read_only = false,
+					other_fields = false,
+				},
 				getDistanceUnitsPerGrid = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCharSelectDetailHost = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36601,7 +40281,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getStabilizationResult = {
+				currencyDefault = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36609,43 +40289,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				tokenLightDefaults = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiptargetactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				requestCharSelectDetailClient = {
-					read_only = false,
-					other_fields = false,
-				},
 				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				modStabilization = {
-					read_only = false,
-					other_fields = false,
-				},
-				performConcentrationCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCharSelectDetailHost = {
-					read_only = false,
-					other_fields = false,
-				},
-				languagefonts = {
-					read_only = false,
-					other_fields = false,
-				},
-				getStabilizationRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencyDefault = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36654,20 +40298,23 @@ stds.dnd2e = {
 		ItemManager = {
 			read_only = false,
 			fields = {
-			},
-		},
-		ItemManager2 = {
-			read_only = false,
-			fields = {
-				handleItem = {
+				handleParcel = {
 					read_only = false,
 					other_fields = false,
 				},
-				addItemToList2 = {
+				getDisplayName = {
 					read_only = false,
 					other_fields = false,
 				},
-				sendItemTransfer = {
+				OOB_MSGTYPE_TRANSFERCURRENCY = {
+					read_only = false,
+					other_fields = false,
+				},
+				getInventorySortPath = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_TRANSFERPARCEL = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36675,7 +40322,143 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				isArmor = {
+				sendItemTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleItemStringTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				setInventoryPaths = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEncumbranceFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInventorySortCompare = {
+					read_only = false,
+					other_fields = false,
+				},
+				getInventoryPaths = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCostField = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendParcelTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomCharAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_TRANSFERITEMSTRING = {
+					read_only = false,
+					other_fields = false,
+				},
+				addFieldToIgnore = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTargetInventoryListPath = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInventorySortUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendItemStringTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleString = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleParcelTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItemToList = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleCurrencyTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				sendCurrencyTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleItemTransfer = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCostField = {
+					read_only = false,
+					other_fields = false,
+				},
+				compareFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				addTransferNotificationHandler = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharAddEvent = {
+					read_only = false,
+					other_fields = false,
+				},
+				setCustomCharRemove = {
+					read_only = false,
+					other_fields = false,
+				},
+				setEncumbranceFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSortName = {
+					read_only = false,
+					other_fields = false,
+				},
+				getIDState = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemSourceTypeCORERPG_CHANGE = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_TRANSFERITEM = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLinkToParcel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharRemoveEvent = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAllInventoryListPaths = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36683,7 +40466,76 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				getTransferClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleCurrency = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ItemManager2 = {
+			read_only = false,
+			fields = {
+				isWearingArmorNamed = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItemToList2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				getArmorWorn = {
+					read_only = false,
+					other_fields = false,
+				},
+				isItemSubType = {
+					read_only = false,
+					other_fields = false,
+				},
+				isRefBaseItemClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemsEquipped = {
+					read_only = false,
+					other_fields = false,
+				},
+				isWarding = {
+					read_only = false,
+					other_fields = false,
+				},
+				isArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				isWearingShield = {
+					read_only = false,
+					other_fields = false,
+				},
+				isItemType = {
+					read_only = false,
+					other_fields = false,
+				},
+				isItemAnyType = {
+					read_only = false,
+					other_fields = false,
+				},
+				isWearingMagicArmor = {
+					read_only = false,
+					other_fields = false,
+				},
 				isWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				isShield = {
+					read_only = false,
+					other_fields = false,
+				},
+				isProtectionOther = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36692,162 +40544,974 @@ stds.dnd2e = {
 		JSON = {
 			read_only = false,
 			fields = {
+				encode = {
+					read_only = false,
+					other_fields = false,
+				},
+				json_null = {
+					read_only = false,
+					other_fields = false,
+				},
+				decode = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		LibraryData5E = {
-			read_only = false,
-			fields = {
-			},
-		},
-		LibraryDataADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		ManagerImportADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		ManagerPsionics = {
-			read_only = false,
-			fields = {
-			},
-		},
-		ManagerSafari = {
-			read_only = false,
-			fields = {
-			},
-		},
-		MenuManager = {
-			read_only = false,
-			fields = {
-			},
-		},
-		Options5E = {
-			read_only = false,
-			fields = {
-			},
-		},
-		OptionsADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		PartyManager2 = {
-			read_only = false,
-			fields = {
-			},
-		},
-		PowerManager = {
-			read_only = false,
-			fields = {
-			},
-		},
-		PowerManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		TokenManager2 = {
-			read_only = false,
-			fields = {
-			},
-		},
-		TokenManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		UtilityManagerADND = {
-			read_only = false,
-			fields = {
-			},
-		},
-		VersionManager2 = {
 			read_only = false,
 			fields = {
 				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip19 = {
+				sortNPCHitDice = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupWeapons = {
+				getNPCHitDice = {
 					read_only = false,
 					other_fields = false,
 				},
-				nSrcDriftRating = {
+				getSpellSphereValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupFrame = {
+				aDefaultSidebarState = {
 					read_only = false,
 					other_fields = false,
 				},
-				migrateChar17 = {
+				aRecords = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip21 = {
+				getSpellSchoolValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				aClassName = {
+				getSpellLevelValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCharImport = {
+				getItemRecordDisplayClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				sRecordNew = {
+				getSkillTypeValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				addStarshipItem = {
+				getSpellSourceValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateModule = {
+				getNPCTypeValue = {
 					read_only = false,
 					other_fields = false,
 				},
-				pcuSummarycheck = {
+				getItemIsIdentified = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar17 = {
+				sanitizevNodeText = {
 					read_only = false,
 					other_fields = false,
 				},
-				migratePCShip19 = {
+				isItemIdentifiable = {
 					read_only = false,
 					other_fields = false,
 				},
-				aRecordStrip = {
+				sortNPCCRValues = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip20 = {
+			},
+		},
+		LibraryDataADND = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar19 = {
+			},
+		},
+		ManagerImportADND = {
+			read_only = false,
+			fields = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				sNewAppFrameRecord = {
+				findSpell = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertModulePCShip21 = {
+				cleanDescription = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertModulePCShip20 = {
+				importSpells = {
+					read_only = false,
+					other_fields = false,
+				},
+				kludgeForSaveVersusWithPeriods = {
+					read_only = false,
+					other_fields = false,
+				},
+				setExpLevelOSRIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				setActionWeapon = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDescription = {
+					read_only = false,
+					other_fields = false,
+				},
+				powerScan = {
+					read_only = false,
+					other_fields = false,
+				},
+				setNumberValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				setExpLevelTSR1 = {
+					read_only = false,
+					other_fields = false,
+				},
+				contextHighlight = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				createBlankNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				setExperience = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpeedFactorFromSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				setAC = {
+					read_only = false,
+					other_fields = false,
+				},
+				setHD = {
+					read_only = false,
+					other_fields = false,
+				},
+				setName = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				setSomeDefaults = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTextValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				setExpLevelSW = {
+					read_only = false,
+					other_fields = false,
+				},
+				nocase = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ManagerPsionics = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateMAC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPSPExpended = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPSPMax = {
+					read_only = false,
+					other_fields = false,
+				},
+				updatePSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateMTHACO = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPSPUsed = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				updatePsionicStats = {
+					read_only = false,
+					other_fields = false,
+				},
+				removePSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPSPRemaining = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		ManagerSafari = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				aTypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFieldsInNPCRecords = {
+					read_only = false,
+					other_fields = false,
+				},
+				addIgnoreField = {
+					read_only = false,
+					other_fields = false,
+				},
+				loadNPCData = {
+					read_only = false,
+					other_fields = false,
+				},
+				aIgnoreFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildEncounterTable = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateRandomEncounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getKeys = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilterTable = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCListFromFiltered = {
+					read_only = false,
+					other_fields = false,
+				},
+				generateEncounter = {
+					read_only = false,
+					other_fields = false,
+				},
+				getFilteredNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		MenuManager = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerMenusWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				addMenuItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				processPreferences = {
+					read_only = false,
+					other_fields = false,
+				},
+				initializeSidebar_adnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				aAddMenuList = {
+					read_only = false,
+					other_fields = false,
+				},
+				menusWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		Options5E = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		OptionsADND = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				createBackupDBOnStartCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerWindowSidebar = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerWindowMenu = {
+					read_only = false,
+					other_fields = false,
+				},
+				wSidebarWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateForEncumbranceOption = {
+					read_only = false,
+					other_fields = false,
+				},
+				enableMenuStyleButtons = {
+					read_only = false,
+					other_fields = false,
+				},
+				enableMenuStyleSidebar = {
+					read_only = false,
+					other_fields = false,
+				},
+				wMenuWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateMenuStyle = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		PartyManager2 = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPartyToCombatTracker = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPartySheetMembers = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardXPtoPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardEncountersToParty = {
+					read_only = false,
+					other_fields = false,
+				},
+				linkPCFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounterCoin = {
+					read_only = false,
+					other_fields = false,
+				},
+				awardQuestsToParty = {
+					read_only = false,
+					other_fields = false,
+				},
+				addQuest = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounterParcel = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounterNPC = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounterItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				addEncounter = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		PowerManager = {
+			read_only = false,
+			fields = {
+				getActionHeal = {
+					read_only = false,
+					other_fields = false,
+				},
+				isPsionicPowerType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGroupSaveDC = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionHealPSPText = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPowerActionOutputOrder = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGroupAttackBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				sCasterType = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeMemorizedSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				castMemorizedSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionDamageText = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasFreeSlot = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGroupCasterType = {
+					read_only = false,
+					other_fields = false,
+				},
+				canMemorizeSpellType = {
+					read_only = false,
+					other_fields = false,
+				},
+				isDivineSpellType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionHealText = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGroupStat = {
+					read_only = false,
+					other_fields = false,
+				},
+				addPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionDamagePSPText = {
+					read_only = false,
+					other_fields = false,
+				},
+				canMemorizeSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCasterLevelByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetPowers = {
+					read_only = false,
+					other_fields = false,
+				},
+				incrementUse = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionHealPSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				SPELL_LEVELS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionDamagePSP = {
+					read_only = false,
+					other_fields = false,
+				},
+				memorizeSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLevelBasedDurationValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				isArcaneSpellType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPowerRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionDamage = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGroupFromAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				performAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				getLevelBasedDiceValues = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGroupDamageHealBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		PowerManagerADND = {
+			read_only = false,
+			fields = {
+				buildInitiativeItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCastInitiative = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDropAddPower = {
+					read_only = false,
+					other_fields = false,
+				},
+				bUpdatingGroups = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCastAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHealAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAction = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		TokenManager2 = {
+			read_only = false,
+			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleIFEffectTag = {
+					read_only = false,
+					other_fields = false,
+				},
+				getHealthInfo = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		TokenManagerADND = {
+			read_only = false,
+			fields = {
+				handleFactionDropOnImage = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDesktopInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyAuras = {
+					read_only = false,
+					other_fields = false,
+				},
+				processAuraChange = {
+					read_only = false,
+					other_fields = false,
+				},
+				selectTokenInPile = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDownADND = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCTFrameType = {
+					read_only = false,
+					other_fields = false,
+				},
+				onUpdateToken = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyAura = {
+					read_only = false,
+					other_fields = false,
+				},
+				resetIndicators = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAuras = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTargetUpdateADND = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAddADND = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWindowOpened = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplyUnderlay = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTargetsForActive = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYUNDERLAY = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTokenDistanceBetween = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyUnderlay = {
+					read_only = false,
+					other_fields = false,
+				},
+				setTokenTargetedIndicator = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCTEntries = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearAllTargetsWidgets = {
+					read_only = false,
+					other_fields = false,
+				},
+				onHoverADND = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		UtilityManagerADND = {
+			read_only = false,
+			fields = {
+				getItemNodeListFromNPCinCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				stripFormattedText = {
+					read_only = false,
+					other_fields = false,
+				},
+				outputUserMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				TableConcat = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNumberSign = {
+					read_only = false,
+					other_fields = false,
+				},
+				concatTables = {
+					read_only = false,
+					other_fields = false,
+				},
+				round = {
+					read_only = false,
+					other_fields = false,
+				},
+				getGlobalSpellList = {
+					read_only = false,
+					other_fields = false,
+				},
+				rateLimitOK = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRandomSpellList = {
+					read_only = false,
+					other_fields = false,
+				},
+				logDebug = {
+					read_only = false,
+					other_fields = false,
+				},
+				findSkillRecord = {
+					read_only = false,
+					other_fields = false,
+				},
+				getInventoryItemFromTextList = {
+					read_only = false,
+					other_fields = false,
+				},
+				sleep = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSkill = {
+					read_only = false,
+					other_fields = false,
+				},
+				replaceStringAt = {
+					read_only = false,
+					other_fields = false,
+				},
+				sanitizeTraitText = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNodeTableFromTextListInCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				askYN = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponNodeByName = {
+					read_only = false,
+					other_fields = false,
+				},
+				replaceWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				getIdentityFromCTNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				containsAny = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTableRoll_adnd = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRulesetVersion = {
+					read_only = false,
+					other_fields = false,
+				},
+				outputBroadcastMessage = {
+					read_only = false,
+					other_fields = false,
+				},
+				aTableRollStack = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				processReadyCheck = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemByName = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDropStory = {
+					read_only = false,
+					other_fields = false,
+				},
+				split = {
+					read_only = false,
+					other_fields = false,
+				},
+				getIdentityFromCharNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClose = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasWeaponNamed = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponListAsJSONText = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemNodeByName = {
+					read_only = false,
+					other_fields = false,
+				},
+				alphaOnly = {
+					read_only = false,
+					other_fields = false,
+				},
+			},
+		},
+		VersionManager2 = {
+			read_only = false,
+			fields = {
+				updateNPCPsionics = {
+					read_only = false,
+					other_fields = false,
+				},
+				fixHitPointsForCharacters = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateToNewMemorizationTotal = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPregenCharacters7 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCs21 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCs23 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCs16 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCharacters2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateEncountersForReadOnly = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPSEnc4 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCAscending = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36855,23 +41519,7 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
-				migrateChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip21 = {
+				convertSpellsInitiative = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36879,11 +41527,115 @@ stds.dnd2e = {
 					read_only = false,
 					other_fields = false,
 				},
+				convertEncounters6 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCharacters5 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar7 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCs24 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPregenCharacters5 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCs18 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNPCs = {
+					read_only = false,
+					other_fields = false,
+				},
+				fixNPCSaves = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateModule = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateToNewMemorizationTotalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharacterClassBonusEXPField = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateClassPowerAndSkills = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateToNewNPCBaseHPField = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateNodelist = {
+					read_only = false,
+					other_fields = false,
+				},
+				fixProfSelectedToProf_Selected = {
+					read_only = false,
+					other_fields = false,
+				},
+				fixAscendingValues = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateSpellInitiative = {
+					read_only = false,
+					other_fields = false,
+				},
+				fixNPCAbilities23 = {
+					read_only = false,
+					other_fields = false,
+				},
+				fixNPCAbilities = {
+					read_only = false,
+					other_fields = false,
+				},
 				onImport = {
 					read_only = false,
 					other_fields = false,
 				},
+				migrateEncounter6 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onModuleLoad = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharImport = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharacters = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCharacters7 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateCharacterForReadOnlyPHB = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar5 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -36892,16 +41644,140 @@ stds.dnd2e = {
 		VisionManagerADND = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setupLightEffectPresets = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		WeaponManagerADND = {
 			read_only = false,
 			fields = {
+				WEAPON_PROP_CRITRANGE = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				getRange = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildAttackAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDamageActionSingle = {
+					read_only = false,
+					other_fields = false,
+				},
+				getToDamageProfs = {
+					read_only = false,
+					other_fields = false,
+				},
+				buildDamageAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				builtInitiativeItem = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCritRange = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInitiative = {
+					read_only = false,
+					other_fields = false,
+				},
+				getToHitProfs = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAttackChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				getProperty = {
+					read_only = false,
+					other_fields = false,
+				},
+				onAttackAction = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPropertyNumber = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		WindowManagerADND = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				setOnlyOneWindowClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				onlyOneWindowClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				aIgnoredWindowClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				oneWindowGroupExists = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWindowOpened = {
+					read_only = false,
+					other_fields = false,
+				},
+				setIgnoredWindowClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				onWindowClosed = {
+					read_only = false,
+					other_fields = false,
+				},
+				aOnlyOneWindowClasses = {
+					read_only = false,
+					other_fields = false,
+				},
+				unMinimizeWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				aWindowList = {
+					read_only = false,
+					other_fields = false,
+				},
+				minimizeWindow = {
+					read_only = false,
+					other_fields = false,
+				},
+				aMinimizedWindows = {
+					read_only = false,
+					other_fields = false,
+				},
+				ignoredWindowClass = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		ability_header = {
@@ -44044,7 +48920,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				modCastSave = {
+				modRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44052,79 +48928,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCLCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSaveVsRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYSAVEVS = {
-					read_only = false,
-					other_fields = false,
-				},
 				performRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getDCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilitySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				getRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCastCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				modRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilityCastRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				modConcentration = {
-					read_only = false,
-					other_fields = false,
-				},
-				resetUsesPerDay = {
-					read_only = false,
-					other_fields = false,
-				},
-				modCLC = {
-					read_only = false,
-					other_fields = false,
-				},
-				modDC = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityTargeting = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44132,7 +48936,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCastSave = {
+				getRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44141,7 +48945,7 @@ stds.dnd35e = {
 		ActionAttack = {
 			read_only = false,
 			fields = {
-				onInit = {
+				onPostAttackResolve = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44153,11 +48957,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getThrownRoll = {
+				performGrappleRoll = {
 					read_only = false,
 					other_fields = false,
 				},
-				clearCritState = {
+				getGrappleRoll = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44181,19 +48985,19 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				performThrownRoll = {
+				setCritState = {
 					read_only = false,
 					other_fields = false,
 				},
-				performCombatManRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCombatManRoll = {
+				isCrit = {
 					read_only = false,
 					other_fields = false,
 				},
 				OOB_MSGTYPE_APPLYHRFC = {
+					read_only = false,
+					other_fields = false,
+				},
+				clearCritState = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44205,11 +49009,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				isCrit = {
+				aCritState = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCritState = {
+				onGrapple = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44217,7 +49021,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onPostAttackResolve = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44306,31 +49110,19 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				nDamageAdjust = {
-					read_only = false,
-					other_fields = false,
-				},
 				handleApplyDamageState = {
 					read_only = false,
 					other_fields = false,
 				},
-				nNonlethalDmgAmount = {
+				aClausesOR = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyDamage = {
 					read_only = false,
 					other_fields = false,
 				},
 				getDamageState = {
-					read_only = false,
-					other_fields = false,
-				},
-				bResist = {
-					read_only = false,
-					other_fields = false,
-				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				bVulnerable = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44378,7 +49170,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				applyDamage = {
+				nNonlethal = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44439,6 +49231,10 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				nEmpowerMod = {
+					read_only = false,
+					other_fields = false,
+				},
 				decodeHealClauses = {
 					read_only = false,
 					other_fields = false,
@@ -44468,7 +49264,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onResolve = {
+				getEffectAdjustments = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplyInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44484,7 +49284,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplyInit = {
+				onResolve = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44546,6 +49346,10 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				bUntrained = {
+					read_only = false,
+					other_fields = false,
+				},
 				performPartySheetRoll = {
 					read_only = false,
 					other_fields = false,
@@ -44575,11 +49379,43 @@ stds.dnd35e = {
 		ActionSpell = {
 			read_only = false,
 			fields = {
-				getSpellCastRoll = {
+				onInit = {
 					read_only = false,
 					other_fields = false,
 				},
 				modCastSave = {
+					read_only = false,
+					other_fields = false,
+				},
+				notifyApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCLCRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSaveVsRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				OOB_MSGTYPE_APPLYSAVEVS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellCastRoll = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleApplySave = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSpellCast = {
+					read_only = false,
+					other_fields = false,
+				},
+				modConcentration = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44595,39 +49431,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
 				onCastCLC = {
 					read_only = false,
 					other_fields = false,
 				},
-				notifyApplySave = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCLCRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				onSpellCast = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSaveVsRoll = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_APPLYSAVEVS = {
-					read_only = false,
-					other_fields = false,
-				},
-				modConcentration = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
+				bEffects = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44644,6 +49452,82 @@ stds.dnd35e = {
 		ActorManager35E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCreatureTypeHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWoundPercent = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				isSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				isAlignment = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				getPCSheetWoundColor = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSize = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyStableEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityScore = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDefenseValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getArmorComps = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellDefense = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeStableEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				nDefenseStatMod = {
+					read_only = false,
+					other_fields = false,
+				},
+				initActorHealth = {
+					read_only = false,
+					other_fields = false,
+				},
+				isCreatureType = {
+					read_only = false,
+					other_fields = false,
+				},
+				getAbilityDamage = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CampaignDataManager2 = {
@@ -44653,56 +49537,48 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				onEncounterGenerated = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		CharManager = {
 			read_only = false,
 			fields = {
-				handleRangedAttacks = {
+				addClassSkill = {
 					read_only = false,
 					other_fields = false,
 				},
-				onKeyAbilityUpdate = {
+				addClassSpellLevelHelper = {
 					read_only = false,
 					other_fields = false,
 				},
-				nodeSource = {
+				CLASS_FEATURE_DOMAIN_SPELLS = {
 					read_only = false,
 					other_fields = false,
 				},
-				bHeavy = {
+				CLASS_NAME_WIZARD = {
 					read_only = false,
 					other_fields = false,
 				},
-				checkForRacialSaveBonus = {
+				RACIAL_TRAIT_SIZE = {
 					read_only = false,
 					other_fields = false,
 				},
-				addInfoDB = {
+				CLASS_NAME_CLERIC = {
 					read_only = false,
 					other_fields = false,
 				},
-				aFeatLoc = {
+				CLASS_FEATURE_EXTRACTS_PER_DAY = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleMeleeAttacks = {
+				CLASS_NAME_ADEPT = {
 					read_only = false,
 					other_fields = false,
 				},
-				TRAIT_MULTITALENTED = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialAbilitiesEmbedded = {
-					read_only = false,
-					other_fields = false,
-				},
-				addArchetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				addRace = {
+				CLASS_NAME_BARD = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44710,7 +49586,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				sStatName = {
+				sortClasses = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44722,27 +49598,15 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				sCollisionDC = {
+				getClassLevelSummary = {
 					read_only = false,
 					other_fields = false,
 				},
-				nCastPerDay = {
+				CLASS_SAVE_BAD = {
 					read_only = false,
 					other_fields = false,
 				},
-				addLanguage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getWeaponAttackRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStatMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRequirements = {
+				rest = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -44758,447 +49622,15 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addUpgrade = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_TECHNOMANCER = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				getThrownRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharItemDelete = {
-					read_only = false,
-					other_fields = false,
-				},
-				addToWeaponDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				resolveRefNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkWeaponIDChange = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_TELEPATHY = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasTrait = {
-					read_only = false,
-					other_fields = false,
-				},
-				FEAT_MULTIPLE_TIMES = {
-					read_only = false,
-					other_fields = false,
-				},
-				onKeyAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_GENERIC = {
-					read_only = false,
-					other_fields = false,
-				},
-				FEAT_TOUGHNESS = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAltFeatureRequirments = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStam = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSkillPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				outputUserMessage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addCompanionAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				onItemIDChanged = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_LEVEL = {
-					read_only = false,
-					other_fields = false,
-				},
-				nClassLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onRaceAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStay = {
-					read_only = false,
-					other_fields = false,
-				},
-				sMod = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_D20PFSRD = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_ABILITY_SW = {
-					read_only = false,
-					other_fields = false,
-				},
-				addFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				sLabel = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LOWLIGHTVISION = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE_MEDIUM = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActiveVeh = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDuplicateFeats = {
-					read_only = false,
-					other_fields = false,
-				},
-				bSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_REPLACE = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFeatureClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_CLASS = {
-					read_only = false,
-					other_fields = false,
-				},
-				sStat = {
-					read_only = false,
-					other_fields = false,
-				},
-				copyVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialSkillBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleDeletedFeatures = {
-					read_only = false,
-					other_fields = false,
-				},
-				claimCompanion = {
-					read_only = false,
-					other_fields = false,
-				},
-				bLight = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_BLINDSENSE = {
-					read_only = false,
-					other_fields = false,
-				},
-				aReplaceListData = {
-					read_only = false,
-					other_fields = false,
-				},
-				calcLevel = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharItemAdd = {
-					read_only = false,
-					other_fields = false,
-				},
-				isWeaponTooHeavy = {
-					read_only = false,
-					other_fields = false,
-				},
-				sReplaced = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				sAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				selectAltRacialStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				aCharClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				onThemeAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				aName = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				nRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				onResolveStab = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillName = {
-					read_only = false,
-					other_fields = false,
-				},
-				aList = {
-					read_only = false,
-					other_fields = false,
-				},
-				nScore = {
-					read_only = false,
-					other_fields = false,
-				},
-				aAsscList = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_MYSTIC = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_PROFICIENCY = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSkillBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				addThemeFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				bAdvanced = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupWeapons = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSkill = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassSpellLevelHelper = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSALName = {
-					read_only = false,
-					other_fields = false,
-				},
-				setupAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasFeat = {
-					read_only = false,
-					other_fields = false,
-				},
-				i = {
-					read_only = false,
-					other_fields = false,
-				},
-				sUpdateFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				k = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleReplaceAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeFromArmorDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				aFeatureStrip = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCompLevelUpdate = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSourceClassKeyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				nSpellFailure = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseFeatureName = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeCompanionOwner = {
-					read_only = false,
-					other_fields = false,
-				},
-				sortClasses = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SIZE = {
-					read_only = false,
-					other_fields = false,
-				},
-				nEac = {
-					read_only = false,
-					other_fields = false,
-				},
-				CURRENT_NODECHAR = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAttacksString = {
-					read_only = false,
-					other_fields = false,
-				},
-				sNewAttack = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityIncreaseSelectDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_SRD_NORMAL = {
-					read_only = false,
-					other_fields = false,
-				},
-				nLevelNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillsNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialVision = {
-					read_only = false,
-					other_fields = false,
-				},
-				sType = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleBaseStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateSPClasses = {
-					read_only = false,
-					other_fields = false,
-				},
 				resetHealth = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_SAVE_BAD_DRONE = {
+				addClassFeature = {
 					read_only = false,
 					other_fields = false,
 				},
-				setCompanionOwner = {
-					read_only = false,
-					other_fields = false,
-				},
-				addTheme = {
-					read_only = false,
-					other_fields = false,
-				},
-				nAdj = {
-					read_only = false,
-					other_fields = false,
-				},
-				sPoints = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				nodeTargetList = {
+				bPrestige = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45206,7 +49638,19 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getReplacedFeatures = {
+				addInfoDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				addLanguage = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkFavoredClassBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleRacialVision = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45214,11 +49658,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				aAttack = {
+				onCharItemDelete = {
 					read_only = false,
 					other_fields = false,
 				},
-				nLevel = {
+				addClassSpellLevelSlot = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45226,71 +49670,23 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				setKeyAbility = {
+				addClassSpellLevel = {
 					read_only = false,
 					other_fields = false,
 				},
-				nUses = {
+				handleClassFeatureDomains = {
 					read_only = false,
 					other_fields = false,
 				},
-				nFreeSkill = {
+				resolveRefNode = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleRaceCheck = {
+				calcItemArmorClass = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_SAVE_BAD = {
-					read_only = false,
-					other_fields = false,
-				},
-				nMaxStatBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				nResolveNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				checkForRacialAbilityInName = {
-					read_only = false,
-					other_fields = false,
-				},
-				hasClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleFreeSkills = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSkillDataCommon = {
-					read_only = false,
-					other_fields = false,
-				},
-				sFreeSkillOne = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeMechAttachments = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleModifyAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyClassStats = {
-					read_only = false,
-					other_fields = false,
-				},
-				applyToughness = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_NAME_WITCHWARPER = {
+				checkWeaponIDChange = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45298,7 +49694,55 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addAug = {
+				checkForRacialSaveBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForRacialAbilityInName = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasTrait = {
+					read_only = false,
+					other_fields = false,
+				},
+				onFavoredClassBonusSelect = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSkillBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_DOMAINS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSkillNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				addClass = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyClassStats = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_GENERIC = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseFeatureName = {
+					read_only = false,
+					other_fields = false,
+				},
+				initWeaponIDTracking = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_PALADIN = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45306,31 +49750,31 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addBoon = {
+				handleRacialBasicTrait = {
 					read_only = false,
 					other_fields = false,
 				},
-				addProfFeat = {
+				onFavoredClassSelect = {
 					read_only = false,
 					other_fields = false,
 				},
-				RACIAL_TRAIT_SUPERIORDARKVISION = {
+				removeFromWeaponDB = {
 					read_only = false,
 					other_fields = false,
 				},
-				addClassSpellLevelKnownSlots = {
+				getGrappleRollStructures = {
 					read_only = false,
 					other_fields = false,
 				},
-				aAbilities = {
+				addRacialTrait = {
 					read_only = false,
 					other_fields = false,
 				},
-				RACIAL_TRAIT_LIMITED_TELEPATHY = {
+				onItemIDChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				addClassSpellLevelSlots = {
+				handleRacialAbilitiesEmbedded = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45338,7 +49782,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addClassSpellLevel = {
+				onRaceAbilitySelect = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45350,79 +49794,15 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onActionDrop = {
+				CLASS_FEATURE_SPELLS_PER_DAY = {
 					read_only = false,
 					other_fields = false,
 				},
-				getSkillRanks = {
+				addRace = {
 					read_only = false,
 					other_fields = false,
 				},
-				updateFeatureLevels = {
-					read_only = false,
-					other_fields = false,
-				},
-				initWeaponIDTracking = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleAltClassFeature = {
-					read_only = false,
-					other_fields = false,
-				},
-				addSaveBonus = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRaceType = {
-					read_only = false,
-					other_fields = false,
-				},
-				OOB_MSGTYPE_RESOLVE_STAB = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_WEAPONFAMILIARITY = {
-					read_only = false,
-					other_fields = false,
-				},
-				onAbilityIncreaseSelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				nKac = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAbilitySelect = {
-					read_only = false,
-					other_fields = false,
-				},
-				calcItemArmorClass = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleRacialSize = {
-					read_only = false,
-					other_fields = false,
-				},
-				aStatInfo = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_LANGUAGES = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleFreeRanks = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_GOOD_DRONE = {
-					read_only = false,
-					other_fields = false,
-				},
-				addClassFeature = {
+				CLASS_NAME_SORCERER = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45430,87 +49810,35 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getClassKeyAbility = {
+				RACIAL_TRAIT_ABILITY_SW = {
 					read_only = false,
 					other_fields = false,
 				},
-				nRpMax = {
+				addSaveBonus = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleRacialBasicTrait = {
+				addFeat = {
 					read_only = false,
 					other_fields = false,
 				},
-				getClassLevelSummary = {
+				hasFeat = {
 					read_only = false,
 					other_fields = false,
 				},
-				nCheckPenalty = {
+				RACIAL_TRAIT_LOWLIGHTVISION = {
 					read_only = false,
 					other_fields = false,
 				},
-				addAbilityModifiers = {
+				updateEncumbrance = {
 					read_only = false,
 					other_fields = false,
 				},
-				sFreeSkillTwo = {
+				CLASS_NAME_BLACKGUARD = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleProficiencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				getWeaponDamageRollStructures = {
-					read_only = false,
-					other_fields = false,
-				},
-				sReplaceName = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_BAB_MEDIUM = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCMech = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_SAVE_GOOD = {
-					read_only = false,
-					other_fields = false,
-				},
-				getSkillNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCompLevelCheck = {
-					read_only = false,
-					other_fields = false,
-				},
-				RACIAL_TRAIT_SPEED_SRD_SLOW = {
-					read_only = false,
-					other_fields = false,
-				},
-				isProficient = {
-					read_only = false,
-					other_fields = false,
-				},
-				getClassNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				removeFromWeaponDB = {
-					read_only = false,
-					other_fields = false,
-				},
-				addAlly = {
-					read_only = false,
-					other_fields = false,
-				},
-				CLASS_FEATURE_SPELLS_PER_DAY = {
+				updateSkillPoints = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45518,19 +49846,135 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRacialTrait = {
+				handleRacialSize = {
 					read_only = false,
 					other_fields = false,
 				},
-				sSkills = {
+				RACIAL_TRAIT_WEAPONFAMILIARITY = {
 					read_only = false,
 					other_fields = false,
 				},
-				sTraitStats = {
+				RACIAL_TRAIT_LANGUAGES = {
 					read_only = false,
 					other_fields = false,
 				},
-				getCombatManStructures = {
+				onActionDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponDamageRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SUPERIORDARKVISION = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_SPELLS = {
+					read_only = false,
+					other_fields = false,
+				},
+				getWeaponAttackRollStructures = {
+					read_only = false,
+					other_fields = false,
+				},
+				TRAIT_MULTITALENTED = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkForRacialSkillBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_D20PFSRD = {
+					read_only = false,
+					other_fields = false,
+				},
+				addToWeaponDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_ASSASSIN = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_WITCH = {
+					read_only = false,
+					other_fields = false,
+				},
+				handleProficiencies = {
+					read_only = false,
+					other_fields = false,
+				},
+				calcLevel = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharItemAdd = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_RANGER = {
+					read_only = false,
+					other_fields = false,
+				},
+				removeFromArmorDB = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_INQUISITOR = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SIZE_MEDIUM = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_SRD_NORMAL = {
+					read_only = false,
+					other_fields = false,
+				},
+				RACIAL_TRAIT_SPEED_SRD_SLOW = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_SUMMONER = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_ORACLE = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_PROFICIENCY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_DRUID = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_BAB_MEDIUM = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_SAVE_GOOD = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_FEATURE_ALCHEMY = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_MAGUS = {
+					read_only = false,
+					other_fields = false,
+				},
+				CLASS_NAME_MYSTIC_THEURGE = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45538,7 +49982,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				CLASS_FEATURE_SPELLS = {
+				CLASS_NAME_ALCHEMIST = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45547,7 +49991,11 @@ stds.dnd35e = {
 		CombatManager2 = {
 			read_only = false,
 			fields = {
-				sortfunc = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseAttackLine = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45555,11 +50003,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onTurnStart = {
-					read_only = false,
-					other_fields = false,
-				},
-				nextPhase = {
+				addRightClickDiceToClauses = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45571,71 +50015,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCDecodeDefAbilities = {
-					read_only = false,
-					other_fields = false,
-				},
-				addDrone = {
-					read_only = false,
-					other_fields = false,
-				},
-				callForEachCombatantRoundDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				getNPCSpecialAbility = {
-					read_only = false,
-					other_fields = false,
-				},
-				getCRFromXP = {
-					read_only = false,
-					other_fields = false,
-				},
-				clearExpiringEffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				nCurrent = {
-					read_only = false,
-					other_fields = false,
-				},
-				onDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				rest = {
-					read_only = false,
-					other_fields = false,
-				},
-				onTurnEnd = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				parseAttackLine = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleResolveDamage = {
-					read_only = false,
-					other_fields = false,
-				},
-				addVehicle = {
-					read_only = false,
-					other_fields = false,
-				},
-				addPC = {
-					read_only = false,
-					other_fields = false,
-				},
-				aEffect = {
-					read_only = false,
-					other_fields = false,
-				},
-				addNPCDecodeQualities = {
+				nCritEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45643,19 +50023,19 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				aAddDamageType = {
+				rollEntryInit = {
 					read_only = false,
 					other_fields = false,
 				},
-				addRightClickDiceToClauses = {
+				nCritStart = {
 					read_only = false,
 					other_fields = false,
 				},
-				handleCompanionInit = {
+				sCritThreshold = {
 					read_only = false,
 					other_fields = false,
 				},
-				rollTypeInit = {
+				resetCombatantInit = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45663,11 +50043,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addCompanion = {
+				clearExpiringEffects = {
 					read_only = false,
 					other_fields = false,
 				},
-				addEffectResolve = {
+				nodeValue = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45679,23 +50059,23 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				addNPCAttacks = {
-					read_only = false,
-					other_fields = false,
-				},
 				calcBattleCR = {
 					read_only = false,
 					other_fields = false,
 				},
-				rollEntryInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				CT_PHASE = {
-					read_only = false,
-					other_fields = false,
-				},
 				calcBattleXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCRFromXP = {
+					read_only = false,
+					other_fields = false,
+				},
+				rest = {
+					read_only = false,
+					other_fields = false,
+				},
+				onTurnEnd = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45704,135 +50084,7 @@ stds.dnd35e = {
 		DataCommon = {
 			read_only = false,
 			fields = {
-				arrayexpert = {
-					read_only = false,
-					other_fields = false,
-				},
 				othercomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				arrayspellcaster = {
-					read_only = false,
-					other_fields = false,
-				},
-				specialdmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproles = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipsizes = {
-					read_only = false,
-					other_fields = false,
-				},
-				sensesdata = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewminoractions = {
-					read_only = false,
-					other_fields = false,
-				},
-				arraycombatant = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesubtype = {
-					read_only = false,
-					other_fields = false,
-				},
-				racetype = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiproleslist = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				conditionaltags = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturedefaulttype = {
-					read_only = false,
-					other_fields = false,
-				},
-				bonuscomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_weapon_damage = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatushalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturesize = {
-					read_only = false,
-					other_fields = false,
-				},
-				companiondatalvl = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				acarmormatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				abilitiesshort = {
-					read_only = false,
-					other_fields = false,
-				},
-				itemsizetoacmod = {
-					read_only = false,
-					other_fields = false,
-				},
-				targetableeffectcomps = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_abrev = {
-					read_only = false,
-					other_fields = false,
-				},
-				currencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactions = {
-					read_only = false,
-					other_fields = false,
-				},
-				actypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_goodevil = {
-					read_only = false,
-					other_fields = false,
-				},
-				minimum_mech_points = {
-					read_only = false,
-					other_fields = false,
-				},
-				spelleffects = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_stol = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45844,19 +50096,15 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				class_nametovalue = {
-					read_only = false,
-					other_fields = false,
-				},
 				creaturetype = {
 					read_only = false,
 					other_fields = false,
 				},
-				weapondmgtypes = {
+				specialdmgtypes = {
 					read_only = false,
 					other_fields = false,
 				},
-				pssavedata = {
+				isPFRPG = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45864,99 +50112,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				abilityeffects = {
-					read_only = false,
-					other_fields = false,
-				},
 				rangetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				acdeflectionmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				naturaldmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipcrewactiontitles = {
-					read_only = false,
-					other_fields = false,
-				},
-				energytypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				save_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				kinetictypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				ammotypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				creaturehalftypesubrace = {
-					read_only = false,
-					other_fields = false,
-				},
-				acshieldmatch = {
-					read_only = false,
-					other_fields = false,
-				},
-				skilldata = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_standard_systems = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatusfull = {
-					read_only = false,
-					other_fields = false,
-				},
-				alignment_neutral = {
-					read_only = false,
-					other_fields = false,
-				},
-				vehicle_custom_array = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_base_stats = {
-					read_only = false,
-					other_fields = false,
-				},
-				mech_default_actions = {
-					read_only = false,
-					other_fields = false,
-				},
-				feat_proficiencies = {
-					read_only = false,
-					other_fields = false,
-				},
-				ability_stol = {
-					read_only = false,
-					other_fields = false,
-				},
-				dmgtypes_ltos = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshipscale = {
-					read_only = false,
-					other_fields = false,
-				},
-				immunetypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				starshiptier = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45964,15 +50120,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				currencyDefault = {
-					read_only = false,
-					other_fields = false,
-				},
 				dmgtypes = {
-					read_only = false,
-					other_fields = false,
-				},
-				healthstatuswounded = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -45988,7 +50136,131 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				save_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				class_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				pssavedata = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatusfull = {
+					read_only = false,
+					other_fields = false,
+				},
+				naturaldmgtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				conditionaltags = {
+					read_only = false,
+					other_fields = false,
+				},
 				connectors = {
+					read_only = false,
+					other_fields = false,
+				},
+				sensesdata = {
+					read_only = false,
+					other_fields = false,
+				},
+				skilldata = {
+					read_only = false,
+					other_fields = false,
+				},
+				bonuscomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				weapondmgtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatushalf = {
+					read_only = false,
+					other_fields = false,
+				},
+				currency = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturesize = {
+					read_only = false,
+					other_fields = false,
+				},
+				alignment_neutral = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_ltos = {
+					read_only = false,
+					other_fields = false,
+				},
+				acarmormatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				acdeflectionmatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				acshieldmatch = {
+					read_only = false,
+					other_fields = false,
+				},
+				ability_stol = {
+					read_only = false,
+					other_fields = false,
+				},
+				targetableeffectcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturedefaulttype = {
+					read_only = false,
+					other_fields = false,
+				},
+				immunetypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				classdata = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturehalftypesubrace = {
+					read_only = false,
+					other_fields = false,
+				},
+				basicdmgtypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				actypes = {
+					read_only = false,
+					other_fields = false,
+				},
+				healthstatuswounded = {
+					read_only = false,
+					other_fields = false,
+				},
+				creaturesubtype = {
+					read_only = false,
+					other_fields = false,
+				},
+				condcomps = {
+					read_only = false,
+					other_fields = false,
+				},
+				alignment_goodevil = {
+					read_only = false,
+					other_fields = false,
+				},
+				energytypes = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46000,7 +50272,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				condcomps = {
+				spelleffects = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46009,11 +50281,87 @@ stds.dnd35e = {
 		Desktop35E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		EffectManager35E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectRollEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextEncode = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectTextDecode = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				applyOngoingDamageAdjustment = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectAddStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonus = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditional = {
+					read_only = false,
+					other_fields = false,
+				},
+				rebuildParsedEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				getEffectsBonusByType = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasEffectCondition = {
+					read_only = false,
+					other_fields = false,
+				},
+				checkConditionalHelper = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalEffect = {
+					read_only = false,
+					other_fields = false,
+				},
+				onEffectActorStartTurn = {
+					read_only = false,
+					other_fields = false,
+				},
+				parseEffectComp = {
+					read_only = false,
+					other_fields = false,
+				},
+				evalAbilityHelper = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		GameSystem = {
@@ -46059,10 +50407,6 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				starshiptargetactions = {
-					read_only = false,
-					other_fields = false,
-				},
 				requestCharSelectDetailClient = {
 					read_only = false,
 					other_fields = false,
@@ -46100,7 +50444,11 @@ stds.dnd35e = {
 		ItemManager2 = {
 			read_only = false,
 			fields = {
-				handleItem = {
+				isArmor = {
+					read_only = false,
+					other_fields = false,
+				},
+				isWeapon = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46108,23 +50456,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				sendItemTransfer = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemSourceType = {
-					read_only = false,
-					other_fields = false,
-				},
-				isArmor = {
-					read_only = false,
-					other_fields = false,
-				},
-				handleAnyDrop = {
-					read_only = false,
-					other_fields = false,
-				},
-				isWeapon = {
+				getItemType = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46133,11 +50465,75 @@ stds.dnd35e = {
 		LibraryData35E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				aListViews = {
+					read_only = false,
+					other_fields = false,
+				},
+				aRecordOverrides = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCRGroupedList = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCCRValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getTypeGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getClassTypeValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getCRGroup = {
+					read_only = false,
+					other_fields = false,
+				},
+				getNPCTypeValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSpellSchoolValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				isItemIdentifiable = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemIsIdentified = {
+					read_only = false,
+					other_fields = false,
+				},
+				getItemRecordDisplayClass = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		Options35E = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerOptions = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		PartyManager2 = {
@@ -46151,7 +50547,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCClasses = {
+				linkPCSkills = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46159,11 +50555,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkillranks = {
-					read_only = false,
-					other_fields = false,
-				},
-				awardXP = {
+				linkPCFields = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46171,7 +50563,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCFields = {
+				awardXP = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46187,7 +50579,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				linkPCSkills = {
+				linkPCClasses = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46200,23 +50592,11 @@ stds.dnd35e = {
 		SpellManager = {
 			read_only = false,
 			fields = {
-				parseSpellSave = {
-					read_only = false,
-					other_fields = false,
-				},
 				getActionHeal = {
 					read_only = false,
 					other_fields = false,
 				},
-				nAbilRanged = {
-					read_only = false,
-					other_fields = false,
-				},
 				resetPrepared = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActionMod = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46232,27 +50612,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				t = {
-					read_only = false,
-					other_fields = false,
-				},
-				bHalf = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertSpellDescToString = {
-					read_only = false,
-					other_fields = false,
-				},
-				sSave = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertSpellShortDescToString = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActionEffectDurationText = {
+				resetSpells = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46260,7 +50620,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActionHealText = {
+				getActionEffectDurationText = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46268,7 +50628,11 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				getActionEffectDuration = {
+				getActionHealText = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertSpellDescToString = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46276,11 +50640,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				resetSpells = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertSpellDescToFormattedText = {
+				getActionAbilityBonus = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46288,15 +50648,15 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				nAbilMelee = {
-					read_only = false,
-					other_fields = false,
-				},
-				getActionAbilityBonus = {
+				getActionEffectDuration = {
 					read_only = false,
 					other_fields = false,
 				},
 				parseSpell = {
+					read_only = false,
+					other_fields = false,
+				},
+				getActionMod = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46308,7 +50668,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				sSaveSource = {
+				convertSpellDescToFormattedText = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46333,11 +50693,7 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				onCombatantDelete = {
-					read_only = false,
-					other_fields = false,
-				},
-				getEffectInfo = {
+				handleIFEffectTag = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46350,47 +50706,31 @@ stds.dnd35e = {
 		VersionManager2 = {
 			read_only = false,
 			fields = {
-				onInit = {
+				convertEncounters16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip19 = {
+				migrateChar11 = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupWeapons = {
+				migrateCharFeat17 = {
 					read_only = false,
 					other_fields = false,
 				},
-				nSrcDriftRating = {
+				convertTable16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				setupFrame = {
+				convertCharacters9 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migrateChar17 = {
+				migrateSpells12 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip21 = {
-					read_only = false,
-					other_fields = false,
-				},
-				aClassName = {
-					read_only = false,
-					other_fields = false,
-				},
-				onCharImport = {
-					read_only = false,
-					other_fields = false,
-				},
-				sRecordNew = {
-					read_only = false,
-					other_fields = false,
-				},
-				addStarshipItem = {
+				convertQuests16 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46398,63 +50738,39 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
-				pcuSummarycheck = {
+				convertEncounter16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar17 = {
+				migrateEncounter9 = {
 					read_only = false,
 					other_fields = false,
 				},
-				migratePCShip19 = {
+				convertCombat11 = {
 					read_only = false,
 					other_fields = false,
 				},
-				aRecordStrip = {
+				convertModuleTables16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertPCShip20 = {
+				convertModuleParcels12 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertChar19 = {
+				convertTables16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				sNewAppFrameRecord = {
+				convertLog10 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertModulePCShip21 = {
+				convertStories16 = {
 					read_only = false,
 					other_fields = false,
 				},
-				convertModulePCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateChar = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip20 = {
-					read_only = false,
-					other_fields = false,
-				},
-				convertChar22 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migrateChar19 = {
-					read_only = false,
-					other_fields = false,
-				},
-				migratePCShip21 = {
+				convertEncounters9 = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -46462,11 +50778,135 @@ stds.dnd35e = {
 					read_only = false,
 					other_fields = false,
 				},
+				convertOptions = {
+					read_only = false,
+					other_fields = false,
+				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertParty11 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertNotes16 = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateChar = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertPSEnc15 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertSystem11 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar17 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertChar17 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCharacters = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertChar12 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onCharImport = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar9 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar8 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertOptions9 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertRegistry11 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateCharProf17 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertCT = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertModuleQuests16 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertParcel11 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertItemInList11 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertModuleNPCs13 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertChar11 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateChar12 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateCharAbility17 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onImport = {
 					read_only = false,
 					other_fields = false,
 				},
+				convertModuleEncounters16 = {
+					read_only = false,
+					other_fields = false,
+				},
 				onModuleLoad = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertModuleStories16 = {
+					read_only = false,
+					other_fields = false,
+				},
+				migrateModuleParcel12 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertNPC14 = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertEncounters = {
+					read_only = false,
+					other_fields = false,
+				},
+				convertFTEntry16 = {
 					read_only = false,
 					other_fields = false,
 				},
