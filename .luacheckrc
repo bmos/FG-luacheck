@@ -18058,7 +18058,75 @@ stds.maladytrackerbmos = {
 		duration_unit = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDatabaseNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				initialize2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				matchData = {
+					read_only = false,
+					other_fields = false,
+				},
+				setStringValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDisplayFont = {
+					read_only = false,
+					other_fields = false,
+				},
+				getValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				cycleLabel = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				initialize = {
+					read_only = false,
+					other_fields = false,
+				},
+				synchData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getStringValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDisplayColor = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18098,7 +18166,75 @@ stds.maladytrackerbmos = {
 		onset_unit = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				getDatabaseNode = {
+					read_only = false,
+					other_fields = false,
+				},
+				initialize2 = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				matchData = {
+					read_only = false,
+					other_fields = false,
+				},
+				setStringValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDisplayFont = {
+					read_only = false,
+					other_fields = false,
+				},
+				getValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				registerUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				cycleLabel = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				initialize = {
+					read_only = false,
+					other_fields = false,
+				},
+				synchData = {
+					read_only = false,
+					other_fields = false,
+				},
+				getStringValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				setDisplayColor = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -18172,7 +18308,15 @@ stds.maladytrackerbmos = {
 					read_only = false,
 					other_fields = false,
 				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27582,7 +27726,15 @@ stds.extraplanarcontainersbmos = {
 		internal_length = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27613,7 +27765,15 @@ stds.extraplanarcontainersbmos = {
 		length = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -27639,7 +27799,15 @@ stds.extraplanarcontainersbmos = {
 		weight = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34355,7 +34523,27 @@ stds.livehitpointsbmos = {
 		charisma = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34364,7 +34552,27 @@ stds.livehitpointsbmos = {
 		constitution = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34373,7 +34581,27 @@ stds.livehitpointsbmos = {
 		dexterity = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34382,7 +34610,19 @@ stds.livehitpointsbmos = {
 		feats = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34418,7 +34658,27 @@ stds.livehitpointsbmos = {
 		intelligence = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34427,7 +34687,27 @@ stds.livehitpointsbmos = {
 		strength = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34436,7 +34716,27 @@ stds.livehitpointsbmos = {
 		wisdom = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				action = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34450,38 +34750,6 @@ stds.ammunitionmanagerbmos = {
 		AmmunitionManager = {
 			read_only = false,
 			fields = {
-				getAmmoRemaining = {
-					read_only = false,
-					other_fields = false,
-				},
-				countMissedShots = {
-					read_only = false,
-					other_fields = false,
-				},
-				getAmmoNode = {
-					read_only = false,
-					other_fields = false,
-				},
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				ammoTracker = {
-					read_only = false,
-					other_fields = false,
-				},
-				calculateMargin = {
-					read_only = false,
-					other_fields = false,
-				},
-				getWeaponName = {
-					read_only = false,
-					other_fields = false,
-				},
-				tLoadWeapons = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
 		ammopicker = {
@@ -34491,16 +34759,172 @@ stds.ammunitionmanagerbmos = {
 					read_only = false,
 					other_fields = false,
 				},
+				setListIndex = {
+					read_only = false,
+					other_fields = false,
+				},
+				showList = {
+					read_only = false,
+					other_fields = false,
+				},
+				setComboBoxReadOnly = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickRelease = {
+					read_only = false,
+					other_fields = false,
+				},
+				refreshSelectionDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				remove = {
+					read_only = false,
+					other_fields = false,
+				},
+				toggle = {
+					read_only = false,
+					other_fields = false,
+				},
+				isComboBoxReadOnly = {
+					read_only = false,
+					other_fields = false,
+				},
+				onClickDown = {
+					read_only = false,
+					other_fields = false,
+				},
+				clear = {
+					read_only = false,
+					other_fields = false,
+				},
+				getValues = {
+					read_only = false,
+					other_fields = false,
+				},
+				refreshButtonDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				getSelectedValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDestroy = {
+					read_only = false,
+					other_fields = false,
+				},
+				replace = {
+					read_only = false,
+					other_fields = false,
+				},
+				activate = {
+					read_only = false,
+					other_fields = false,
+				},
+				setListValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				optionDelete = {
+					read_only = false,
+					other_fields = false,
+				},
+				refreshDisplay = {
+					read_only = false,
+					other_fields = false,
+				},
+				setComboBoxVisible = {
+					read_only = false,
+					other_fields = false,
+				},
+				addItems = {
+					read_only = false,
+					other_fields = false,
+				},
+				hideList = {
+					read_only = false,
+					other_fields = false,
+				},
+				optionClicked = {
+					read_only = false,
+					other_fields = false,
+				},
+				add = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		attack1 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				bAttack = {
+					read_only = false,
+					other_fields = false,
+				},
 				action = {
 					read_only = false,
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				sourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				charMechSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				sources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				charSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34509,11 +34933,67 @@ stds.ammunitionmanagerbmos = {
 		attack2 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				bAttack = {
+					read_only = false,
+					other_fields = false,
+				},
 				action = {
 					read_only = false,
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				sourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				charMechSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				sources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				charSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34522,11 +35002,67 @@ stds.ammunitionmanagerbmos = {
 		attack3 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				bAttack = {
+					read_only = false,
+					other_fields = false,
+				},
 				action = {
 					read_only = false,
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				sourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				charMechSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				sources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				charSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34535,11 +35071,67 @@ stds.ammunitionmanagerbmos = {
 		attack4 = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				bAttack = {
+					read_only = false,
+					other_fields = false,
+				},
 				action = {
 					read_only = false,
 					other_fields = false,
 				},
 				onDoubleClick = {
+					read_only = false,
+					other_fields = false,
+				},
+				sourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				calculateSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				hasSources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				ops = {
+					read_only = false,
+					other_fields = false,
+				},
+				charMechSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				sources = {
+					read_only = false,
+					other_fields = false,
+				},
+				onSourceValue = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSourceWithOp = {
+					read_only = false,
+					other_fields = false,
+				},
+				charSourceUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
+				addSource = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34565,6 +35157,14 @@ stds.ammunitionmanagerbmos = {
 		attacks = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
 				action = {
 					read_only = false,
 					other_fields = false,
@@ -34573,15 +35173,27 @@ stds.ammunitionmanagerbmos = {
 					read_only = false,
 					other_fields = false,
 				},
+				updateWidgets = {
+					read_only = false,
+					other_fields = false,
+				},
+				onDragStart = {
+					read_only = false,
+					other_fields = false,
+				},
+				updateAttackFields = {
+					read_only = false,
+					other_fields = false,
+				},
+				v = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		char_weapon = {
 			read_only = false,
 			fields = {
-				onReloadAction = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
 		char_weapon_editor_main = {
@@ -34690,7 +35302,19 @@ stds.enhanceditemsllisandur = {
 		charge = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34708,30 +35332,6 @@ stds.enhanceditemsllisandur = {
 		item_main = {
 			read_only = false,
 			fields = {
-				onInit = {
-					read_only = false,
-					other_fields = false,
-				},
-				getItemType = {
-					read_only = false,
-					other_fields = false,
-				},
-				updateControl = {
-					read_only = false,
-					other_fields = false,
-				},
-				VisDataCleared = {
-					read_only = false,
-					other_fields = false,
-				},
-				update = {
-					read_only = false,
-					other_fields = false,
-				},
-				InvisDataAdded = {
-					read_only = false,
-					other_fields = false,
-				},
 			},
 		},
 		main = {
@@ -34742,7 +35342,19 @@ stds.enhanceditemsllisandur = {
 		maxcharges = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onDrop = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34770,6 +35382,10 @@ stds.partyitemidentifiedllisandur = {
 					other_fields = false,
 				},
 				hideOrShowID = {
+					read_only = false,
+					other_fields = false,
+				},
+				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34929,7 +35545,15 @@ stds.itemdurabilitybmos = {
 		ac = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34938,7 +35562,15 @@ stds.itemdurabilitybmos = {
 		bonus = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34965,7 +35597,15 @@ stds.itemdurabilitybmos = {
 		checkpenalty = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -34982,12 +35622,24 @@ stds.itemdurabilitybmos = {
 					read_only = false,
 					other_fields = false,
 				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		hitpoints = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -35037,12 +35689,28 @@ stds.itemdurabilitybmos = {
 					read_only = false,
 					other_fields = false,
 				},
+				update = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		type = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
+					read_only = false,
+					other_fields = false,
+				},
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
@@ -63707,6 +64375,10 @@ stds.customizeditemgeneratorfaelwenwithmodificationsbyrmilmineandbmos = {
 					read_only = false,
 					other_fields = false,
 				},
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
 			},
 		},
 		button_generate = {
@@ -63994,11 +64666,19 @@ stds.spellformattingimprovementbmos = {
 		description_full = {
 			read_only = false,
 			fields = {
+				onInit = {
+					read_only = false,
+					other_fields = false,
+				},
+				onVisUpdate = {
+					read_only = false,
+					other_fields = false,
+				},
 				onValueChanged = {
 					read_only = false,
 					other_fields = false,
 				},
-				onInit = {
+				update = {
 					read_only = false,
 					other_fields = false,
 				},
