@@ -29,47 +29,7 @@ stds.fg = {
   }
 }
 
-stds.fgfunctions = {
-    read_globals = {
-        "getDatabaseNode",
-        "setColor",
-        "getColor",
-        "setStateColor",
-        "setIcons",
-        "setText",
-        "setStateIcons",
-        "setStateText",
-        "setStateTooltipText",
-        "setTooltipText",
-        "setEmptyText",
-        "getEmptyText",
-        "setReadOnly",
-        "getReadOnly",
-        "setVisible",
-        "getVisible",
-        "setValue",
-        "getValue",
-        "getName",
-        "getPath",
-        "registerOptions",
-        "registerMenuItem",
-    },
-    globals = {
-        "onInit",
-        "onClose",
-        "update",
-        "onUpdate",
-        "onDrag",
-        "onDrop",
-        "onValueChanged",
-        "onDataChanged",
-        "onDoubleClick",
-        "onButtonPress",
-        "onClickRelease",
-    }
-}
-
-std = 'lua51+fg+fgfunctions+corerpg+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2'
+std = 'lua51+fg+corerpg+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2'
 
 stds.coinsweightbmos = {
 	globals = {
