@@ -28,3 +28,13 @@ stds.fg = {
     self = {other_fields = true},
   }
 }
+
+stds.fgfunctions = {
+    read_globals = {
+        "getDatabaseNode",
+    },
+    globals = {
+        "onInit",
+        "onClose",
+    }
+}
