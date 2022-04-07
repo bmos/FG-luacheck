@@ -33,10 +33,10 @@ stds.fg = {
 
 stds.fgfunctions = {
   read_globals = {
-      "getDatabaseNode",
+    "getDatabaseNode",
   },
   globals = {
-      "onInit",
-      "onClose",
+    "onInit",
+    "onClose",
   }
 }
