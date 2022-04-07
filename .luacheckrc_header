@@ -23,7 +23,9 @@ stds.fg = {
   },
   globals = {
     windowlist = {other_fields = true},
+    subwindow = {other_fields = true},
     window = {other_fields = true},
+    header = {other_fields = true},
     super = {other_fields = true},
     self = {other_fields = true},
   }
