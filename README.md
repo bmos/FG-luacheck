@@ -7,7 +7,7 @@ Warns about setting new global variables. Warns about line length > 150.
 Warns about cyclomatic complexity > 35 (anything above 10 is pretty bad).
 
 Contains stds definitions for:
-corerpg, dnd2e, dnd35e, dnd4e, dnd5e, pfrpg, pfrpg2, sfrpg
+corerpg, dnd2e, dnd35e, dnd4e, dnd5e, pfrpg, pfrpg2, sfrpg, all of my current extensions.
 
 It ignores global variable warnings for all global variables matching these patterns:
 * OOB_[%u_]+
