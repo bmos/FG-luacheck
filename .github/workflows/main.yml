@@ -99,7 +99,7 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
 
-    # Processing
+    # Processing 
     - name: Generate new .luacheckrc
       uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
       with:
