@@ -90,7 +90,15 @@ jobs:
         path: .fg/extensions/Exhausted
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-    
+
+    - name: Clone rhagelstrom/BetterCombatEffects
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/BetterCombatEffects
+        path: .fg/extensions/BetterCombatEffects
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
     # Processing
     - name: Generate new .luacheckrc
       uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
