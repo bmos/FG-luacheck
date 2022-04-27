@@ -11,3 +11,5 @@ corerpg, dnd2e, dnd35e, dnd4e, dnd5e, pfrpg, pfrpg2, sfrpg, all of my current ex
 
 It ignores global variable warnings for all global variables matching these patterns:
 * OOB_[%u_]+
+
+If you fork this repo, you must add a secret named ACTIONS containing your GitHub Personal Access Token
