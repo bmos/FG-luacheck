@@ -1,4 +1,4 @@
-[![Update .luacheckrc](https://github.com/bmos/FG-luacheck/actions/workflows/main.yml/badge.svg)](https://github.com/bmos/FG-luacheck/actions/workflows/main.yml)
+[![Update .luacheckrc](https://github.com/rhagelstrom/FG-luacheck/actions/workflows/main.yml/badge.svg)](https://github.com/rhagelstrom/FG-luacheck/actions/workflows/main.yml)
 
 # FantasyGrounds .luacheckrc configuration
 This config file is suitable for using luacheck to check lua code for FantasyGrounds.
