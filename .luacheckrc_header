@@ -15,7 +15,25 @@ stds.fg = {
     File = {other_fields = true},
     Input = {other_fields = true},
     Interface = {other_fields = true, fields = {onWindowOpened = {read_only = false}}},
-    Module = {other_fields = true},
+    Module = {
+      other_fields = false,
+      fields = {
+        activate = {read_only = true},
+        deactivate = {read_only = true},
+        export = {read_only = true},
+        getModuleInfo = {read_only = true},
+        getModules = {read_only = true},
+        onActivationRequested = {read_only = false},
+        onModuleAdded = {read_only = false},
+        onModuleLoad = {read_only = false},
+        onModuleRemoved = {read_only = false},
+        onModuleUnload = {read_only = false},
+        onModuleUpdated = {read_only = false},
+        onUnloadedReference = {read_only = false},
+        revert = {read_only = true},
+        setModulePermissions = {read_only = true},
+      },
+    },
     Session = {
       other_fields = false,
       fields = {
