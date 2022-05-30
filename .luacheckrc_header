@@ -16,7 +16,19 @@ stds.fg = {
     Input = {other_fields = true},
     Interface = {other_fields = true, fields = {onWindowOpened = {read_only = false}}},
     Module = {other_fields = true},
-    Session = {other_fields = true},
+    Session = {
+      other_fields = false,
+      fields = {
+        IsHost = {read_only = true},
+        IsLocal = {read_only = true},
+        VersionMajor = {read_only = true},
+        VersionMinor = {read_only = true},
+        VersionRelease = {read_only = true},
+        CampaignName = {read_only = true},
+        RulesetName = {read_only = true},
+        UserName = {read_only = true},
+      },
+    },
     Token = {
       other_fields = false,
       fields = {
