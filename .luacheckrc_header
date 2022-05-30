@@ -13,7 +13,20 @@ stds.fg = {
     Debug = {other_fields = true},
     Extension = {other_fields = true},
     File = {other_fields = true},
-    Input = {other_fields = true},
+    Input = {
+      other_fields = false,
+      fields = {
+        getDragData = {read_only = true},
+        getMouseButtonState = {read_only = true},
+        getMousePosition = {read_only = true},
+        isAltPressed = {read_only = true},
+        isControlPressed = {read_only = true},
+        isShiftPressed = {read_only = true},
+        onAlt = {read_only = false},
+        onControl = {read_only = false},
+        onShift = {read_only = false},
+      },
+    },
     Interface = {other_fields = true, fields = {onWindowOpened = {read_only = false}}},
     Module = {
       other_fields = false,
