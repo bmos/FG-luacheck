@@ -10,7 +10,13 @@ stds.fg = {
   read_globals = {
     Comm = {other_fields = true},
     DB = {other_fields = true},
-    Debug = {other_fields = true},
+    Debug = {
+      other_fields = false,
+      fields = {
+        chat = {read_only = true},
+        console = {read_only = true},
+      },
+    },
     Extension = {
       other_fields = false,
       fields = {
