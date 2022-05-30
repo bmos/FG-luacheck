@@ -12,7 +12,18 @@ stds.fg = {
     DB = {other_fields = true},
     Debug = {other_fields = true},
     Extension = {other_fields = true},
-    File = {other_fields = true},
+    File = {
+      other_fields = false,
+      fields = {
+        addCampaignAssetFile = {read_only = true},
+        getCampaignFolder = {read_only = true},
+        getDataFolder = {read_only = true},
+        openCampaignFolder = {read_only = true},
+        openDataFolder = {read_only = true},
+        openTextFile = {read_only = true},
+        saveTextFile = {read_only = true},
+      },
+    },
     Input = {
       other_fields = false,
       fields = {
