@@ -11,7 +11,13 @@ stds.fg = {
     Comm = {other_fields = true},
     DB = {other_fields = true},
     Debug = {other_fields = true},
-    Extension = {other_fields = true},
+    Extension = {
+      other_fields = false,
+      fields = {
+        getExtensionInfo = {read_only = true},
+        getExtensions = {read_only = true},
+      },
+    },
     File = {
       other_fields = false,
       fields = {
