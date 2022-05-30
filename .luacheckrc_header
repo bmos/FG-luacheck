@@ -4,7 +4,7 @@ codes = true
 
 ignore = {
   "111/OOB_MSGTYPE_.+",
-}
+},
 
 stds.fg = {
   read_globals = {
@@ -22,7 +22,67 @@ stds.fg = {
         vote = {read_only = true},
       },
     },
-    DB = {other_fields = true},
+    DB = {
+      other_fields = false,
+      fields = {
+        addChildCategory = {read_only = true},
+        addHandler = {read_only = true},
+        addHolder = {read_only = true},
+        backup = {read_only = true},
+        convertCampaign = {read_only = true},
+        copyNode = {read_only = true},
+        createChild = {read_only = true},
+        createNode = {read_only = true},
+        deleteChild = {read_only = true},
+        deleteChildren = {read_only = true},
+        deleteNode = {read_only = true},
+        export = {read_only = true},
+        findNode = {read_only = true},
+        getCategory = {read_only = true},
+        getChild = {read_only = true},
+        getChildCategories = {read_only = true},
+        getChildCount = {read_only = true},
+        getChildren = {read_only = true},
+        getChildrenGlobal = {read_only = true},
+        getDefaultChildCategory = {read_only = true},
+        getHolders = {read_only = true},
+        getImportRulesetVersion = {read_only = true},
+        getImportVersion = {read_only = true},
+        getModule = {read_only = true},
+        getOwner = {read_only = true},
+        getParent = {read_only = true},
+        getPath = {read_only = true},
+        getRoot = {read_only = true},
+        getRulesetVersion = {read_only = true},
+        getText = {read_only = true},
+        getType = {read_only = true},
+        getValue = {read_only = true},
+        getVersion = {read_only = true},
+        import = {read_only = true},
+        isEmpty = {read_only = true},
+        isIntact = {read_only = true},
+        isOwner = {read_only = true},
+        isPublic = {read_only = true},
+        isReadOnly = {read_only = true},
+        isStatic = {read_only = true},
+        onAuxCharLoad = {read_only = false},
+        onImport = {read_only = false},
+        onIntegrityChange = {read_only = false},
+        removeAllHolders = {read_only = true},
+        removeChildCategory = {read_only = true},
+        removeHandler = {read_only = true},
+        removeHolder = {read_only = true},
+        revert = {read_only = true},
+        setCategory = {read_only = true},
+        setDefaultChildCategory = {read_only = true},
+        setOwner = {read_only = true},
+        setPublic = {read_only = true},
+        setStatic = {read_only = true},
+        setValue = {read_only = true},
+        updateChildCategory = {read_only = true},
+        updateVersion = {read_only = true},
+      },
+    },
     Debug = {
       other_fields = false,
       fields = {
@@ -170,8 +230,8 @@ stds.fg = {
     header = {other_fields = true},
     super = {other_fields = true},
     self = {other_fields = true},
-  }
-}
+  },
+},
 
 stds.fgfunctions = {
   read_globals = {
