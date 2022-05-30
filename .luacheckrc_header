@@ -8,7 +8,20 @@ ignore = {
 
 stds.fg = {
   read_globals = {
-    Comm = {other_fields = true},
+    Comm = {
+      other_fields = false,
+      fields = {
+        addChatMessage = {read_only = true},
+        clearChat = {read_only = true},
+        deliverChatMessage = {read_only = true},
+        deliverOOBMessage = {read_only = true},
+        onReceiveOOBMessage = {read_only = false},
+        registerSlashHandler = {read_only = true},
+        setChatMood = {read_only = true},
+        throwDice = {read_only = true},
+        vote = {read_only = true},
+      },
+    },
     DB = {other_fields = true},
     Debug = {
       other_fields = false,
