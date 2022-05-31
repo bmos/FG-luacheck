@@ -21,4 +21,4 @@ Contains stds definitions for:
 It ignores global variable warnings for all global variables matching these patterns:
 * OOB_[%u_]+
 
-If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token
+**If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
