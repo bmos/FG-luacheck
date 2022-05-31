@@ -213,6 +213,7 @@ stds.fg = {
         onDrop = {read_only = false},
         onHover = {read_only = false},
         onHoverUpdate = {read_only = false},
+        onMove = {read_only = false},
         onScaleChanged = {read_only = false},
         onTargetUpdate = {read_only = false},
         onWheel = {read_only = false},
