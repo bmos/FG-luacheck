@@ -4,7 +4,7 @@ codes = true
 
 ignore = {
   "111/OOB_MSGTYPE_.+",
-},
+}
 
 stds.fg = {
   read_globals = {
@@ -270,7 +270,7 @@ stds.fg = {
     super = {other_fields = true},
     self = {other_fields = true},
   },
-},
+}
 
 stds.fgfunctions = {
   read_globals = {
