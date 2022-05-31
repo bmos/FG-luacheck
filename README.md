@@ -16,7 +16,7 @@ Contains stds definitions for:
 * pfrpg
 * pfrpg2
 * sfrpg
-* all of my current extensions.
+* all of my current extensions
 
 It ignores global variable warnings for all global variables matching these patterns:
 * OOB_[%u_]+
