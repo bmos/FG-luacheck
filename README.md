@@ -3,13 +3,22 @@
 # FantasyGrounds .luacheckrc configuration
 This config file is suitable for using luacheck to check lua code for FantasyGrounds.
 
-Warns about setting new global variables. Warns about line length > 150.
-Warns about cyclomatic complexity > 35 (anything above 10 is pretty bad).
+Non-standard configurations:
+* Warns about line length > 150.
+* Warns about cyclomatic complexity > 35.
 
 Contains stds definitions for:
-corerpg, dnd2e, dnd35e, dnd4e, dnd5e, pfrpg, pfrpg2, sfrpg, all of my current extensions.
+* corerpg
+* dnd2e
+* dnd35e
+* dnd4e
+* dnd5e
+* pfrpg
+* pfrpg2
+* sfrpg
+* all of my current extensions.
 
 It ignores global variable warnings for all global variables matching these patterns:
 * OOB_[%u_]+
 
-If you fork this repo, you must add a secret named ACTIONS containing your GitHub Personal Access Token
+If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token
