@@ -90,6 +90,13 @@ jobs:
         path: .fg/extensions/FG-PFRPG-Encumbrance-Penalties
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
+    - name: Clone FG-Unofficial-Developers-Guild/FG-PFRPG-Advanced-Effects
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/FG-PFRPG-Advanced-Effects
+        path: .fg/extensions/FG-PFRPG-Advanced-Effects
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
     - name: Clone bmos/FG-PFRPG-Drain-and-Permanent-Bonuses
       uses: actions/checkout@v3
       with:
