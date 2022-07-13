@@ -160,6 +160,13 @@ jobs:
         path: .fg/extensions/FG-PFRPG-Malady-Tracker
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
+    - name: Clone bmos/FG-HitMargins
+      uses: actions/checkout@v3
+      with:
+        repository: bmos/FG-HitMargins
+        path: .fg/extensions/FG-HitMargins
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
     - name: Clone bmos/FG-PFRPG-Live-Hitpoints
       uses: actions/checkout@v3
       with:
