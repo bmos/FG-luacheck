@@ -82,7 +82,7 @@ jobs:
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
 
-    # Extensions
+    # bmos extensions
     - name: Clone bmos/FG-PFRPG-Encumbrance-Penalties
       uses: actions/checkout@v3
       with:
@@ -244,13 +244,6 @@ jobs:
         path: .fg/extensions/FG-CoreRPG-Moon-Tracker
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-    - name: Clone FG-Unofficial-Developers-Guild/FG-ClockAdjuster
-      uses: actions/checkout@v3
-      with:
-        repository: FG-Unofficial-Developers-Guild/FG-ClockAdjuster
-        path: .fg/extensions/FG-ClockAdjuster
-        fetch-depth: 0
-        token: ${{ secrets.ACTIONS }}
     - name: Clone FG-Unofficial-Developers-Guild/FG-Aura-Effect
       uses: actions/checkout@v3
       with:
@@ -263,6 +256,43 @@ jobs:
       with:
         repository: FG-Unofficial-Developers-Guild/FG-4E-TEMPO-and-TEMPA
         path: .fg/extensions/FG-4E-TEMPO-and-TEMPA
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+        
+    # Other dev's extensions
+    - name: Clone Kelrugem/Extended-automation-and-overlays
+      uses: actions/checkout@v3
+      with:
+        repository: Kelrugem/Extended-automation-and-overlays
+        path: .fg/extensions/Extended-automation-and-overlays
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone FG-Unofficial-Developers-Guild/FG-ClockAdjuster
+      uses: actions/checkout@v3
+      with:
+        repository: FG-Unofficial-Developers-Guild/FG-ClockAdjuster
+        path: .fg/extensions/FG-ClockAdjuster
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/BetterCombatEffects
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/BetterCombatEffects
+        path: .fg/extensions/BetterCombatEffects
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone MeAndUnique/SizeMatters
+      uses: actions/checkout@v3
+      with:
+        repository: MeAndUnique/SizeMatters
+        path: .fg/extensions/SizeMatters
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone MeAndUnique/TemporalFixation
+      uses: actions/checkout@v3
+      with:
+        repository: MeAndUnique/TemporalFixation
+        path: .fg/extensions/TemporalFixation
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
     
