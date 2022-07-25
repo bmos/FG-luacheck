@@ -16,7 +16,12 @@ Contains stds definitions for:
 * pfrpg
 * pfrpg2
 * sfrpg
+
 * all of my current extensions
+* kelrugem's extended automation
+* clockadjuster
+* rhagelstrom's BetterCombatEffects
+* MeAndUnique's SizeMatters and TemporalFixation
 
 It ignores warnings for all global variables matching these patterns:
 * OOB_[%u_]+
