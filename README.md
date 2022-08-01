@@ -25,5 +25,7 @@ Contains stds definitions for:
 
 It ignores warnings for all global variables matching these patterns:
 * OOB_[%u_]+
+* register[%a_]+
+* unregister[%a_]+
 
 **If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
