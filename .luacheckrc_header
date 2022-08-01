@@ -4,7 +4,11 @@ codes = true
 
 ignore = {
   "111/OOB_MSGTYPE_.+",
+  "111/register.+",
+  "111/unregister.+",
   "113/OOB_MSGTYPE_.+",
+  "113/register.+",
+  "113/unregister.+",
 }
 
 stds.fg = {
