@@ -24,8 +24,8 @@ Contains stds definitions for:
 * MeAndUnique's SizeMatters and TemporalFixation
 
 It ignores warnings for all global variables matching these patterns:
-* OOB_[%u_]+
-* register[%a_]+
-* unregister[%a_]+
+* OOB_MSGTYPE_.+
+* register.+
+* unregister.+
 
 **If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
