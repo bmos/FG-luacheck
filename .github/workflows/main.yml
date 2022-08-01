@@ -295,6 +295,13 @@ jobs:
         path: .fg/extensions/TemporalFixation
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
+    - name: Clone SirMotte/FGU-Theme-Hearth
+      uses: actions/checkout@v3
+      with:
+        repository: SirMotte/FGU-Theme-Hearth
+        path: .fg/extensions/FGU-Theme-Hearth
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
     
     # Processing
     - name: Generate new .luacheckrc
