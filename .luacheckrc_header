@@ -6,9 +6,11 @@ ignore = {
   "111/OOB_MSGTYPE_.+",
   "111/register.+",
   "111/unregister.+",
+  "111/handle.+",
   "113/OOB_MSGTYPE_.+",
   "113/register.+",
   "113/unregister.+",
+  "113/handle.+",
 }
 
 stds.fg = {
