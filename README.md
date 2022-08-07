@@ -30,4 +30,4 @@ It ignores warnings for all global variables matching these patterns:
 * unregister.+
 * handle.+
 
-**If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
+**If you fork this repo to generate your own luacheck config file, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
