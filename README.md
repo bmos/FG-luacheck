@@ -17,15 +17,17 @@ Contains stds definitions for:
 * pfrpg2
 * sfrpg
 
-* all of my current extensions
-* kelrugem's extended automation
-* clockadjuster
-* rhagelstrom's BetterCombatEffects
+* All of bmos' current extensions
+* Kelrugem's extended automation
+* ClockAdjuster
+* Ryan Hagelstrom's BetterCombatEffects
 * MeAndUnique's SizeMatters and TemporalFixation
+* SirMotte's Hearth Theme
 
 It ignores warnings for all global variables matching these patterns:
 * OOB_MSGTYPE_.+
 * register.+
 * unregister.+
+* handle.+
 
 **If you fork this repo, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
