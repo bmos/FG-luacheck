@@ -272,6 +272,7 @@ stds.fg = {
     },
   },
   globals = {
+    parentcontrol = {other_fields = true},
     windowlist = {other_fields = true},
     subwindow = {other_fields = true},
     window = {other_fields = true},
