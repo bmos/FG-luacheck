@@ -5,7 +5,7 @@ This config file is suitable for using luacheck to check lua code for FantasyGro
 
 ## Non-standard configurations:
 * Warns about line length > 150.
-* Warns about cyclomatic complexity > 35. This is very permissive; best practices are much lower.
+* Warns about cyclomatic complexity > 36. This is very permissive; best practices are much lower.
 * Show warning codes.
 
 ## Contains stds definitions for:
