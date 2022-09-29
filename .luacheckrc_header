@@ -27,6 +27,8 @@ stds.fg = {
         setChatMood = {read_only = true},
         throwDice = {read_only = true},
         vote = {read_only = true},
+        addEventHandler = {read_only = true},
+        removeEventHandler = {read_only = true},
       },
     },
     DB = {
@@ -88,6 +90,8 @@ stds.fg = {
         setValue = {read_only = true},
         updateChildCategory = {read_only = true},
         updateVersion = {read_only = true},
+        getChildList = {read_only = true},
+        isNode = {read_only = true},
       },
     },
     Debug = {
@@ -128,6 +132,8 @@ stds.fg = {
         onAlt = {read_only = false},
         onControl = {read_only = false},
         onShift = {read_only = false},
+        addEventHandler = {read_only = false},
+        removeEventHandler = {read_only = false},
       },
     },
     Interface = {
@@ -168,6 +174,9 @@ stds.fg = {
         setLighting = {read_only = true},
         setString = {read_only = true},
         toggleWindow = {read_only = true},
+        isWindowClass = {read_only = true},
+        addKeyedEventHandler = {read_only = true},
+        removeKeyedEventHandler = {read_only = true},
       },
     },
     Module = {
@@ -187,6 +196,8 @@ stds.fg = {
         onUnloadedReference = {read_only = false},
         revert = {read_only = true},
         setModulePermissions = {read_only = true},
+        addEventHandler = {read_only = true},
+        removeEventHandler = {read_only = true},
       },
     },
     Session = {
@@ -224,6 +235,8 @@ stds.fg = {
         onScaleChanged = {read_only = false},
         onTargetUpdate = {read_only = false},
         onWheel = {read_only = false},
+        addEventHandler = {read_only = false},
+        removeEventHandler = {read_only = false},
       },
     },
     User = {
@@ -260,6 +273,8 @@ stds.fg = {
         setCurrentIdentityColors = {read_only = true},
         setLocalIdentityPortrait = {read_only = true},
         setPortrait = {read_only = true},
+        addEventHandler = {read_only = true},
+        removeEventHandler = {read_only = true},
       },
     },
     Utility = {
