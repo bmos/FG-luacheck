@@ -177,6 +177,8 @@ stds.fg = {
         isWindowClass = {read_only = true},
         addKeyedEventHandler = {read_only = true},
         removeKeyedEventHandler = {read_only = true},
+        getDicePacks = {read_only = true},
+        getDicePackInfo = {read_only = true},
       },
     },
     Module = {
