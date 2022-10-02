@@ -31,7 +31,7 @@ This config file is suitable for using luacheck to check lua code for FantasyGro
 * unregister.+
 * handle.+
 
-# Common Modifications
+## Common Modifications
 ``allow_defined_top = true`` Allows top-level globals without warning. Useful for those who do not want to localize or whitelist all functions.
 
 **If you fork this repo to generate your own luacheck config file, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
