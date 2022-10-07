@@ -91,11 +91,11 @@ jobs:
         path: .fg/extensions/FG-PFRPG-Encumbrance-Penalties
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-    - name: Clone bmos/FG-PFRPG-Auto-Crit-and-Fumble
+    - name: Clone bmos/FG-PFRPG-Advanced-Crit-and-Fumble-Tables
       uses: actions/checkout@v3
       with:
-        repository: bmos/FG-PFRPG-Auto-Crit-and-Fumble
-        path: .fg/extensions/FG-PFRPG-Auto-Crit-and-Fumble
+        repository: bmos/FG-PFRPG-Advanced-Crit-and-Fumble-Tables
+        path: .fg/extensions/FG-PFRPG-Advanced-Crit-and-Fumble-Tables
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
     - name: Clone FG-Unofficial-Developers-Guild/FG-PFRPG-Advanced-Effects
