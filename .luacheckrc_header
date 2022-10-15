@@ -285,6 +285,7 @@ stds.fg = {
         decodeXML = {read_only = true},
         encodeXML = {read_only = true},
         getDiceTotal = {read_only = true},
+        convertStringToLower = {read_only = true},
       },
     },
   },
