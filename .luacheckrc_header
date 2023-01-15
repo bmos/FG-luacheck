@@ -58,6 +58,7 @@ stds.fg = {
         getImportRulesetVersion = {read_only = true},
         getImportVersion = {read_only = true},
         getModule = {read_only = true},
+        getName = {read_only = true},
         getOwner = {read_only = true},
         getParent = {read_only = true},
         getPath = {read_only = true},
