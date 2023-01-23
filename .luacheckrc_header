@@ -121,6 +121,12 @@ stds.fg = {
         saveTextFile = {read_only = true},
       },
     },
+    Image = {
+      other_fields = false,
+      fields = {
+        addLayerPaintStamp = {read_only = true},
+      },
+    },
     Input = {
       other_fields = false,
       fields = {
