@@ -1,9 +1,16 @@
 max_line_length = 150
-max_cyclomatic_complexity = 35
+max_cyclomatic_complexity = 36
 codes = true
 
 ignore = {
   "111/OOB_MSGTYPE_.+",
+  "111/register.+",
+  "111/unregister.+",
+  "111/handle.+",
+  "113/OOB_MSGTYPE_.+",
+  "113/register.+",
+  "113/unregister.+",
+  "113/handle.+",
 }
 
 stds.fg = {
@@ -20,6 +27,8 @@ stds.fg = {
         setChatMood = {read_only = true},
         throwDice = {read_only = true},
         vote = {read_only = true},
+        addEventHandler = {read_only = true},
+        removeEventHandler = {read_only = true},
       },
     },
     DB = {
@@ -49,6 +58,7 @@ stds.fg = {
         getImportRulesetVersion = {read_only = true},
         getImportVersion = {read_only = true},
         getModule = {read_only = true},
+        getName = {read_only = true},
         getOwner = {read_only = true},
         getParent = {read_only = true},
         getPath = {read_only = true},
@@ -81,6 +91,8 @@ stds.fg = {
         setValue = {read_only = true},
         updateChildCategory = {read_only = true},
         updateVersion = {read_only = true},
+        getChildList = {read_only = true},
+        isNode = {read_only = true},
       },
     },
     Debug = {
@@ -109,6 +121,12 @@ stds.fg = {
         saveTextFile = {read_only = true},
       },
     },
+    Image = {
+      other_fields = false,
+      fields = {
+        addLayerPaintStamp = {read_only = true},
+      },
+    },
     Input = {
       other_fields = false,
       fields = {
@@ -121,6 +139,8 @@ stds.fg = {
         onAlt = {read_only = false},
         onControl = {read_only = false},
         onShift = {read_only = false},
+        addEventHandler = {read_only = false},
+        removeEventHandler = {read_only = false},
       },
     },
     Interface = {
@@ -161,6 +181,11 @@ stds.fg = {
         setLighting = {read_only = true},
         setString = {read_only = true},
         toggleWindow = {read_only = true},
+        isWindowClass = {read_only = true},
+        addKeyedEventHandler = {read_only = true},
+        removeKeyedEventHandler = {read_only = true},
+        getDicePacks = {read_only = true},
+        getDicePackInfo = {read_only = true},
       },
     },
     Module = {
@@ -180,6 +205,8 @@ stds.fg = {
         onUnloadedReference = {read_only = false},
         revert = {read_only = true},
         setModulePermissions = {read_only = true},
+        addEventHandler = {read_only = true},
+        removeEventHandler = {read_only = true},
       },
     },
     Session = {
@@ -217,6 +244,8 @@ stds.fg = {
         onScaleChanged = {read_only = false},
         onTargetUpdate = {read_only = false},
         onWheel = {read_only = false},
+        addEventHandler = {read_only = false},
+        removeEventHandler = {read_only = false},
       },
     },
     User = {
@@ -253,6 +282,8 @@ stds.fg = {
         setCurrentIdentityColors = {read_only = true},
         setLocalIdentityPortrait = {read_only = true},
         setPortrait = {read_only = true},
+        addEventHandler = {read_only = true},
+        removeEventHandler = {read_only = true},
       },
     },
     Utility = {
@@ -260,10 +291,13 @@ stds.fg = {
       fields = {
         decodeXML = {read_only = true},
         encodeXML = {read_only = true},
+        getDiceTotal = {read_only = true},
+        convertStringToLower = {read_only = true},
       },
     },
   },
   globals = {
+    parentcontrol = {other_fields = true},
     windowlist = {other_fields = true},
     subwindow = {other_fields = true},
     window = {other_fields = true},

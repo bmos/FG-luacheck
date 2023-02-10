@@ -91,7 +91,7 @@ jobs:
         path: .fg/extensions/Exhausted
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-
+        
     - name: Clone rhagelstrom/BetterCombatEffects
       uses: actions/checkout@v3
       with:
@@ -147,7 +147,7 @@ jobs:
         path: .fg/extensions/FranklyNot
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-
+        
     - name: Clone rhagelstrom/ChatAestheticsConfigurator
       uses: actions/checkout@v3
       with:
@@ -155,7 +155,7 @@ jobs:
         path: .fg/extensions/ChatAestheticsConfigurator
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-
+        
     - name: Clone rhagelstrom/EffectiveInitiative
       uses: actions/checkout@v3
       with:
