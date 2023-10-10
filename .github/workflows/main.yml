@@ -259,7 +259,7 @@ jobs:
         path: .fg/extensions/FG-4E-TEMPO-and-TEMPA
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-        
+
     # Other dev's extensions
     - name: Clone Kelrugem/Extended-automation-and-overlays
       uses: actions/checkout@v3
@@ -303,7 +303,84 @@ jobs:
         path: .fg/extensions/FGU-Theme-Hearth
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-    
+    - name: Clone rhagelstrom/Turbo
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/Turbo
+        path: .fg/extensions/Turbo
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/Contaminated
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/Contaminated
+        path: .fg/extensions/Contaminated
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/FranklyNot
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/FranklyNot
+        path: .fg/extensions/FranklyNot
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/PowerUp
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/PowerUp
+        path: .fg/extensions/PowerUp
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/Exhausted
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/Exhausted
+        path: .fg/extensions/Exhausted
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/ChatAestheticsConfigurator
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/ChatAestheticsConfigurator
+        path: .fg/extensions/ChatAestheticsConfigurator
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/ArcaneWard
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/ArcaneWard
+        path: .fg/extensions/ArcaneWard
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/EffectiveInitiative
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/EffectiveInitiative
+        path: .fg/extensions/EffectiveInitiative
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/HighVariance
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/HighVariance
+        path: .fg/extensions/HighVariance
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/Effective-NPC
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/Effective-NPC
+        path: .fg/extensions/Effective-NPC
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+    - name: Clone rhagelstrom/BetterCombatEffectsGold
+      uses: actions/checkout@v3
+      with:
+        repository: rhagelstrom/BetterCombatEffectsGold
+        path: .fg/extensions/BetterCombatEffectsGold
+        fetch-depth: 0
+        token: ${{ secrets.ACTIONS }}
+
     # Processing
     - name: Generate new .luacheckrc
       uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main

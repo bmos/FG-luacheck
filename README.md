@@ -21,7 +21,7 @@ This config file is suitable for using luacheck to check lua code for FantasyGro
 * All of bmos' current extensions
 * Kelrugem's extended automation
 * ClockAdjuster
-* Ryan Hagelstrom's BetterCombatEffects
+* Ryan Hagelstrom's BetterCombatEffects, BetterCombatEfffectsGold, Turbo, PowerUp, Exhausted, Contaminated, Effective-NPC, HighVariance, EffectiveInitiative, ArcaneWard, ChatAestheticsConfigurator, and FranklyNot
 * MeAndUnique's SizeMatters and TemporalFixation
 * SirMotte's Hearth Theme
 
