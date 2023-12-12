@@ -388,7 +388,7 @@ jobs:
         std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2'
 
     - name: Create pull request
-      uses: peter-evans/create-pull-request@v4
+      uses: peter-evans/create-pull-request@v5
       with:
         title: Update .luacheckrc
         commit-message: "test: update .luacheckrc"
