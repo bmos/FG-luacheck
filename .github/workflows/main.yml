@@ -6,8 +6,11 @@ on:
       - '.luacheckrc_header'
       - '.github/workflows/main.yml'
   schedule:
-    - cron: 0 0 * * *
+    - cron:  '30 5,17 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate:
@@ -391,6 +394,6 @@ jobs:
       uses: peter-evans/create-pull-request@v6
       with:
         title: Update .luacheckrc
-        commit-message: "test: update .luacheckrc"
+        commit-message: "The latest .luacheckrc config build from targeted repos."
         branch: update-luacheckrc
         delete-branch: true
