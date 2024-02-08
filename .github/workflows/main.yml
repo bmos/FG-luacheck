@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   generate:
@@ -388,7 +389,7 @@ jobs:
     - name: Generate new .luacheckrc
       uses: FG-Unofficial-Developers-Guild/action-generate-luacheckrc@main
       with:
-        std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2'
+        std: '+dnd2e+dnd35e+dnd4e+dnd5e+pfrpg+pfrpg2+sfrpg'
 
     - name: Create pull request
       uses: peter-evans/create-pull-request@v6
