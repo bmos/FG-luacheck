@@ -100,6 +100,8 @@ stds.fg = {
       fields = {
         chat = {read_only = true},
         console = {read_only = true},
+        print = {read_only = true},
+        printstack = {read_only = true},
       },
     },
     Extension = {
