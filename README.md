@@ -7,7 +7,7 @@ This config file is suitable for using luacheck to check lua code for FantasyGro
 > If you fork this repo to generate your own luacheck config file, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token.
 
 > [!NOTE]  
-> When adding folders to main.yml (the action that generates the luacheck config), be sure that the local folder names don't start with a number.
+> When adding extensions to main.yml (the action that generates the luacheck config), be sure that the extension names don't start with a number.
 
 ## Non-standard configurations:
 * Warns about line length > 150.
