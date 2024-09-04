@@ -3,6 +3,12 @@
 # FantasyGrounds .luacheckrc configuration
 This config file is suitable for using luacheck to check lua code for FantasyGrounds.
 
+> [!IMPORTANT]  
+> If you fork this repo to generate your own luacheck config file, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token.
+
+> [!NOTE]  
+> When adding folders to main.yml (the action that generates the luacheck config), be sure that the local folder names don't start with a number.
+
 ## Non-standard configurations:
 * Warns about line length > 150.
 * Warns about cyclomatic complexity > 36. This is very permissive; best practices are much lower.
@@ -33,5 +39,3 @@ This config file is suitable for using luacheck to check lua code for FantasyGro
 
 ## Common Modifications
 ``allow_defined_top = true`` Allows top-level globals without warning. Useful for those who do not want to localize or whitelist all functions.
-
-**If you fork this repo to generate your own luacheck config file, you must add a secret to your repo settings named ACTIONS containing a GitHub Personal Access Token**
