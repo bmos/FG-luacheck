@@ -263,11 +263,11 @@ jobs:
         path: .fg/extensions/FG-4E-TEMPO-and-TEMPA
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
-    - name: Clone FG-Unofficial-Developers-Guild/24-Hour-Clock
+    - name: Clone FG-Unofficial-Developers-Guild/FG-24-Hour-Clock
       uses: actions/checkout@v4
       with:
-        repository: FG-Unofficial-Developers-Guild/24-Hour-Clock
-        path: .fg/extensions/24-Hour-Clock
+        repository: FG-Unofficial-Developers-Guild/FG-24-Hour-Clock
+        path: .fg/extensions/FG-24-Hour-Clock
         fetch-depth: 0
         token: ${{ secrets.ACTIONS }}
 
