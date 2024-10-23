@@ -15,6 +15,9 @@ ignore = {
 
 stds.fg = {
   read_globals = {
+    CampaignRegistry = {
+      other_fields = true,
+    },
     Comm = {
       other_fields = false,
       fields = {
